@@ -1,5 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
 .App {
-    position:  fixed;
+    position:  relative;
     width: 100%;
     text-align: center;
     background-color: black;
@@ -10,18 +12,21 @@
   }
   
   section {
-    position: relative;
+    position: absolute;
     height: 100vh;
     width: 100%;
   }
   
   #yellow-text-left , #yellow-text-right {
     position: absolute;
-    color: yellow;
+    color: white;
     text-align: center;
-    margin-top: 30%;
-    margin-left: 45%;
+    margin-top: 24%;
+    margin-left: 43%;
+    font-size: 2em;
     object-fit: cover;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
     
   }
   
@@ -29,15 +34,35 @@
     position : absolute;
   }
   
-  #map-image {
+  /* #map-image {
     
     scale : 0.5;
     left: 15%;
     top: -20%;
-  }
+  } */
   
      
   #girl-image {
-    left: 40%;
-    top: 20%;
+    position: fixed;
+
+    z-index : 10000;
+    left: 42%;
+    top: 15%;
   }
+
+
+  .logo-container {
+    position: fixed;
+    bottom: 5%;
+    width: 25%;
+    z-index: 100;
+    height : 4%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: inherit;
+  }
+
+  
+  
