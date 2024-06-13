@@ -1,8 +1,12 @@
+import Hero from "./compoents/hero";
+import ScreenTwo from "./compoents/screen-two";
 
 function App() {
   return (
-    <div>
-      <h1>Innovate with Ballerina 2024</h1>
+    <div className = "main-container">
+      
+      <Hero />  
+      <ScreenTwo />
     </div>
   );
 }
