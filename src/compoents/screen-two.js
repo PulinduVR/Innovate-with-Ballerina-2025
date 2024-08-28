@@ -1,3 +1,4 @@
+import ScreenThree from "./screen-three";
 import "./screen-two.css";
 
 const ScreenTwo = () => {
@@ -26,6 +27,7 @@ const ScreenTwo = () => {
 
                 
             </div>
+            
 
         </div>
     );
