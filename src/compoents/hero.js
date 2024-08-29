@@ -68,8 +68,8 @@ function Hero() {
       <section className = "section-one">
       <p id = "yellow-text-left"> INNOVATE </p>
       <p id = "yellow-text-right"> WITH BALERINA </p>
-      <img src='./girl.png' alt= "girl" id = "girl-image" ></img>
-      {/* <img src='./map.png' alt= "map" id = "map-image"></img> */}
+      {/* <img src='./girl.png' alt= "girl" id = "girl-image" ></img> */}
+     
 
       </section>
 

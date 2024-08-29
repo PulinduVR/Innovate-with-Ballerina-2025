@@ -7,9 +7,9 @@ function App() {
   return (
     <div className = "main-container">
       
-      {/* <Hero />   */}
-      {/* <ScreenTwo /> */}
-      <TextOne />
+      <Hero />  
+      <ScreenTwo />
+    
       <ScreenThree />
 
     </div>

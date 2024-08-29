@@ -1,10 +1,11 @@
 import "./screen-three.css";
 import TextOne from "./text-one";
+import TextTwo from "./text-two";
 
 const ScreenThree = () => {
   return (
    <>
-  
+   <TextOne />
     <div className="container-screen-three">
       
       <div className="big-container">
@@ -26,8 +27,10 @@ const ScreenThree = () => {
                 <span className="button maximize"></span>
               </div> */}
             </div>
-            <div className="content" style = {{justifyContent : "center"}}>
-              <img src="./bal.png" alt="balerina" id="balerina" style = {{marginLeft : "20%" , scale : "0.5"}}></img>
+            <div className="content">
+               <div>
+              <img src="./bal.png" alt="balerina"  style = {{scale : "0.5"}}></img>
+              </div>
               <p>
                 "Innovate With Ballerina" provides an exclusive platform for
                 university students to elevate their coding passion with the
@@ -46,6 +49,7 @@ const ScreenThree = () => {
           </div> */}
       </div>
     </div>
+    <TextTwo />
     </>
   );
 };
