@@ -1,65 +1,88 @@
 .prize-section {
     font-family: 'Space Grotesk';
-    text-align: center;
-    padding: 20px;
+    text-align: left;
+    padding: 50px 75px;
     color: #ffffff;
-    background-color: #0c1c28;
+    background-color: #0A1F25;
   }
   
   .prize-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 100%;
   }
   
-  .prize-title span {
-    color: #f4c542;
+  .win-exciting {
+    font-weight: normal;
+  }
+  
+  .prizes {
+    font-weight: bold;
   }
   
   .prize-container {
+    padding: 2.5%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
   }
   
   .prize-box {
-    background-color: #1c2f3a;
-    border: 2px solid #f4c542;
-    border-radius: 10px;
-    padding: 20px;
+    /* padding: 20px; */
     width: 100%;
     max-width: 200px;
     text-align: center;
   }
   
   .prize-box img {
-    width: 100%;
-    max-width: 80px;
+    /* max-width: 150px; */
     margin-bottom: 10px;
+    height: auto;
   }
   
   .prize-info h3 {
-    font-size: 1.5rem;
+    font-family: "Space Mono";
+    font-size: 1.3rem;
     margin: 10px 0;
-    color: #f4c542;
+    margin-left: 15%;
+    padding: 0px 3%;
+    color: #222;
+    background-color: #FFB34A;
+    letter-spacing: 1%;
+    width: fit-content;
   }
   
   .prize-info p {
-    font-size: 1.2rem;
+    font-size: 1.75rem;
+    letter-spacing: 1%;
     margin: 0;
   }
   
-  .additional-prizes {
+  /* .additional-prizes {
     margin-top: 20px;
-    background-color: #1c2f3a;
-    border: 2px solid #f4c542;
+    background-color: #0A1F25;
+    border: 2px solid #FFB34A;
     border-radius: 10px;
     padding: 10px;
     width: 100%;
     max-width: 300px;
     margin: 20px auto 0;
     text-align: center;
+  } */
+
+  .first-place img {
+    width: 130%;
+  }
+  
+  .second-place img {
+    width: 100%;
+  }
+  
+  .third-place img {
+    width: 80%
   }
   
   @media (max-width: 768px) {

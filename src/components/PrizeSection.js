@@ -4,7 +4,10 @@ import '../stylesheets/PrizeSection.css';
 const PrizeSection = () => {
   return (
     <div className="prize-section">
-      <h2 className="prize-title">Win Exciting <span>Prices</span></h2>
+      <div className="prize-title">
+        <span className="win-exciting">Win Exciting</span>
+        <span className="prizes">Prizes</span>
+      </div>
       
       <div className="prize-container">
         <div className="prize-box second-place">
@@ -30,13 +33,18 @@ const PrizeSection = () => {
             <p>Rs 75,000/-</p>
           </div>
         </div>
+
+        {/* <div className="prize-box">
+            <img src="3rd-place.png" alt="Third Place" />
+            <div className="prize-info">
+                <p>Additional Prizes Of</p>
+                <p>Rs 10,000/- Each</p>
+                <p>For Places 4th To 10th</p>
+            </div>
+        </div> */}
       </div>
       
-      <div className="additional-prizes">
-        <p>Additional Prizes Of</p>
-        <p>Rs 10,000/- Each</p>
-        <p>For Places 4th To 10th</p>
-      </div>
+      
     </div>
   );
 };
