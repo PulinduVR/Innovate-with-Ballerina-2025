@@ -1,20 +1,21 @@
 .prize-section {
     font-family: 'Space Grotesk';
     text-align: left;
-    padding: 50px 75px;
+    padding: 50px 100px;
     color: #ffffff;
     background-color: #0A1F25;
   }
   
   .prize-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     display: flex;
     flex-direction: column;
     line-height: 100%;
+    letter-spacing: 5px;
   }
   
   .win-exciting {
-    font-weight: normal;
+    font-weight: 300;
   }
   
   .prizes {
@@ -24,65 +25,94 @@
   .prize-container {
     padding: 2.5%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 10px;
   }
   
   .prize-box {
     /* padding: 20px; */
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     text-align: center;
   }
   
   .prize-box img {
-    /* max-width: 150px; */
+    max-width: 300px;
     margin-bottom: 10px;
     height: auto;
   }
   
   .prize-info h3 {
     font-family: "Space Mono";
-    font-size: 1.3rem;
     margin: 10px 0;
-    margin-left: 15%;
+    margin-left: 25%;
     padding: 0px 3%;
     color: #222;
     background-color: #FFB34A;
-    letter-spacing: 1%;
     width: fit-content;
   }
   
   .prize-info p {
-    font-size: 1.75rem;
-    letter-spacing: 1%;
+    letter-spacing: 1px;
     margin: 0;
+    text-transform: capitalize;
   }
   
-  /* .additional-prizes {
-    margin-top: 20px;
-    background-color: #0A1F25;
-    border: 2px solid #FFB34A;
-    border-radius: 10px;
-    padding: 10px;
-    width: 100%;
-    max-width: 300px;
-    margin: 20px auto 0;
-    text-align: center;
-  } */
+ .additional{
+    text-align: left;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+ }
+
+ .additional svg{
+    width: 40px;
+    margin-bottom: -10%;
+ }
 
   .first-place img {
-    width: 130%;
+    width: 120%;
+  }
+
+  .first-place h3 {
+    font-size: 1.3rem;
+  }
+
+  .first-place p {
+    font-size: 1.8rem;
   }
   
   .second-place img {
-    width: 100%;
+    width: 90%;
+  }
+
+  .second-place h3 {
+    font-size: 1.2rem;
   }
   
+  .second-place p {
+    font-size: 1.7rem;
+  }
+
   .third-place img {
     width: 80%
+  }
+
+  .third-place h3 {
+    font-size: 1.1rem;
+  }
+
+  .third-place p {
+    font-size: 1.6rem;
+  }
+
+  .third-place svg{
+    width: 60px;
+    margin-top: -50%;
+    margin-bottom: -10%;
   }
   
   @media (max-width: 768px) {
