@@ -6,11 +6,13 @@ const ScreenTwo = () => {
       <div style={styles.curve}></div>
       <div style={styles.content}>
         <div style={styles.textContainer}>
-          <span style={styles.codeIcon}>{"{}"}</span>
+          {/* <span style={styles.codeIcon}>{"{}"}</span> */}
           <h1 style={styles.heading}>
             <span ><img style={{ height: 60}} src = "/arrow.png" alt = "starr" /></span>{" "}
             <span style={styles.subHeading}>The</span>{" "}
-            <span style={styles.highlight}>Ultimate</span> <br />
+            <span style={styles.highlight}>Ultimate</span>
+            {"  "}  <span><img style = {{width: 40}} src= "/spring.png" alt = "spring" /></span>
+            <br />
             <span style={styles.subHeading}>C<span><img style = {{height : 60}}src = "/bluestar.png" alt = "star" /></span>ding Challenge</span>
           </h1>
           <p style={styles.subText}>
