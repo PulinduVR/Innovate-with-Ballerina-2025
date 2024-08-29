@@ -1,12 +1,9 @@
-import Hero from "./compoents/hero";
-import ScreenTwo from "./compoents/screen-two";
+import PrizeSection from "./components/PrizeSection";
 
 function App() {
   return (
     <div className = "main-container">
-      
-      <Hero />  
-      <ScreenTwo />
+      <PrizeSection />
     </div>
   );
 }

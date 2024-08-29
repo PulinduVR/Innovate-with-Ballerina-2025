@@ -1,0 +1,70 @@
+.prize-section {
+    font-family: 'Space Grotesk';
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #0c1c28;
+  }
+  
+  .prize-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .prize-title span {
+    color: #f4c542;
+  }
+  
+  .prize-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .prize-box {
+    background-color: #1c2f3a;
+    border: 2px solid #f4c542;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+  }
+  
+  .prize-box img {
+    width: 100%;
+    max-width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .prize-info h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #f4c542;
+  }
+  
+  .prize-info p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .additional-prizes {
+    margin-top: 20px;
+    background-color: #1c2f3a;
+    border: 2px solid #f4c542;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .prize-container {
+      flex-direction: column;
+    }
+  }
+  
