@@ -1,17 +1,34 @@
-import Hero from "./compoents/hero";
-import ScreenThree from "./compoents/screen-three";
-import ScreenTwo from "./compoents/screen-two";
-import TextOne from "./compoents/text-one";
+import React from "react";
+import Hero from "./components/hero";
+import ScreenTwo from "./components/screen-two";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  return (
-    <div className = "main-container">
-      
-      {/* <Hero />   */}
-      <ScreenTwo />
-    
-      <ScreenThree />
+  React.useEffect(() => {
+    gsap.to(".hero", {
+      scrollTrigger: {
+        trigger: ".main-container",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+      opacity: 0,
+      // y: -100,
+      ease: "power1.out",
+    });
+  }, []);
 
+  return (
+    <div className="main-container">
+      <div className="hero">
+        <Hero />
+      </div>
+      <div className="screen-two">
+        <ScreenTwo />
+      </div>
     </div>
   );
 }

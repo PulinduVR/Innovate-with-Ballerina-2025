@@ -15,15 +15,15 @@ function Hero() {
     gsap.to("#girl-image", {duration: 2, scale: 1.3});
     // gsap.to("#map-image", {duration: 2, y : -100});
 
-    gsap.to("#girl-image",{
-        scrollTrigger: {
+    // gsap.to("#girl-image",{
+    //     scrollTrigger: {
             
-            scrub: 1,
-          },
-            scale: 1.5,
-            x: 100,
-        }
-    );
+    //         scrub: 1,
+    //       },
+    //         scale: 1.5,
+    //         x: 100,
+    //     }
+    // );
 
     gsap.to("#yellow-text-right",{
         scrollTrigger: {
@@ -68,7 +68,7 @@ function Hero() {
       <section className = "section-one">
       <p id = "yellow-text-left"> INNOVATE </p>
       <p id = "yellow-text-right"> WITH BALERINA </p>
-      {/* <img src='./girl.png' alt= "girl" id = "girl-image" ></img> */}
+      <img src='./girl.png' alt= "girl" id = "girl-image" ></img>
      
 
       </section>
