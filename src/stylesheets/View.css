@@ -1,0 +1,80 @@
+.view-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #FBB934;
+  overflow: hidden; /* Ensure that content doesn't overflow */
+}
+
+.background-text {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 8.3rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #FFEACC; /* Light color to blend with the background */
+  white-space: nowrap;
+  pointer-events: none; /* Ignore mouse events */
+  opacity: 0.5;
+}
+
+.background-text-second {
+  position: absolute;
+  top: 75%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 8.3rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #FFEACC; /* Light color to blend with the background */
+  white-space: nowrap;
+  pointer-events: none; /* Ignore mouse events */
+  opacity: 0.5;
+}
+
+.faq-title {
+  font-size: xxx-large;
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+}
+
+.card-gallery {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.card-one{
+  margin-left: 180px;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 250px;
+  margin-bottom: 50px; /* Increased gap between cards */
+}
+
+@media (max-width: 600px) {
+  .card-one{
+    margin-left: 0px;
+  }
+  .card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px; /* Add some gap between cards */
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .background-text, .background-text-second {
+    font-size: 5.3rem;
+  }
+}

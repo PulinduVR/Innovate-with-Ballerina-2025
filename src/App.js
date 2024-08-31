@@ -1,8 +1,12 @@
-import './App.css';
+// App.js
+import React from 'react';
+import View from './views/FaqView';
+
 
 function App() {
   return (
-    <div>
+    <div className="App">
+      <View />
     </div>
   );
 }

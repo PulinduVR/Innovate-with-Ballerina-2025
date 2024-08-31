@@ -1,0 +1,94 @@
+.faq-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 25px auto;
+  max-width: 1200px;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.faq-column {
+  flex: 1;
+  margin: 0 12px;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif; 
+}
+
+.dropdown {
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.dropdown-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  height: 50px;
+  font-family: "Space Grotesk", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.dropdown-title {
+  flex: 1;
+  padding: 15px 20px; /* Add padding directly to the title to space out */
+}
+
+.dropdown-arrow-wrapper {
+  background-color: #4a4a4a;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+}
+
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  background-color: transparent;
+  color: black;
+  padding: 5px 20px;
+  border-radius: 0 0 10px 10px;
+  width: calc(100% - 40px);
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.dropdown-content.open {
+  opacity: 1;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 800px) {
+  .faq-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-column {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+}
