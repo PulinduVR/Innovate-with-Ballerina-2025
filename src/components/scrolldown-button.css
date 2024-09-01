@@ -1,11 +1,11 @@
 .scroll-down-button {
-    position: fixed;
-    width: 150px;
-    height: 50px;
+
+    position: relative;
+    height: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between ; 
-    top: 80%;
-    left: 80%;
+    justify-content: right; 
+    padding: 10px;
+   
     
 }

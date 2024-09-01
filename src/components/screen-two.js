@@ -17,6 +17,18 @@ const ScreenTwo = () => {
       },
       x: -50,
     });
+
+    gsap.from("#cont", {
+      scrollTrigger: {
+        trigger: "cont",
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: 3,
+      },
+      y: 200,
+    });
+
+    
   });
 
   return (
@@ -38,7 +50,7 @@ const ScreenTwo = () => {
       <div style={styles.topdiv}>
         <img src="/bal.png" />
       </div>
-      <div style={styles.content}>
+      <div style={styles.content} id = "cont">
         <div style={styles.textContainer}>
           <h1 style={styles.heading}>
             <span>

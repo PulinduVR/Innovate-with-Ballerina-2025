@@ -29,9 +29,11 @@ const ScreenThree = () => {
             </div>
             <div className="content">
                <div>
-              <img src="./bal.png" alt="balerina"  style = {{scale : "0.5"}}></img>
+              <img src="./b1.png" alt="balerina"  style = {{scale : "0.5"}}></img>
               </div>
-              <p>
+              <p className= "desc" style = {{
+               fontFamily: "space-grotesk",
+              }}>
                 "Innovate With Ballerina" provides an exclusive platform for
                 university students to elevate their coding passion with the
                 Ballerina programming language. This pioneering competition aims
