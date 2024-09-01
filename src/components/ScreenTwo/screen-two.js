@@ -48,7 +48,7 @@ const ScreenTwo = () => {
       </style>
       <div style={styles.curve}></div>
       <div style={styles.topdiv}>
-        <img src="/bal.png" />
+        <img src="/bal.png" alt="bal"/>
       </div>
       <div style={styles.content} id = "cont">
         <div style={styles.textContainer}>
