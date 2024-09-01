@@ -17,6 +17,8 @@
    align-items: center;
    background-color: #000;
    border: 2px solid #333;
+   align-items: center;
+   justify-content: center;
    
    border-radius:  10px;
  }
@@ -35,7 +37,7 @@
  
  .browser-header {
    display: flex;
-   justify-content: flex-start;
+   justify-content: flex-end;
    align-items: center;
    padding-bottom: 10px;
    border-bottom: 1px solid #333;
@@ -55,19 +57,10 @@
    width: 15px;
    height: 15px;
    border-radius: 50%;
+   background-color : white;
  }
  
- .close {
-   background-color: #f96256;
- }
  
- .minimize {
-   background-color: #fdbc40;
- }
- 
- .maximize {
-   background-color: #34c849;
- }
  
  .content {
    display: flex;
@@ -75,6 +68,7 @@
    background-color: #1C292C;
    justify-content: center;
    align-items: center;
+   padding: 20px;
  }
  
  .content h1 {
@@ -107,6 +101,8 @@
    width : 80% ;
    display: flex;
    flex-direction: row;
+   justify-content: center;
+ 
 
  }
 
@@ -116,3 +112,51 @@
    justify-content: space-between;
  }
 
+
+
+ @media only screen and (max-width: 768px) {
+  .container-screen-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A1F25;
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px; /* Add padding for spacing on small screens */
+  }
+
+  .center-container {
+    width: 90%; /* Adjust width to fit smaller screens */
+    height: auto;
+    background-color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .browser-window {
+    width: 100%;
+    height: auto;
+    background-color: #1C292C;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    padding: 20px; /* Space out the content */
+  }
+
+  .content img {
+    width: 80%; /* Ensure the image scales appropriately */
+    height: auto;
+    margin: 0 auto 20px auto; /* Center and space out the image */
+  }
+
+  .content p {
+    font-size: 14px; /* Adjust font size for readability on small screens */
+    line-height: 1.5;
+    font-family: 'space-grotesk', sans-serif;
+    margin: 0; /* Remove extra margins */
+  }
+
+  .text-one {
+    display: none;
+  }
+}
