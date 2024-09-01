@@ -1,9 +1,9 @@
 import React from "react";
-import Hero from "./components/hero";
-import ScreenTwo from "./components/screen-two";
+import Hero from "./components/Hero/hero";
+import ScreenTwo from "./components/ScreenTwo/screen-two";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ScreenThree from "./components/screen-three";
+import ScreenThree from "./components/ScreenThree/screen-three";
 
 gsap.registerPlugin(ScrollTrigger);
 

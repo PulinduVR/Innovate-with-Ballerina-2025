@@ -1,6 +1,6 @@
 import "./screen-three.css";
-import TextOne from "./text-one";
-import TextTwo from "./text-two";
+import TextOne from "../TextOne/text-one";
+import TextTwo from "../TextTwo/text-two";
 
 const ScreenThree = () => {
   return (

@@ -1,5 +1,5 @@
 import './hero.css';
-import ScrollDownButton from './scrolldown.button';
+import ScrollDownButton from '../ScrollButton/scrolldown.button';
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
