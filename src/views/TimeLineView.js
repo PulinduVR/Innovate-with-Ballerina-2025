@@ -9,7 +9,7 @@ import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-export default function TimeLineView({parentRef}) {
+export default function TimeLineView() {
     
     
     const [visibleCard, setVisibleCard] = useState(0);
@@ -243,7 +243,7 @@ export default function TimeLineView({parentRef}) {
                         </p>
                     </div>
                     <div className='buttonSection'>
-                        <button className='button-filled button-filled-text'>Register Now</button>
+                        <a className='button-filled button-filled-text' href='https://forms.gle/uB1ScvWHJYsQbTBs5'>Register Now</a>
                         <button className='button-outlined button-outlined-text'>Download Booklet</button>
                     </div>
                     <div className='svg2'>

@@ -265,19 +265,44 @@
 
 .button-filled, .button-outlined {
     width: 60%; /* Fixed width for both buttons */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.8em;
     flex-shrink: 0;
-    border-radius: 1em;
+    border-radius: 1em; /* Ensure rounded borders are applied */
     border: 1px solid #000;
     display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
     cursor: pointer;
+    transition: all 0.3s ease; /* Add transition for all properties */
 }
 
 .button-filled {
     background: #292929;
+    text-decoration: none; /* Remove underline */
+    
+}
+
+.button-filled:hover {
+    border: 1px #F7F7F7;
+    background: linear-gradient(95deg, #0E9F9B 3.99%, #FBB934 120.91%);
+}
+
+.button-outlined {
+    background: transparent;
+    
+}
+
+
+
+
+.button-outlined:hover {
+    border: 2px solid #0E9F9B;; 
+    
 }
 
 .button-filled-text, .button-outlined-text {
@@ -291,12 +316,21 @@
     text-transform: uppercase;
 }
 
+
 .button-filled-text {
     color: #E9E9E9;
 }
 
 .button-outlined-text {
     color: #000;
+}
+
+.button-outlined-text:hover {
+    background: linear-gradient(45deg, #0E9F9B, #FFB34A); /* Apply gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
 }
 
 .svg1 {
