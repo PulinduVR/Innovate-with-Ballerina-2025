@@ -14,7 +14,6 @@ export default function TimeLineView({parentRef}) {
     
     const [visibleCard, setVisibleCard] = useState(0);
     const controls = useAnimation();
-    const parentDivRef = parentRef;
    
     
     const headerRef = useRef(null);
@@ -22,7 +21,7 @@ export default function TimeLineView({parentRef}) {
 
     
     useEffect(() => {
-        console.log(parentDivRef.current);
+        
         gsap.registerPlugin(TextPlugin, ScrollTrigger);
     
         // Set initial opacity for elements
