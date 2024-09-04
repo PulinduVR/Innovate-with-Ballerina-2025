@@ -13,22 +13,22 @@ const View = () => {
 
   useEffect(() => {
     gsap.to(".background-text", {
-      x: "20%",  // Move to the right
+      x: "15%",  // Move to the right
       scrollTrigger: {
         trigger: ".view-container",
         start: "top top",  // Animation starts when the top of the container hits the top of the viewport
         end: "bottom top",  // Animation ends when the bottom of the container hits the top of the viewport
-        scrub: true,  // Smooth scrubbing
+        scrub: 3,  // Smooth scrubbing
       },
     });
 
     gsap.to(".background-text-second", {
-      x: "-20%",  // Move to the left
+      x: "-15%",  // Move to the left
       scrollTrigger: {
         trigger: ".view-container",
         start: "top top",
         end: "bottom top",
-        scrub: true,
+        scrub: 3,
       },
     });
   }, []);

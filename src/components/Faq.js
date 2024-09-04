@@ -28,7 +28,7 @@ const Faq = ({ title, children, isOpen, onToggle }) => {
       </button>
       <div
         ref={contentRef}
-        className="dropdown-content"
+        className={`dropdown-content ${isOpen ? 'open' : ''}`}
         style={{ maxHeight: height }}
       >
         {children}
