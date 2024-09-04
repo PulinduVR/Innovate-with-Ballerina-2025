@@ -10,7 +10,7 @@
 
 .background-text {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 60%;
   transform: translate(-50%, -50%);
   font-size: 8.3rem;
@@ -23,7 +23,7 @@
 
 .background-text-second {
   position: absolute;
-  top: 75%;
+  top: 78%;
   left: 30%;
   transform: translate(-50%, -50%);
   font-size: 8.3rem;
@@ -38,6 +38,8 @@
   font-size: xxx-large;
   font-family: "Space Grotesk", sans-serif;
   color: white;
+  margin-bottom: 50px;
+  margin-top: 10px;
 }
 
 .card-gallery {
@@ -45,7 +47,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .card-one{

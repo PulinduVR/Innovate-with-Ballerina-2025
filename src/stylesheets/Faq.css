@@ -64,17 +64,20 @@
 .dropdown-content {
   background-color: transparent;
   color: black;
-  padding: 5px 20px;
+  padding: 5px 0px; /* This padding applies when the answer is closed */
   border-radius: 0 0 10px 10px;
   width: calc(100% - 40px);
-  transition: max-height 0.3s ease, opacity 0.3s ease;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
   max-height: 0;
   overflow: hidden;
+  opacity: 0;
 }
 
 .dropdown-content.open {
   opacity: 1;
+  padding: 16px 0px; /* Increase the vertical padding when the answer is open */
 }
+
 
 /* Media query for mobile responsiveness */
 @media (max-width: 800px) {
