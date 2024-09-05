@@ -128,7 +128,7 @@
 
 /* Default styles for larger screens */
 .text-background {
-    color: #292929;
+    color: white;
     font-family: "Space Grotesk";
     font-size: 244px;
     font-style: normal;
@@ -136,7 +136,7 @@
     line-height: 101%; /* 347.44px */
     letter-spacing: 3.44px;
     text-transform: capitalize;
-    opacity: 0.06;
+    opacity: 0.48;
     position: absolute;
 }
 

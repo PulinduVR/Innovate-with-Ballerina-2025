@@ -130,6 +130,47 @@ export default function TimeLineView() {
             ease: "power2.inOut" // Smooth easing
         }
     );
+
+     // Add horizontal scroll-triggered animation for 'Stay Updated' text
+     gsap.to(".text-background-div1 p", {
+        x: "15%",
+        scrollTrigger: {
+            trigger: ".timeline-view-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: 2,
+        },
+    });
+
+    gsap.to(".text-background-div2 p", {
+        x: "15%",
+        scrollTrigger: {
+            trigger: ".timeline-view-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: 2,
+        },
+    });
+
+    gsap.to(".text-background-div3 p", {
+        x: "-15%",
+        scrollTrigger: {
+            trigger: ".timeline-view-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: 2,
+        },
+    });
+
+    gsap.to(".text-background-div4 p", {
+        x: "-15%",
+        scrollTrigger: {
+            trigger: ".timeline-view-container",
+            start: "top center",
+            end: "bottom center",
+            scrub: 2,
+        },
+    });
     
     }, []);
 
