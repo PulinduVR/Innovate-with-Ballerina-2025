@@ -5,10 +5,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScreenThree from "./components/ScreenThree/screen-three";
 import View from './views/FaqView';
-import TimeLineView from './views/TimeLineView';
+import TimeLineView from "./views/TimeLineView";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+
   // React.useEffect(() => {
   //   gsap.to(".hero", {
   //     scrollTrigger: {
@@ -35,6 +37,7 @@ function App() {
       <div className="screen-three">
       <TimeLineView/>
     </div>
+
       <div className="App">
         <View />
       </div>
@@ -43,3 +46,4 @@ function App() {
 }
 
 export default App;
+
