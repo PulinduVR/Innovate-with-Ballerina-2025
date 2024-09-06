@@ -1,0 +1,109 @@
+.view-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #FBB934;
+  overflow: hidden; /* Ensure that content doesn't overflow */
+}
+
+.background-text {
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 8.3rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #FFEACC; /* Light color to blend with the background */
+  white-space: nowrap;
+  pointer-events: none; /* Ignore mouse events */
+  opacity: 0.5;
+}
+
+.background-text-second {
+  position: absolute;
+  top: 78%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 8.3rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: #FFEACC; /* Light color to blend with the background */
+  white-space: nowrap;
+  pointer-events: none; /* Ignore mouse events */
+  opacity: 0.5;
+}
+
+.faq-title {
+  font-size: xxx-large;
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.card-gallery {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.card-one{
+  margin-left: 180px;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 250px;
+  margin-bottom: 50px; /* Increased gap between cards */
+}
+
+@media (max-width: 600px) {
+  .card-one{
+    margin-left: 0px;
+  }
+  .card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px; /* Add some gap between cards */
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .background-text, .background-text-second {
+    font-size: 5.3rem;
+  }
+}
+
+.row1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
+  gap: 20px; /* Optional: space between the columns */
+  margin-bottom: 10%;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+  gap: 20px; /* Optional: space between the columns */
+}
+
+
+@media (max-width: 768px) {
+  .row1, .row2 {
+    display: flex;
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center;    /* Center the content horizontally */
+    gap: 20px; /* Keep space between the items */
+  }
+
+  .row1 > div, .row2 > div {
+    width: 100%; /* Make each column take the full width */
+  }
+}
