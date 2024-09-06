@@ -7,16 +7,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PrizeSection = () => {
   useEffect(() => {
-    // GSAP animation for p-vector-2 to move left and right based on scroll
     gsap.to('.p-vector-2', {
-      x: () => window.innerWidth * 0.1, // Move by 10% of window width
-      ease: 'power1.inOut', // Smoother ease-in-out animation
+      x: () => window.innerWidth * 0.1,
+      ease: 'power1.inOut',
       scrollTrigger: {
         trigger: '.prize-section',
-        start: 'top bottom', // Start when section enters viewport
-        end: 'bottom top', // End when the section leaves the viewport
-        scrub: true, // Sync with scroll
-        markers: false, // Set to true for debugging
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true,
+        markers: false,
       },
     });
   }, []);
