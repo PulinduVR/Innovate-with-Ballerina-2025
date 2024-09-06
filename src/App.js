@@ -35,9 +35,6 @@ function App() {
         <ScreenTwo />
         <ScreenThree />
       </div>
-      <div>
-        <PrizeSection />
-      </div>
       <div className="screen-three">
       <TimeLineView/>
     </div>
