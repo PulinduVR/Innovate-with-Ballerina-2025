@@ -1,0 +1,192 @@
+.prize-section {
+    font-family: 'Space Grotesk';
+    text-align: left;
+    color: #ffffff;
+    background-color: #0A1F25;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* justify-content: center; */
+    /* align-items: center; */
+    overflow: hidden;
+  }
+
+  .vector {
+    position: relative;
+  }
+
+  .p-vector-1 {
+    position: absolute;
+    top: 0;
+    right: -3%;
+    width: 15%;
+    height: auto;
+    top: -160px;
+  }
+
+  .p-vector-2 {
+    position: absolute;
+    left: -17.5%;
+    bottom: -20px; /* Fine-tune the exact position */
+    width: 20%;
+    height: auto;
+    top: 425px;
+  }
+  
+  .prize-title {
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 100%;
+    letter-spacing: 5px;
+  }
+  
+  .win-exciting {
+    font-weight: 300;
+  }
+  
+  .prizes {
+    font-weight: bold;
+  }
+
+  .prize-box {
+    width: 110%;
+    max-width: 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .prize-box img {
+    width: 300px;
+    height: auto;
+  } */
+
+  .prize-info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .prize-info h3 {
+    font-family: "Space Mono";
+    color: #222;
+    background: linear-gradient(90deg, #FFB34A 0%, #00FFF8 100%);
+    width: fit-content;
+    margin: -15%;
+    padding: 0% 2%;
+  }
+
+  .prize-info p {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  .prize-set{
+    display: flex;
+  }
+
+  .first-place .prize-info{
+    top: 20px;
+  }
+
+  .second-place .prize-info{
+    top: 280px;
+    left: -80px;
+  }
+
+  .third-place .prize-info{
+    top: 360px;
+    left: 115px;
+  }
+
+  .first-place img {
+    width: 190%;
+  }
+
+  .first-place h3 {
+    font-size: 1.3rem;
+  }
+
+  .first-place p {
+    font-size: 1.9rem;
+  }
+  
+  .second-place img {
+    width: 180%;
+  }
+
+  .second-place h3 {
+    font-size: 1.2rem;
+  }
+  
+  .second-place p {
+    font-size: 1.7rem;
+  }
+
+  .third-place img {
+    width: 150%
+  }
+
+  .third-place h3 {
+    font-size: 1.1rem;
+  }
+
+  .third-place p {
+    font-size: 1.5rem;
+  }
+
+  .card-1{
+    position: absolute;
+    z-index: 10;
+    left: 25%;
+    padding-top: 2.5%;
+  }
+  
+  .card-2{
+    position: absolute;
+    z-index: 5;
+    left: 10%;
+  }
+
+  .card-3{
+    position: absolute;
+    z-index: 2;
+    left: 38.5%;
+    padding-top: 2.5%;
+  }
+  
+  /* @media (max-width: 600px) {
+    .prize-section {
+        padding: 10px 20px;
+    }
+
+    .prize-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .prize-section {
+        padding: 15px 30px; 
+    }
+
+    .prize-title {
+        font-size: 2.5rem;
+    }
+} */
+
+
+@media (min-width: 1025px) {
+    .prize-section {
+        padding: 50px 100px;
+    }
+
+    .prize-title {
+        font-size: 3.5rem; 
+    }
+}
