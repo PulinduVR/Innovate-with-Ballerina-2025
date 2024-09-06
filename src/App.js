@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScreenThree from "./components/ScreenThree/screen-three";
 import View from './views/FaqView';
 import TimeLineView from "./views/TimeLineView";
-import PrizeSection from "../src/components/PrizeSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
