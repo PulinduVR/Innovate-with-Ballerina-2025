@@ -284,7 +284,7 @@ export default function TimeLineView() {
                         </p>
                     </div>
                     <div className='buttonSection'>
-                        <a className='button-filled button-filled-text' href='https://forms.gle/uB1ScvWHJYsQbTBs5'>Register Now</a>
+                        <button className='button-filled button-filled-text' href='https://forms.gle/uB1ScvWHJYsQbTBs5'> Register Now</button>
                         <button className='button-outlined button-outlined-text'>Download Booklet</button>
                     </div>
                     <div className='svg2'>
