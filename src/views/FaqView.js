@@ -140,7 +140,7 @@ const View = () => {
         </div>
 
         <div className="card-gallery">
-          <div className="card-row card-one">
+          <div className="card-row card-one row1">
             <Card
               image={members[0].image}
               name={members[0].name}
@@ -158,7 +158,7 @@ const View = () => {
               contact={members[1].contact}
             />
           </div>
-          <div className="card-row">
+          <div className="card-row row2">
             <Card
               image={members[2].image}
               name={members[2].name}
