@@ -11,7 +11,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 function App() {
 
-
   // React.useEffect(() => {
   //   gsap.to(".hero", {
   //     scrollTrigger: {
@@ -37,7 +36,8 @@ function App() {
       </div>
       <div className="screen-three">
       <TimeLineView/>
-      </div>
+    </div>
+
       <div className="App">
         <View />
       </div>
@@ -46,3 +46,4 @@ function App() {
 }
 
 export default App;
+
