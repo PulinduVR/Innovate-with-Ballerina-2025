@@ -7,6 +7,7 @@ import ScreenThree from "./components/ScreenThree/screen-three";
 import View from './views/FaqView';
 import TimeLineView from "./views/TimeLineView";
 import PrizeSection from "../src/components/PrizeSection";
+import StatsSection from "./components/StatsSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -34,6 +35,9 @@ function App() {
       <div className="screen-two">
         <ScreenTwo />
         <ScreenThree />
+      </div>
+      <div>
+        <StatsSection />
       </div>
       <div>
         <PrizeSection />
