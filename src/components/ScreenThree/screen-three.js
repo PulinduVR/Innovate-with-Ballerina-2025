@@ -10,7 +10,7 @@ const ScreenThree = () => {
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
   useEffect(() => {
-    // Text animation for the paragraph
+    // Text animation for the paragraph with smoother transitions
     const tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".paraSec", // Trigger element
@@ -23,14 +23,14 @@ const ScreenThree = () => {
 
     const chars = text.split(""); // Splitting the text into characters
 
-    // Typing animation for each character in the paragraph
+    // Typing animation for each character in the paragraph with liquid-like easing
     chars.forEach((char, i) => {
       tl1.to(".desc", {
-        duration: 0.1, // Speed for each character
+        duration: 0.05 + Math.random() * 0.05, // Randomizing duration for each character
         text: {
           value: text.slice(0, i + 1), // Incrementally revealing the text
         },
-        ease: "none",
+        ease: "power1.inOut", // Smooth easing for liquid effect
       });
     });
 
@@ -53,10 +53,19 @@ const ScreenThree = () => {
         trigger: ".main-screen-three", // Trigger when the user scrolls in the main screen
         start: "top center", // Start rotation when the top of the container reaches the center of the viewport
         end: "bottom top", // End rotation when the bottom of the container reaches the top of the viewport
-        scrub:2, // Smooth animation based on scroll
+        scrub: 2, // Smooth animation based on scroll
       },
       rotation: 360, // Full rotation
       ease: "none",
+    });
+
+    // Adding a wavy liquid effect to the text once it's fully revealed
+    tl1.to(".desc", {
+      duration: 1,
+      y: 4, // Slight wavy movement on the Y-axis
+      ease: "sine.inOut",
+      repeat: -1, // Continuous wave effect
+      yoyo: true,
     });
   }, []);
 

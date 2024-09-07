@@ -61,6 +61,7 @@ function App() {
       </div>
       <div className="screen-two">
         <ScreenTwo />
+        <StatsSection />
       </div>
       <div className="screen-three">
         <ScreenThree />
@@ -69,9 +70,6 @@ function App() {
     </div>
      <div>
         <PrizeSection />
-      </div>
-      <div>
-        <StatsSection />
       </div>
       <TimeLineView/>
 

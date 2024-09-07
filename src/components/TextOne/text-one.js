@@ -1,7 +1,7 @@
 const TextOne = () => {
   return (
    
-    <div style={{ backgroundColor: "#0A1F25" , width: '100%',height: '50vh', overflow : 'hidden', marginTop: "4%"}}>
+    <div style={{ backgroundColor: "#0A1F25" , width: '100%',height: '50vh', overflow : 'hidden', marginTop: "20%"}}>
       {/* <svg width="847" height="772" viewBox="0 0 1147 772" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M-157.861 311.44C-68.0371 187.315 174.345 -35.2696 425.28 67.3931C738.948 195.721 637.666 535.458 800.332 670.462C930.464 778.466 1067.76 715.464 1120.14 670.462" stroke="url(#paint0_linear_2407_156)" stroke-width="82"/>
 <mask id="path-2-outside-1_2407_156" maskUnits="userSpaceOnUse" x="-30.232" y="136.765" width="44.8148" height="43.5469" fill="black">
