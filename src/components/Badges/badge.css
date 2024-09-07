@@ -1,0 +1,40 @@
+.main-badge-container {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #0A1F25;
+
+
+   padding: 20px;
+   overflow: hidden;
+
+}
+
+.center-badge-container {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   width: 70%;
+   align-items: center;
+   background-color: #0A1F25;
+   margin-bottom: 100px;
+   padding: 20px;
+   padding-bottom: 40px;
+   justify-content: space-between;
+}
+
+.badge-container{
+   display: flex;
+   height: 70px;
+}
+
+@media  screen and (max-width: 768px) {
+   .center-badge-container {
+      flex-direction: column;
+      height : 80vh;
+      
+   }
+
+   
+}

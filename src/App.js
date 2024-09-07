@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import View from './views/FaqView';
 import TimeLineView from "./views/TimeLineView";
 import './App.css'; // Ensure you import your styles
+import Badges from "./components/Badges/badges";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,14 +52,16 @@ function App() {
       </div>
       <div className="screen-three">
         <ScreenThree />
+        <Badges/>
       </div>
     </div>
-    <div className="screen-three">
+    
       <TimeLineView/>
-    </div>
+
        
     <div className="App">
         <View />
+
       </div>
      </>
   );

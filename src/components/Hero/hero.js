@@ -47,8 +47,6 @@ function Hero() {
       <div className = "scroll-button-container">
       <ScrollDownButton className="scroll-button" />
       </div>
-     
-      
       <div className="logo-container">
         <img src='./ieee-logo.png' alt="ieee-logo" id="ieee-logo"></img>
         <img src='./wso2-logo.png' alt="wso2-logo" id="wso2-logo"></img>

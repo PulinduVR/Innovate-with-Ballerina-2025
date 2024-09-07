@@ -1,9 +1,26 @@
+/* screen-two.css */
 
+/* Base styles are already set. Add media queries for smaller screens. */
+@media (max-width: 768px) {
 
-
-@media screen and (max-width: 768px) {
-   .heading {
-    font-size: 1.5rem;
+   .text-container {
+      position: relative;
+       width: 50%; /* Adjust width for smaller screens */
    }
-   
-}
+   .heading {
+     font-size: 1rem; /* Smaller heading for mobile */
+   }
+ 
+   .sub-text {
+     font-size: 0.9rem; /* Smaller text for mobile */
+   }
+ 
+   .main-container-se {
+     padding: 10px; /* Reduce padding for mobile */
+   }
+ 
+   .topdiv {
+     height: 8%; /* Adjust the height for smaller screens */
+   }
+ }
+ 

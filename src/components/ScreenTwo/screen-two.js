@@ -33,7 +33,7 @@ const ScreenTwo = () => {
   });
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container}  className="main-container-se">
       <style>
         {`
           @keyframes spin {
@@ -52,7 +52,7 @@ const ScreenTwo = () => {
         <img src="/bal.png" alt="bal"/>
       </div>
       <div style={styles.content} id = "cont">
-        <div style={styles.textContainer}>
+        <div style={styles.textContainer} className="text-container">
           <h1 style={styles.heading} className="heading">
             <span>
               <img
@@ -131,14 +131,14 @@ const styles = {
     textAlign: "center",
   },
   textContainer: {
+    position: "relative",
     display: "flex",
     flexDirection: "column",
     padding: 20,
     width: "100%",
-
   },
   heading: {
-    fontSize: "6rem",
+    fontSize: "5rem",
     fontWeight: "bold",
     fontFamily: "Space Grotesk",
   },
@@ -155,11 +155,12 @@ const styles = {
   },
   subText: {
     marginTop: "20px",
-    fontSize: "1.2rem",
+    fontSize: "1rem",
     color: "#C5C6C7",
     fontFamily: "Space Grotesk",
   },
-  //media query
+  
+
 
 
 };
