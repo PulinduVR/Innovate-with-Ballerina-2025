@@ -140,6 +140,7 @@ const View = () => {
         </div>
 
         <div className="card-gallery">
+          <h1 className="card-title">Meet the Team</h1>
           <div className="card-row card-one row1">
             <Card
               image={members[0].image}

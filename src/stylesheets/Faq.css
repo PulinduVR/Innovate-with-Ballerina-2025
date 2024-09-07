@@ -67,11 +67,12 @@
   color: black;
   padding: 5px 0px; /* This padding applies when the answer is closed */
   border-radius: 0 0 10px 10px;
-  width: calc(100% - 40px);
+  width: calc(100% - 50px);
   transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
+  margin-left: 4%;
 }
 
 .dropdown-content.open {
@@ -79,9 +80,22 @@
   padding: 16px 0px; /* Increase the vertical padding when the answer is open */
 }
 
+.card-title{
+  display: none;
+}
 
 /* Media query for mobile responsiveness */
 @media (max-width: 800px) {
+  .card-title{
+    display: block;
+    margin-top: -10%;
+    margin-bottom: 20%;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: xxx-large;
+    color: white;
+    text-align: center;
+  }
+
   .faq-container {
     flex-direction: column;
     align-items: center;
@@ -94,5 +108,9 @@
 
   .dropdown {
     width: 100%;
+  }
+
+  .dropdown-button {
+    padding: 11% 4%;
   }
 }
