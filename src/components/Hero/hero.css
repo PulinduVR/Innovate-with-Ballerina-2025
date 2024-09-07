@@ -63,6 +63,7 @@
   height: auto;
   z-index: 1;
   position: relative;
+  padding-right: 25px;
 }
 
 /* Container for the logos at the bottom left */

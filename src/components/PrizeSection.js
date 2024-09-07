@@ -10,7 +10,7 @@ const PrizeSection = () => {
   useEffect(() => {
     // Move the vector image on scroll
     gsap.to('.p-vector-2', {
-      x: () => window.innerWidth * 0.3,
+      x: () => window.innerWidth * 0.1,
       opacity: 0.7,
       ease: 'power1.inOut',
       scrollTrigger: {
