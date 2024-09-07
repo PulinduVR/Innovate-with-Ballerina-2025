@@ -57,19 +57,19 @@
   .card {
     margin: 0 auto; /* Center the card horizontally */
     margin-bottom: 10%; /* Add some space between cards */
-    max-width: 180px; /* Maintain smaller card size */
+    max-width: 200px; /* Maintain smaller card size */
   }
 
   .card-image {
-    width: 120px; /* Maintain smaller image size */
-    height: 140px; /* Maintain smaller image height */
+    width:  150px; /* Maintain smaller image size */
+    height: auto; /* Maintain smaller image height */
   }
 }
 
 @media (max-width: 768px) {
   .card {
     margin: 0 auto; /* Center the card horizontally */
-    max-width: 200px; /* Maintain smaller card size */
+    max-width: 225px; /* Maintain smaller card size */
   }
 
   .card-image {

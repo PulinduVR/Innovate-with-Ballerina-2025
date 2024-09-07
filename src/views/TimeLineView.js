@@ -28,7 +28,7 @@ export default function TimeLineView() {
         gsap.set(".svg3", { opacity: 0 });
         gsap.set(".header", { opacity: 0 });
         gsap.set(".svg-2", { opacity: 0 });
-    
+          
        // ---------Animation for the header text and SVG drawing---------------
 
         const tl1 = gsap.timeline({

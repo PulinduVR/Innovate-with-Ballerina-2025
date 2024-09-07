@@ -94,15 +94,18 @@
     }
     
     .card5 {
-        margin: 6% 5% 5% 39%; /* top right bottom left */
+        margin: 2% 5% 5% 50%; /* top right bottom left */
+        top: 50px;
     }
     
     .card6 {
         margin: -3% 5% 5% 64%; /* top right bottom left */
+        top: 60px;
     }
     
     .card7 {
         margin: 0% 5% 5% 30%; /* top right bottom left */
+        top: 50px;
     }
     
     .card8 {
@@ -116,6 +119,8 @@
     }
 
     .inner-container {
+        justify-content: center;
+        /* align-items: center; */
         margin-left: 10%;
         gap: 0px;
     }
