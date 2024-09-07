@@ -10,6 +10,7 @@
     justify-content: center;
     position: relative;
     font-family:'Space Grotesk', sans-serif ;
+    overflow: hidden; /* Ensure content is clipped within the card */
   }
   
   @media (min-width: 1024px) {
@@ -33,7 +34,8 @@
 .time-line-card3 .day {
     margin-top: 32.2px;
     margin-right: 50%;
-    color: #E9E9E9;
+    color: transparent; /* Make the text color transparent */
+    -webkit-text-stroke: 2px #E9E9E9; /* Add a stroke to the text */
     font-family: "Space Grotesk";
     font-size: 119.82px;
     font-style: normal;
@@ -41,6 +43,9 @@
     line-height: 101%; /* 161.418px */
     letter-spacing: 1.598px;
     text-transform: capitalize;
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text; /* Standard property for background-clip */
+    background-color: #E9E9E9; /* Set the background color to match the section */
 }
 
 .time-line-card3 .text {

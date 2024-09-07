@@ -4,12 +4,13 @@
     flex-shrink: 0;
     border-radius: 11.293px;
     background: #292929;
-    color: white;
+    color: rgba(255, 255, 255, 0);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     font-family: 'Space Grotesk', sans-serif;
+    overflow: hidden; /* Ensure content is clipped within the card */
   }
   
   
@@ -46,6 +47,9 @@
     line-height: 101%; /* 161.418px */
     letter-spacing: 1.598px;
     text-transform: capitalize;
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text; /* Standard property for background-clip */
+    background-color: #E9E9E9; /* Set the background color to match the section */
   }
   
   .time-line-card .text {
