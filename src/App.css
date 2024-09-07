@@ -4,7 +4,7 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    height: 350vh; /* Enough height for scrolling through all sections */
+    height: 300vh; /* Enough height for scrolling through all sections */
     background-color: #0A1F25;
     overflow: hidden;
   }
