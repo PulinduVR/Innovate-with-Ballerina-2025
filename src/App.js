@@ -18,24 +18,26 @@ function App() {
        
         start: "top top",
         end: "100vh top",
-        scrub: 2,
+        scrub: 3,
         pin: ".hero", // Pin the Hero section while scrolling
       },
-     ease : 3,
-      opacity: 0, // Fade out the Hero
+      //scroll speed increase
+      y: -1000,
+     
+
     });
 
     // Animate the ScreenTwo section to scroll up and fade in
-    gsap.to(".screen-two", {
-      scrollTrigger: {
-        trigger: ".screen-two",
-        start: "top 80%",
-        end: "bottom 20%",
-        scrub: true,
-      },
-      y: 200,
-      opacity: 1,
-    });
+    // gsap.to(".screen-two", {
+    //   scrollTrigger: {
+    //     trigger: ".screen-two",
+    //     start: "top 80%",
+    //     end: "bottom 20%",
+    //     scrub: true,
+    //   },
+    //   y: 200,
+    //   opacity: 1,
+    // });
   }, []);
 
   return (

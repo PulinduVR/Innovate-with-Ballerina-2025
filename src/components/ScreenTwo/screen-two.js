@@ -134,11 +134,11 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     padding: 20,
-    width: "90%",
+    width: "100%",
 
   },
   heading: {
-    fontSize: "5rem",
+    fontSize: "6rem",
     fontWeight: "bold",
     fontFamily: "Space Grotesk",
   },
