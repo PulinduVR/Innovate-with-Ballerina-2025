@@ -22,7 +22,7 @@ const ScrollDownButton = () => {
 
     return (
         <div className="scroll-down-button" >
-            <img src='./down-arrow.png' alt= "down-arrow" id = "down-arrow"></img>
+            <img src='./down-arrow.svg' alt= "down-arrow" id = "down-arrow"></img>
             <p id = "button-text">Scroll Down</p>
         </div>
     );

@@ -25,12 +25,18 @@ export default function BackgroundLine() {
                 start: "top 20%", // When the top of the container enters the bottom of the viewport
                 end: "bottom 90%", // When the bottom of the container leaves the top of the viewport
                 // markers: true, // For debugging
-                scrub: 1,
+                scrub: 2,
                  onUpdate: self => {
                     if (self.progress === 1) {
                         // Lock the animation at the end
                         gsap.to(svgPath, { strokeDashoffset: 0 });
                     }
+                },
+                onLeaveBack: (self) => {
+                    // Ensure that on scroll up, the line stays drawn and doesn't reset
+                    gsap.to(svgPath, { strokeDashoffset: 0, overwrite: true });
+                    self.vars.scrub = false; // Disable scrubbing after the first complete draw
+                    self.refresh(); // Refresh the trigger
                 },
             },
             ease: "none",

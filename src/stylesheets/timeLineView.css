@@ -94,15 +94,18 @@
     }
     
     .card5 {
-        margin: 6% 5% 5% 39%; /* top right bottom left */
+        margin: 2% 5% 5% 50%; /* top right bottom left */
+        top: 50px;
     }
     
     .card6 {
         margin: -3% 5% 5% 64%; /* top right bottom left */
+        top: 60px;
     }
     
     .card7 {
         margin: 0% 5% 5% 30%; /* top right bottom left */
+        top: 50px;
     }
     
     .card8 {
@@ -116,12 +119,10 @@
     }
 
     .inner-container {
-        display: flex;            /* Use flexbox to align items */
-        flex-direction: column;   /* Stack the cards vertically */
-        align-items: center;      /* Center the cards horizontally */
-        justify-content: center;  /* Center the cards vertically if needed */
-        width: 100%;              /* Make the container take full width */
-        padding: 10px;            /* Optional: Add padding for better spacing */
+        justify-content: center;
+        /* align-items: center; */
+        margin-left: 10%;
+        gap: 0px;
     }
 
 }
@@ -202,13 +203,14 @@
     align-items: center;
     justify-content: center;
     /* gap: 20px; */
+    /* overflow-x: hidden; */
     
 
 }
 
 .paraSec-sub {
-    width: 80%;
-    margin-top: 8%;
+    width: 75%;
+    margin-top: 5%;
 }
 
 
@@ -217,10 +219,10 @@
     color: #292929;
     text-align: center;
     font-family: "Space Grotesk";
-    font-size: 80px;
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 81%; /* 75.33px */
+    /* line-height: 81%; */
     letter-spacing: 0.93px;
     text-transform: capitalize;
 }
@@ -228,25 +230,25 @@
 
 @media (max-width: 1023px) {
     .header {
-        font-size: 55px; /* Reduce font size for smaller screens */
-        line-height: 90%; /* Adjust line height for smaller screens */
+        font-size: 50px; /* Reduce font size for smaller screens */
+        line-height: 100%; /* Adjust line height for smaller screens */
     }
 }
 
 /* Default styles for larger screens */
 .para {
-    margin-top: 8%;
+    margin-top: 3%;
     color: #282828;
     justify-content: 'center';
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
     font-family: "Space Grotesk";
-    font-size: 25px;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 109%; /* 29.43px */
-    letter-spacing: 0.27px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -263,7 +265,7 @@
     flex-direction: row; 
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 25px;
     margin: 2%;
 }
 
@@ -340,7 +342,7 @@
 .button-filled-text, .button-outlined-text {
     text-align: center;
     font-family: "Space Grotesk";
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 109%;
@@ -366,8 +368,8 @@
 }
 
 .svg1 {
-    margin-left: -8%;
-    margin-bottom: 0%;
+    margin-left: -20%;
+    margin-bottom: 5%;
     display: flex;
     justify-content: flex-start; 
     align-items: center; 
@@ -378,10 +380,11 @@
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .svg1 {
-        width: 50%; /* Make the SVG smaller */
+        width: 75%; /* Make the SVG smaller */
         height: auto; /* Maintain aspect ratio */
-        margin-left: -22%; /* Adjust margin for smaller screens */
-        margin-bottom: -5%; /* Adjust margin for smaller screens */
+        margin-left: 30px;
+        margin-bottom: 10%; /* Adjust margin for smaller screens */
+        margin-top: 10%;
     }
 }
 
@@ -389,32 +392,35 @@
     display: flex;
     justify-content: flex-end; 
     align-items: center; 
-    width: 100%;
-    margin-bottom: 6%; 
+    width: 15%;
     height: auto; 
+    margin-top: -5%;
+    transform: translateX(450px);
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .svg2 {
-        width: 55%;
+        width: 30%;
         height: auto;
-        margin: 20% -85% 0% 0%; 
+        margin-top: 10%; 
+        transform: translateX(27.5px);
     }
 }
 .svg3 {
     position: absolute;
     top: -32.5%;
-    right: 19.6%;
+    right: 25%;
+    width: 22.5%;
 
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .svg3 {
-        top: 35%; /* Adjust position lower */
+        top: 40%; /* Adjust position lower */
         right: 18%; /* Adjust horizontal position */
-        width: 60%; /* Make the SVG smaller */
+        width: 65%; /* Make the SVG smaller */
         height: auto; /* Maintain aspect ratio */
     }
 }

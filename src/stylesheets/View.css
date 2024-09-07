@@ -11,7 +11,7 @@
 .background-text {
   position: absolute;
   top: 45%;
-  left: 60%;
+  left: 70%;
   transform: translate(-50%, -50%);
   font-size: 8.3rem;
   font-family: "Space Grotesk", sans-serif;
@@ -43,23 +43,32 @@
 }
 
 .card-gallery {
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-top: 100px;
 }
 
-.card-one{
-  margin-left: 180px;
+.row1{
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
 }
-
+.row2{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -5%;
+}
 .card-row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 250px;
-  margin-bottom: 50px; /* Increased gap between cards */
+  position: relative;
+  left: 5%;
 }
 
 @media (max-width: 600px) {
@@ -99,8 +108,9 @@
   .row1, .row2 {
     display: flex;
     flex-direction: column; /* Stack columns vertically */
+    justify-content: center;
     align-items: center;    /* Center the content horizontally */
-    gap: 20px; /* Keep space between the items */
+    gap: 50px; /* Keep space between the items */
   }
 
   .row1 > div, .row2 > div {
