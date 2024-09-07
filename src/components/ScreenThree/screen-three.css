@@ -7,13 +7,12 @@
  
  .center-container {
    position: relative;
-   width: 80%;
+   z-index: 10;
+   width: 75%;
    height: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #000;
-   border: 2px solid #333;
    align-items: center;
    justify-content: center;
    border-radius:  10px;
@@ -27,7 +26,7 @@
    border-radius: 10px;
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
    color: #fff;
-   font-family: 'Arial', sans-serif;
+   font-family: 'Space Mono';
  }
  
  .browser-header {
@@ -35,12 +34,11 @@
    justify-content: flex-end;
    align-items: center;
    padding-bottom: 10px;
-   border-bottom: 1px solid #333;
-   height: 30px;
+   height: 17.5px;
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
   
-   background-color: #373737; 
+   background-color: #858585; 
  }
  
  .browser-buttons {
@@ -63,22 +61,21 @@
    background-color: #1C292C;
    justify-content: center;
    align-items: center;
-   padding: 20px;
+   padding: 1% 12.5%;
  }
  
- .content h1 {
-   font-size: 36px;
+ .content img {
    font-weight: bold;
-   margin-bottom: 20px;
    text-align: center;
   
  }
  
  .content p {
-   font-size: 16px;
-   line-height: 1.5;
+   font-size: 0.9rem;
+   line-height: 1.4;
    text-align: center;
-
+   margin-top: -5%;
+   opacity: 0.8;
  }
  
  .boxes-container {
@@ -136,7 +133,10 @@
     font-family: "Space Mono", monospace;
     color: #fff;
  }
-
+ .text-one {
+    position: absolute;
+    z-index: 10;
+  } 
 
 .desc {
   font-family: "Space Mono", monospace;

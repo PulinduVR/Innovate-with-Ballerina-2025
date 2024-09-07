@@ -78,17 +78,17 @@
 
 /* Styling for each logo image */
 .logo-container img {
-  height: 30px;
+  height: 35px;
   padding: 0% 10px;
   max-height: 50px;
 }
 
 #wso2-logo{
-  height: 40px;
+  height: 45px;
 }
 
 #balerina-logo{
-  height: 25px;
+  height: 30px;
 }
 
 /* Scroll button styling (if any specific styling needed) */
@@ -183,8 +183,8 @@
   position: absolute;
   /* gap: 20px; */
   bottom: 10px;
-  right: 10px;
-  width: 15%;
+  right: 20px;
+  width: 14%;
 }
 
 /* Scroll button styling (if any specific styling needed) */

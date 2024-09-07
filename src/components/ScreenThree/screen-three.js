@@ -26,7 +26,7 @@ const ScreenThree = () => {
     // Typing animation for each character in the paragraph
     chars.forEach((char, i) => {
       tl1.to(".desc", {
-        duration: 0.02, // Speed for each character
+        duration: 0.1, // Speed for each character
         text: {
           value: text.slice(0, i + 1), // Incrementally revealing the text
         },
@@ -53,7 +53,7 @@ const ScreenThree = () => {
         trigger: ".main-screen-three", // Trigger when the user scrolls in the main screen
         start: "top center", // Start rotation when the top of the container reaches the center of the viewport
         end: "bottom top", // End rotation when the bottom of the container reaches the top of the viewport
-        scrub: true, // Smooth animation based on scroll
+        scrub:2, // Smooth animation based on scroll
       },
       rotation: 360, // Full rotation
       ease: "none",
@@ -69,10 +69,10 @@ const ScreenThree = () => {
             <div className="box-start-container">
               <div className="boxes-container">
                 <img
-                  src="./boxes.png"
+                  src="./error.svg"
                   alt="box"
                   id="box"
-                  style={{ height: "100%", width: "auto" }}
+                  style={{ height: "100%", width: "auto", marginTop: "-20%" }}
                 />
               </div>
               <div className="boxes-container">
@@ -82,7 +82,7 @@ const ScreenThree = () => {
                   id="box"
                   className="vector-svg" // Added class for the rotating SVG
                   style={{
-                    height: "100%",
+                    height: "90%",
                     width: "auto",
                     marginTop: "50%",
                     marginLeft: "50%",
@@ -100,7 +100,7 @@ const ScreenThree = () => {
                     <img
                       src="./b1.png"
                       alt="ballerina"
-                      style={{ scale: "0.5" }}
+                      style={{ scale: "0.55" }}
                     />
                   </div>
                   <p className="desc"></p>

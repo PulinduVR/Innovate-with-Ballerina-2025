@@ -15,12 +15,11 @@
    position: relative;
    display: flex;
    flex-direction: row;
-   width: 70%;
+   width: 75%;
    align-items: center;
    background-color: #0A1F25;
    margin-bottom: 100px;
    padding: 20px;
-   padding-bottom: 40px;
    justify-content: space-between;
 }
 
