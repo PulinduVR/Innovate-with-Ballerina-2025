@@ -3,6 +3,9 @@
   text-align: left;
   margin: 0 auto;
   max-width: 480px; /* Increased max width */
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 

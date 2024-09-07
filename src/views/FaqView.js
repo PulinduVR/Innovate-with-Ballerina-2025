@@ -51,20 +51,20 @@ const View = () => {
       contact: '+94 71 882 6916'
     },
     {
-      image: 'https://zenko.syd1.cdn.digitaloceanspaces.com/balerina/ameera.png',
-      name: 'Ameera Thiwanka',
-      position: 'Event Co-Chairman',
-      club: 'Innovate with Ballerina',
-      email: 'ameera.21@cse.mrt.ac.lk',
-      contact: '+94 71 135 6855'
-    },
-    {
       image: 'https://zenko.syd1.cdn.digitaloceanspaces.com/balerina/salama.png',
       name: 'Salama Fazlul',
       position: 'Event Chairman',
       club: 'Innovate with Ballerina',
       email: 'fazlulsalama@gmail.com',
       contact: '+94 77 460 7907'
+    },
+    {
+      image: 'https://zenko.syd1.cdn.digitaloceanspaces.com/balerina/ameera.png',
+      name: 'Ameera Thiwanka',
+      position: 'Event Co-Chairman',
+      club: 'Innovate with Ballerina',
+      email: 'ameera.21@cse.mrt.ac.lk',
+      contact: '+94 71 135 6855'
     },
     {
       image: 'https://zenko.syd1.cdn.digitaloceanspaces.com/balerina/harindu.png',
@@ -97,14 +97,14 @@ const View = () => {
               isOpen={openFaqIndex === 0}
               onToggle={() => handleToggle(0)}
             >
-              <p>A team can consist of 3-5 participants.</p>
+              <p>A team can consist of 3-4 participants.</p>
             </Faq>
             <Faq
               title="Can a team consist of participants from different universities?"
               isOpen={openFaqIndex === 1}
               onToggle={() => handleToggle(1)}
             >
-              <p>Yes, All participants must be currently enrolled undergraduates from the same university or institution.</p>
+              <p>Yes, all participants must be currently enrolled undergraduates, and they can be from different universities or institutions.</p>
             </Faq>
             <Faq
               title="Can we change our team members after registration close?"

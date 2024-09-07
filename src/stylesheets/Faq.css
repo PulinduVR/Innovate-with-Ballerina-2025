@@ -40,6 +40,7 @@
 .dropdown-title {
   flex: 1;
   padding: 15px 20px; /* Add padding directly to the title to space out */
+  font-size: 0.9rem;
 }
 
 .dropdown-arrow-wrapper {
