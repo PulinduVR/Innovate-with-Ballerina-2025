@@ -74,8 +74,10 @@ const ScreenTwo = () => {
               <span>
                 <img
                   id="star"
-                  src="/bluestar.png"
+                  src="/o-star.svg"
                   alt="star"
+                  width={40}
+                  style={{ marginBottom: -10 }}
                 />
               </span>
               ding Challenge
@@ -140,7 +142,7 @@ const styles = {
     width: "100%",
   },
   heading: {
-    fontSize: "5rem",
+    fontSize: "4.6rem",
     fontWeight: "bold",
     fontFamily: "Space Grotesk",
   },
