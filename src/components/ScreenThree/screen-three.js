@@ -10,24 +10,17 @@ const ScreenThree = () => {
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
   useEffect(() => {
-    // Animation for the text inside <p> tags
+    // Text animation for the paragraph
     const tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".paraSec", // Trigger element
         start: "top 90%",
-      
         toggleActions: "play none none none",
       },
     });
 
-    const text = `Innovate With Ballerina" provides an exclusive platform for
-                    university students to elevate their coding passion with the
-                    Ballerina programming language. This pioneering competition
-                    aims to drive the future of technology by fostering teamwork,
-                    innovation, and outstanding performance. Projects can be
-                    submitted via GitHub and will be evaluated by the WSO2
-                    Ballerina team. Compelling rewards and certificates will be
-                    awarded for exceptional contributions.` // You can adjust this text as needed
+    const text = `Innovate With Ballerina provides an exclusive platform for university students to elevate their coding passion with the Ballerina programming language. This pioneering competition aims to drive the future of technology by fostering teamwork, innovation, and outstanding performance. Projects can be submitted via GitHub and will be evaluated by the WSO2 Ballerina team. Compelling rewards and certificates will be awarded for exceptional contributions.`; 
+
     const chars = text.split(""); // Splitting the text into characters
 
     // Typing animation for each character in the paragraph
@@ -53,6 +46,18 @@ const ScreenThree = () => {
         );
       },
     });
+
+    // Rotating Vector.svg with scroll
+    gsap.to(".vector-svg", {
+      scrollTrigger: {
+        trigger: ".main-screen-three", // Trigger when the user scrolls in the main screen
+        start: "top center", // Start rotation when the top of the container reaches the center of the viewport
+        end: "bottom top", // End rotation when the bottom of the container reaches the top of the viewport
+        scrub: true, // Smooth animation based on scroll
+      },
+      rotation: 360, // Full rotation
+      ease: "none",
+    });
   }, []);
 
   return (
@@ -75,6 +80,7 @@ const ScreenThree = () => {
                   src="./Vector.svg"
                   alt="box"
                   id="box"
+                  className="vector-svg" // Added class for the rotating SVG
                   style={{
                     height: "100%",
                     width: "auto",
@@ -97,9 +103,7 @@ const ScreenThree = () => {
                       style={{ scale: "0.5" }}
                     />
                   </div>
-                  <p className="desc">
-                    
-                  </p>
+                  <p className="desc"></p>
                 </div>
               </div>
             </div>
