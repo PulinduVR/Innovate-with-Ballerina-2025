@@ -78,15 +78,17 @@
 
 /* Styling for each logo image */
 .logo-container img {
+  height: 30px;
+  padding: 0% 10px;
   max-height: 50px;
-  margin-right: 15px;
 }
 
-/* Container for the scroll down button, positioned at the bottom right */
-.scroll-button-container {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
+#wso2-logo{
+  height: 40px;
+}
+
+#balerina-logo{
+  height: 25px;
 }
 
 /* Scroll button styling (if any specific styling needed) */
@@ -159,7 +161,7 @@
 }
 
 /* Container for the logos at the bottom left */
-.logo-container {
+/* .logo-container {
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -167,19 +169,22 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-}
+} */
 
 /* Styling for each logo image */
-.logo-container img {
+/* .logo-container img {
   max-height: 40px;
   margin-right: 15px;
-}
+} */
 
 /* Container for the scroll down button, positioned at the bottom right */
 .scroll-button-container {
+  /* border: 1px solid white; */
   position: absolute;
+  /* gap: 20px; */
   bottom: 10px;
   right: 10px;
+  width: 15%;
 }
 
 /* Scroll button styling (if any specific styling needed) */
