@@ -16,23 +16,6 @@ function Hero() {
 
     gsap.from("#yellow-text-right #yello-text-left", { duration: 2, opacity: 0,  });
 
-
-    // gsap.to("#yellow-text-right", {
-    //     scrollTrigger: {
-    //       scrub: 1,
-    //     },
-    //     scale: 2,
-    //     y: 100,
-    // });
-    
-    // gsap.to("#yellow-text-left", {
-    //     scrollTrigger: {
-    //       scrub: 1,
-    //     },
-    //     scale: 2,
-    //     y: 100,
-    // });
-
   });
 
   return (
@@ -47,8 +30,6 @@ function Hero() {
       <div className = "scroll-button-container">
       <ScrollDownButton className="scroll-button" />
       </div>
-     
-      
       <div className="logo-container">
         <img src='./ieee-logo.png' alt="ieee-logo" id="ieee-logo"></img>
         <img src='./CS-logo.png' alt="cs-logo" id="cs-logo"></img>

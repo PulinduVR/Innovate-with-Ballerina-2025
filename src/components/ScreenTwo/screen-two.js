@@ -2,13 +2,14 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import './screen-two.css';
 
 const ScreenTwo = () => {
   gsap.registerPlugin(useGSAP);
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
-    gsap.from("#arrow", {
+    gsap.to("#arrow", {
       scrollTrigger: {
         trigger: "#arrow",
         start: "top 80%",
@@ -32,7 +33,7 @@ const ScreenTwo = () => {
   });
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container}  className="main-container-se">
       <style>
         {`
           @keyframes spin {
@@ -51,8 +52,8 @@ const ScreenTwo = () => {
         <img src="/bal.png" alt="bal"/>
       </div>
       <div style={styles.content} id = "cont">
-        <div style={styles.textContainer}>
-          <h1 style={styles.heading}>
+        <div style={styles.textContainer} className="text-container">
+          <h1 style={styles.heading} className="heading">
             <span>
               <img
                 id="arrow"
@@ -104,7 +105,7 @@ const styles = {
     zIndex: 1,
   },
   container: {
-    position: "relative",
+
     width: "100%",
     height: "100vh",
     backgroundColor: "#0A1F25",
@@ -112,6 +113,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    overflow: "hidden",
   },
   curve: {
     position: "absolute",
@@ -128,9 +130,14 @@ const styles = {
   content: {
     zIndex: 2,
     textAlign: "center",
+    display: "flex",
   },
   textContainer: {
-    display: "inline-block",
+    position: "relative",
+    display: "flex",
+    flexDirection: "column",
+    padding: 20,
+    width: "100%",
   },
   heading: {
     fontSize: "5rem",
@@ -150,7 +157,7 @@ const styles = {
   },
   subText: {
     marginTop: "20px",
-    fontSize: "1.2rem",
+    fontSize: "1rem",
     color: "#C5C6C7",
     fontFamily: "Space Grotesk",
   },
