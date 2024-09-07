@@ -10,6 +10,7 @@
     /* justify-content: center; */
     /* align-items: center; */
     overflow: hidden;
+    height: 100vh;
   }
 
   .prize-line{
@@ -22,11 +23,10 @@
 
   .p-vector-1 {
     position: absolute;
-    top: 0;
     right: -3%;
     width: 15%;
     height: auto;
-    top: -160px;
+    top: -110px;
   }
 
   .p-vector-2 {
@@ -44,6 +44,7 @@
     flex-direction: column;
     line-height: 100%;
     letter-spacing: 5px;
+    margin-bottom: 3%;
   }
   
   .win-exciting {
@@ -222,13 +223,149 @@
     }
 } */
 
+@media (max-width: 600px) {
+  .prize-section {
+      padding: 10px 20px;
+  }
+
+  .prize-title {
+      font-size: 2.5rem;
+  }
+
+  .prize-box img {
+      width: 100%;
+  }
+
+  .first-place img {
+      width: 100%;
+  }
+
+  .second-place img {
+      width: 100%;
+  }
+
+  .third-place img {
+      width: 100%;
+  }
+
+  .prize-info h3,
+  .prize-info p {
+      position: static;
+      transform: none;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .prize-section {
+      padding: 15px 30px;
+  }
+
+  .prize-title {
+      font-size: 2.5rem;
+  }
+
+  .prize-box img {
+      width: 80%;
+  }
+
+  .first-place img {
+      width: 150%;
+  }
+
+  .second-place img {
+      width: 140%;
+  }
+
+  .third-place img {
+      width: 130%;
+  }
+}
 
 @media (min-width: 1025px) {
-    .prize-section {
-        padding: 50px 100px;
-    }
+  
+  .prize-section {
+      padding: 100px 100px;
+  }
 
-    .prize-title {
-        font-size: 3.5rem; 
-    }
+  .prize-title {
+      font-size: 3.3rem;
+  }
+
+  .prize-box img {
+      width: 100%;
+  }
+
+  .first-place img {
+      width: 170%;
+      height: 340px !important;
+  }
+
+  .second-place img {
+      width: 165%;
+  }
+
+  .third-place img {
+      width: 150%;
+  }
+
+  .first-place h3 {
+    font-size: 1.15rem;
+  }
+
+  .first-place p {
+    font-size: 1.7rem;
+  }
+
+  .second-place h3 {
+    font-size: 1.05rem;
+  }
+  
+  .second-place p {
+    font-size: 1.6rem;
+  }
+
+  .third-place h3 {
+    font-size: 0.95rem;
+  }
+
+  .third-place p {
+    font-size: 1.4rem;
+  }
+
+  .additional-prizes{
+    gap: 0.5px;
+    position: absolute;
+    top: 100px;
+    right: 40px;   
+  }
+
+  .additional-prizes span:nth-child(2){
+    font-size: 1.4rem;
+    letter-spacing: 1px; 
+    margin-top: 10px;
+  }
+
+  .additional-prizes span:nth-child(3){
+    color: #FFB34A;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 5%;
+  }
+
+  .additional-prizes span:nth-child(4){
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .additional-prizes img{
+    padding-bottom: 0%;
+  }
+
+  .third-place .prize-info{
+    top: 320px;
+  }
+
+  .second-place .prize-info{
+    top: 240px;
+    left: -60px;
+  }
 }

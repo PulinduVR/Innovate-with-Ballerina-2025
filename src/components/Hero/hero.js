@@ -24,7 +24,7 @@ function Hero() {
         <div className="section-one">
           <p id="yellow-text-left">INNOVATE</p>
           <img src='./girl.png' alt="girl" id="girl-image"></img>
-          <p id="yellow-text-right">WITH BALERINA</p>
+          <p id="yellow-text-right">WITH BALLERINA</p>
         </div>
       </div>
       <div className = "scroll-button-container">
