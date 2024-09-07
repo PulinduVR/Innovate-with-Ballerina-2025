@@ -364,7 +364,7 @@
 
 .svg1 {
     margin-left: -20%;
-    margin-bottom: 0%;
+    margin-bottom: 5%;
     display: flex;
     justify-content: flex-start; 
     align-items: center; 
@@ -375,10 +375,11 @@
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .svg1 {
-        width: 50%; /* Make the SVG smaller */
+        width: 75%; /* Make the SVG smaller */
         height: auto; /* Maintain aspect ratio */
-        margin-left: -22%; /* Adjust margin for smaller screens */
-        margin-bottom: -5%; /* Adjust margin for smaller screens */
+        margin-left: 30px;
+        margin-bottom: 10%; /* Adjust margin for smaller screens */
+        margin-top: 10%;
     }
 }
 
@@ -388,16 +389,17 @@
     align-items: center; 
     width: 15%;
     height: auto; 
-    margin-top: -10%;
+    margin-top: -5%;
     transform: translateX(450px);
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .svg2 {
-        width: 55%;
+        width: 30%;
         height: auto;
-        margin: 20% -85% 0% 0%; 
+        margin-top: 10%; 
+        transform: translateX(27.5px);
     }
 }
 .svg3 {
