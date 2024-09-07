@@ -1,11 +1,11 @@
 import React from "react";
-// import Hero from "./components/Hero/hero";
-// import ScreenTwo from "./components/ScreenTwo/screen-two";
+import Hero from "./components/Hero/hero";
+import ScreenTwo from "./components/ScreenTwo/screen-two";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import ScreenThree from "./components/ScreenThree/screen-three";
-// import View from './views/FaqView';
-// import TimeLineView from "./views/TimeLineView";
+import ScreenThree from "./components/ScreenThree/screen-three";
+import View from './views/FaqView';
+import TimeLineView from "./views/TimeLineView";
 import PrizeSection from "../src/components/PrizeSection";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -28,23 +28,23 @@ function App() {
 
   return (
     <div className="main-container">
-      {/* <div className="hero">
+      <div className="hero">
         <Hero />
       </div>
       <div className="screen-two">
         <ScreenTwo />
         <ScreenThree />
-      </div> */}
+      </div>
       <div>
         <PrizeSection />
       </div>
-      {/* <div className="screen-three">
+      <div className="screen-three">
       <TimeLineView/>
-    </div> */}
+    </div>
 
-      {/* <div className="App">
+      <div className="App">
         <View />
-      </div> */}
+      </div>
     </div>
   );
 }
