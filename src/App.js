@@ -61,7 +61,9 @@ function App() {
      <div>
         <PrizeSection />
       </div>
-    
+      <div>
+        <StatsSection />
+      </div>
       <TimeLineView/>
 
        
