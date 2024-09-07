@@ -113,6 +113,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    overflow: "hidden",
   },
   curve: {
     position: "absolute",
@@ -129,6 +130,7 @@ const styles = {
   content: {
     zIndex: 2,
     textAlign: "center",
+    display: "flex",
   },
   textContainer: {
     position: "relative",
@@ -159,10 +161,6 @@ const styles = {
     color: "#C5C6C7",
     fontFamily: "Space Grotesk",
   },
-  
-
-
-
 };
 
 export default ScreenTwo;

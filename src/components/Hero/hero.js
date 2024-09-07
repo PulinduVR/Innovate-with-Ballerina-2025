@@ -16,23 +16,6 @@ function Hero() {
 
     gsap.from("#yellow-text-right #yello-text-left", { duration: 2, opacity: 0,  });
 
-
-    // gsap.to("#yellow-text-right", {
-    //     scrollTrigger: {
-    //       scrub: 1,
-    //     },
-    //     scale: 2,
-    //     y: 100,
-    // });
-    
-    // gsap.to("#yellow-text-left", {
-    //     scrollTrigger: {
-    //       scrub: 1,
-    //     },
-    //     scale: 2,
-    //     y: 100,
-    // });
-
   });
 
   return (
