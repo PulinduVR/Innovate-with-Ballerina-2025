@@ -51,6 +51,7 @@ function Hero() {
       
       <div className="logo-container">
         <img src='./ieee-logo.png' alt="ieee-logo" id="ieee-logo"></img>
+        <img src='./CS-logo.png' alt="cs-logo" id="cs-logo"></img>
         <img src='./wso2-logo.png' alt="wso2-logo" id="wso2-logo"></img>
         <img src='./b-logo.png' alt="b-logo" id="balerina-logo"></img>
         
