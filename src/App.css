@@ -1,6 +1,26 @@
-.balerina-logo {
-    position: fixed;
+/* styles.css */
+.main-container {
+    position: relative;
     width: 100%;
-    z-index: 100;
-    background-color: black;
-}
+    background-color: #0A1F25;
+    overflow: hidden; /* Ensure no overflow happens */
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    z-index: 2; /* In front of screen-two */
+    background-color: #0A1F25;
+    top: 0;
+  }
+  
+  .screen-two {
+    position: absolute; /* Positioned relative to .main-container */
+    top: 0;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-color: #ffffff;
+    z-index: 1; /* Behind the hero */
+  }
+  

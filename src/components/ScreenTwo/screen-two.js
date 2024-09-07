@@ -2,13 +2,14 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import './screen-two.css';
 
 const ScreenTwo = () => {
   gsap.registerPlugin(useGSAP);
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
-    gsap.from("#arrow", {
+    gsap.to("#arrow", {
       scrollTrigger: {
         trigger: "#arrow",
         start: "top 80%",
@@ -52,7 +53,7 @@ const ScreenTwo = () => {
       </div>
       <div style={styles.content} id = "cont">
         <div style={styles.textContainer}>
-          <h1 style={styles.heading}>
+          <h1 style={styles.heading} className="heading">
             <span>
               <img
                 id="arrow"
@@ -104,7 +105,7 @@ const styles = {
     zIndex: 1,
   },
   container: {
-    position: "relative",
+
     width: "100%",
     height: "100vh",
     backgroundColor: "#0A1F25",
@@ -130,7 +131,11 @@ const styles = {
     textAlign: "center",
   },
   textContainer: {
-    display: "inline-block",
+    display: "flex",
+    flexDirection: "column",
+    padding: 20,
+    width: "90%",
+
   },
   heading: {
     fontSize: "5rem",
@@ -154,6 +159,9 @@ const styles = {
     color: "#C5C6C7",
     fontFamily: "Space Grotesk",
   },
+  //media query
+
+
 };
 
 export default ScreenTwo;
