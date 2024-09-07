@@ -6,6 +6,7 @@
     width: 100%;
     height: 300vh; /* Enough height for scrolling through all sections */
     background-color: #0A1F25;
+    overflow: hidden;
   }
   
   /* Hero section */

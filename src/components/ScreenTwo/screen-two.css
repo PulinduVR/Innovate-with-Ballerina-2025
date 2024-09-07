@@ -1,4 +1,7 @@
 /* screen-two.css */
+.main-container-se{
+  overflow: hidden;
+}
 
 /* Base styles are already set. Add media queries for smaller screens. */
 @media (max-width: 768px) {
