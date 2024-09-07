@@ -225,8 +225,8 @@
 
 @media (max-width: 1023px) {
     .header {
-        font-size: 55px; /* Reduce font size for smaller screens */
-        line-height: 90%; /* Adjust line height for smaller screens */
+        font-size: 50px; /* Reduce font size for smaller screens */
+        line-height: 100%; /* Adjust line height for smaller screens */
     }
 }
 
@@ -413,7 +413,7 @@
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .svg3 {
-        top: 35%; /* Adjust position lower */
+        top: 40%; /* Adjust position lower */
         right: 18%; /* Adjust horizontal position */
         width: 60%; /* Make the SVG smaller */
         height: auto; /* Maintain aspect ratio */
