@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./components/Hero/hero";
+// import Hero from "./components/Hero/hero";
 import ScreenTwo from "./components/ScreenTwo/screen-two";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
