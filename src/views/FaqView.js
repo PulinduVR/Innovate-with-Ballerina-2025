@@ -111,7 +111,7 @@ const View = () => {
               isOpen={openFaqIndex === 2}
               onToggle={() => handleToggle(2)}
             >
-              <p>No,After the registration period, teams won’t be able to change their members. But can make changes of the team content within registration period.</p>
+              <p>No, After the registration period, teams won’t be able to change their members. But can make changes of the team content within registration period.</p>
             </Faq>
           </div>
           <div className="faq-column">
