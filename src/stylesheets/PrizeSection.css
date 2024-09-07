@@ -3,7 +3,7 @@
     text-align: left;
     color: #ffffff;
     background-color: #0A1F25;
-    height: 80vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -12,6 +12,10 @@
     overflow: hidden;
   }
 
+  .prize-line{
+    position: relative;
+    /* display: flex; */
+  }
   .vector {
     position: relative;
   }
@@ -31,7 +35,7 @@
     bottom: -20px; /* Fine-tune the exact position */
     width: 20%;
     height: auto;
-    top: 425px;
+    top: 450px;
   }
   
   .prize-title {
@@ -60,10 +64,11 @@
     align-items: center;
   }
   
-  /* .prize-box img {
+  .prize-box img {
+    max-width: 570px;
     width: 300px;
     height: auto;
-  } */
+  }
 
   .prize-info{
     position: absolute;
@@ -87,6 +92,7 @@
 
   .prize-set{
     display: flex;
+    position: relative;
   }
 
   .first-place .prize-info{
@@ -104,7 +110,7 @@
   }
 
   .first-place img {
-    width: 190%;
+    width: 220%;
   }
 
   .first-place h3 {
@@ -116,7 +122,7 @@
   }
   
   .second-place img {
-    width: 180%;
+    width: 200%;
   }
 
   .second-place h3 {
@@ -128,7 +134,7 @@
   }
 
   .third-place img {
-    width: 150%
+    width: 170%
   }
 
   .third-place h3 {
@@ -142,23 +148,60 @@
   .card-1{
     position: absolute;
     z-index: 10;
-    left: 25%;
-    padding-top: 3%;
+    left: 27.5%;
+    padding-top: 4%;
   }
   
   .card-2{
     position: absolute;
     z-index: 5;
-    left: 10%;
+    left: 8%;
   }
 
   .card-3{
     position: absolute;
-    z-index: 2;
-    left: 38.5%;
-    padding-top: 3%;
+    z-index: 1;
+    left: 46%;
+    padding-top: 2%;
   }
-  
+
+  .additional-prizes{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    gap: 2px;
+    position: absolute;
+    top: 150px;
+    right: 150px;   
+  }
+  .additional-prizes img{
+    max-width: 35px;
+    height: auto;
+    padding-bottom: 5%;
+  }
+
+  .additional-prizes span:nth-child(2){
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 1px; 
+  }
+
+  .additional-prizes span:nth-child(3){
+    color: #FFB34A;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 5%;
+  }
+
+  .additional-prizes span:nth-child(4){
+    background: linear-gradient(100deg, #10C3BD 3.53%, #FBB934 63.81%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
   /* @media (max-width: 600px) {
     .prize-section {
         padding: 10px 20px;
