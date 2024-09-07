@@ -405,8 +405,8 @@
 .svg3 {
     position: absolute;
     top: -32.5%;
-    right: 22.5%;
-    width: 25%;
+    right: 25%;
+    width: 22.5%;
 
 }
 
@@ -415,7 +415,7 @@
     .svg3 {
         top: 40%; /* Adjust position lower */
         right: 18%; /* Adjust horizontal position */
-        width: 60%; /* Make the SVG smaller */
+        width: 65%; /* Make the SVG smaller */
         height: auto; /* Maintain aspect ratio */
     }
 }
