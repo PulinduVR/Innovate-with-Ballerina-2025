@@ -17,8 +17,6 @@ export default function TimeLineView() {
    
     
     const headerRef = useRef(null);
-
-
     
     useEffect(() => {
         
@@ -285,7 +283,7 @@ export default function TimeLineView() {
                     </div>
                     <div className='buttonSection'>
                         <button className='button-filled button-filled-text' href='https://forms.gle/uB1ScvWHJYsQbTBs5'> Register Now</button>
-                        <button className='button-outlined button-outlined-text'>Download Booklet</button>
+                        <button className='button-outlined button-outlined-text' href="https://drive.google.com/file/d/1PU3KlQlWEZaPHcD0jbWcEpEwVleT9uRF/view?usp=sharing">Download Booklet</button>
                     </div>
                     <div className='svg2'>
                         <svg className='svg-2' xmlns="http://www.w3.org/2000/svg" width="316" height="306" viewBox="0 0 316 306" fill="none">
