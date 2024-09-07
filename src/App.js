@@ -29,9 +29,9 @@ function App() {
 
   return (
     <div className="main-container">
-      <div className="hero">
+      {/* <div className="hero">
         <Hero />
-      </div>
+      </div> */}
       <div className="screen-two">
         <ScreenTwo />
         <ScreenThree />

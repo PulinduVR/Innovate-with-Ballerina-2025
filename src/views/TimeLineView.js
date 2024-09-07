@@ -76,7 +76,7 @@ export default function TimeLineView() {
         const tl2 = gsap.timeline({
             scrollTrigger: {
                 trigger: ".buttonSection", // Adjust this to the container of the SVG
-                scrub: true, // Smooth scrubbing, when you scroll it animates
+                scrub: 3, // Smooth scrubbing, when you scroll it animates
                 // markers: true,  Uncomment this for debugging
             }
         });
@@ -113,7 +113,7 @@ export default function TimeLineView() {
             scrollTrigger: {
                 trigger: ".header", // The element that triggers the animation
                 start: "top 90%", // Start animation when the top of the element hits 90% of the viewport height
-                scrub: true, // Smooth scrubbing, when you scroll it animates
+                scrub: 3, // Smooth scrubbing, when you scroll it animates
                 // markers: true,  //Uncomment this for debugging
             }
         });
@@ -138,7 +138,7 @@ export default function TimeLineView() {
             trigger: ".timeline-view-container",
             start: "top center",
             end: "bottom center",
-            scrub: 2,
+            scrub: 3,
         },
     });
 
@@ -148,7 +148,7 @@ export default function TimeLineView() {
             trigger: ".timeline-view-container",
             start: "top center",
             end: "bottom center",
-            scrub: 2,
+            scrub: 3,
         },
     });
 
@@ -158,7 +158,7 @@ export default function TimeLineView() {
             trigger: ".timeline-view-container",
             start: "top center",
             end: "bottom center",
-            scrub: 2,
+            scrub: 3,
         },
     });
 
@@ -168,7 +168,7 @@ export default function TimeLineView() {
             trigger: ".timeline-view-container",
             start: "top center",
             end: "bottom center",
-            scrub: 2,
+            scrub: 3,
         },
     });
     
@@ -280,7 +280,7 @@ export default function TimeLineView() {
 
                         </div>
                         <p className="para">
-                            Join the "Innovate with Ballerina" competition to empower your coding proficiency and entrepreneurial spirit! Gain invaluable experience and contribute to shaping  the future of technology. Secure your spot today and embark on an inspiring         journey of learning and discovery.
+                            Join the "Innovate with Ballerina" competition to empower your <br />coding proficiency and entrepreneurial spirit! <br />Gain invaluable experience and contribute to shaping  the future of technology. <br />Secure your spot today and embark on an inspiring journey of learning and discovery.
                         </p>
                     </div>
                     <div className='buttonSection'>

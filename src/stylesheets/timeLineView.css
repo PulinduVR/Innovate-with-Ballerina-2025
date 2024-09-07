@@ -116,12 +116,8 @@
     }
 
     .inner-container {
-        display: flex;            /* Use flexbox to align items */
-        flex-direction: column;   /* Stack the cards vertically */
-        align-items: center;      /* Center the cards horizontally */
-        justify-content: center;  /* Center the cards vertically if needed */
-        width: 100%;              /* Make the container take full width */
-        padding: 10px;            /* Optional: Add padding for better spacing */
+        margin-left: 10%;
+        gap: 0px;
     }
 
 }
@@ -202,13 +198,14 @@
     align-items: center;
     justify-content: center;
     /* gap: 20px; */
+    /* overflow-x: hidden; */
     
 
 }
 
 .paraSec-sub {
-    width: 80%;
-    margin-top: 8%;
+    width: 75%;
+    margin-top: 5%;
 }
 
 
@@ -217,10 +214,10 @@
     color: #292929;
     text-align: center;
     font-family: "Space Grotesk";
-    font-size: 80px;
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 81%; /* 75.33px */
+    /* line-height: 81%; */
     letter-spacing: 0.93px;
     text-transform: capitalize;
 }
@@ -235,18 +232,18 @@
 
 /* Default styles for larger screens */
 .para {
-    margin-top: 8%;
+    margin-top: 3%;
     color: #282828;
     justify-content: 'center';
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
     font-family: "Space Grotesk";
-    font-size: 25px;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 109%; /* 29.43px */
-    letter-spacing: 0.27px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -263,7 +260,7 @@
     flex-direction: row; 
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 25px;
     margin: 2%;
 }
 
@@ -340,7 +337,7 @@
 .button-filled-text, .button-outlined-text {
     text-align: center;
     font-family: "Space Grotesk";
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 109%;
@@ -366,7 +363,7 @@
 }
 
 .svg1 {
-    margin-left: -8%;
+    margin-left: -20%;
     margin-bottom: 0%;
     display: flex;
     justify-content: flex-start; 
@@ -389,9 +386,10 @@
     display: flex;
     justify-content: flex-end; 
     align-items: center; 
-    width: 100%;
-    margin-bottom: 6%; 
+    width: 15%;
     height: auto; 
+    margin-top: -10%;
+    transform: translateX(450px);
 }
 
 /* Media query for smaller screens */
@@ -405,7 +403,8 @@
 .svg3 {
     position: absolute;
     top: -32.5%;
-    right: 19.6%;
+    right: 22.5%;
+    width: 25%;
 
 }
 
