@@ -26,10 +26,19 @@ function App() {
         pin: ".hero", // Pin the Hero section while scrolling
       },
       //scroll speed increase
-      y: -1000,
+      y: -600,
      
 
     });
+    // gsap.to(".screen-two .screen-three", {
+    //   scrollTrigger: {
+    //     trigger: ".screen-two",
+    //     start: "top top",
+    //     end: "bottom 20%",
+    //     scrub: true,
+    //   },
+    //   y: 200,
+    // });
 
     // Animate the ScreenTwo section to scroll up and fade in
     // gsap.to(".screen-two", {

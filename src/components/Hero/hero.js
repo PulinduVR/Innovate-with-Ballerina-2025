@@ -10,8 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 function Hero() {
 
   useGSAP(() => {
-    gsap.to("#yellow-text-right", {duration: 2, x: 180});
-    gsap.to("#yellow-text-left", {duration: 2, x: -90});
+    gsap.to("#yellow-text-right", {duration: 2, x: 160});
+    gsap.to("#yellow-text-left", {duration: 2, x: -80});
     gsap.to("#girl-image", {duration: 2, scale: 1.3});
 
     gsap.from("#yellow-text-right #yello-text-left", { duration: 2, opacity: 0,  });
