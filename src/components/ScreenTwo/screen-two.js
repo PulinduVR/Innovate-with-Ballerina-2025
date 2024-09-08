@@ -1,12 +1,21 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './screen-two.css';
+import Button from "../RegisterButton/Button";
 
 const ScreenTwo = () => {
   gsap.registerPlugin(useGSAP);
   gsap.registerPlugin(ScrollTrigger);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  },[]);
 
   useGSAP(() => {
     gsap.to("#arrow", {
@@ -19,18 +28,42 @@ const ScreenTwo = () => {
       x: -50,
     });
 
-    gsap.to("#cont", {
+    gsap.from("#cont", {
       scrollTrigger: {
         trigger: "cont",
-        start: "top 80%",
+        start: "top top",
         end: "bottom 20%",
         scrub: 3,
       },
-      y: -400,
+      y: 100,
     });
 
     
   });
+  const stylesRes = {
+    heading: {
+      fontSize: isMobile ? "3rem" : "5rem",
+      fontWeight: "bold",
+      fontFamily: "Space Grotesk",
+    },
+    subHeading: {
+      color: '#D2D2D2',
+      fontSize: isMobile ? "1.5rem" : "2rem",
+    },
+    highlight: {
+      backgroundImage: "url(./highlight.png)",
+      backgroundSize: "cover",
+      padding: isMobile ? "0 5px" : "0 10px",
+      borderRadius: "5px",
+      color: "#152B39",
+    },
+    subText: {
+      marginTop: "20px",
+      fontSize: isMobile ? "0.875rem" : "1rem",
+      color: "#C5C6C7",
+      fontFamily: "Space Grotesk",
+    },
+  };
 
   return (
     <div style={styles.container}  className="main-container-se">
@@ -50,10 +83,11 @@ const ScreenTwo = () => {
       <div style={styles.curve}></div>
       <div style={styles.topdiv} id = "logo-cont">
         <img src="/bal.png" alt="bal"/>
+        <Button label="Register Now"  />
       </div>
       <div style={styles.content} id = "cont">
         <div style={styles.textContainer} className="text-container">
-          <h1 style={styles.heading} className="heading">
+          <h1 style={stylesRes.heading} className="heading">
             <span>
               <img
                 id="arrow"
@@ -92,22 +126,21 @@ const ScreenTwo = () => {
     </div>
   );
 };
-
 const styles = {
   topdiv: {
     position: "absolute",
     top: 0,
     left: 0,
-    width: "80%",
-    height: "10%",
+    width: "100%",
+    height: "14%",
     display: "flex",
-    justifyContent: "left",
+    justifyContent: "space-between",
     padding: 20,
+    zIndex: 10,
     alignItems: "center",
     zIndex: 1,
   },
   container: {
-
     width: "100%",
     height: "110vh",
     backgroundColor: "#0A1F25",
@@ -142,7 +175,7 @@ const styles = {
     width: "100%",
   },
   heading: {
-    fontSize: "4.6rem",
+    fontSize: "5rem",
     fontWeight: "bold",
     fontFamily: "Space Grotesk",
   },
@@ -150,12 +183,11 @@ const styles = {
     color: '#D2D2D2',
   },
   highlight: {
-    backgroundImage : "url(/highlight.png)",
+    backgroundImage: "url(/highlight.png)",
     backgroundSize: "cover",
     padding: "0 10px",
     borderRadius: "5px",
-    color: "#152B39"
-
+    color: "#152B39",
   },
   subText: {
     marginTop: "20px",
@@ -163,6 +195,8 @@ const styles = {
     color: "#C5C6C7",
     fontFamily: "Space Grotesk",
   },
+  
 };
+
 
 export default ScreenTwo;

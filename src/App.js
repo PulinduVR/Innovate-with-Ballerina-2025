@@ -21,46 +21,23 @@ function App() {
     // Animate the Hero section to scroll up and fade out
     gsap.to(".hero", {
       scrollTrigger: {
-        start: "top top", // Start animation when the top of the hero hits the top of the viewport
-        end: "50% top", // End animation when the bottom of the hero hits the top of the viewport
-        scrub: 3, // Smooth scrolling effect
-        pin: ".hero", // Pin the Hero section while scrolling
+        start: "top top", 
+        end: "30% top", 
+        scrub: 3, 
+        pin: ".hero", 
         onLeave: () => {
-          // This triggers when the hero section leaves the viewport
           gsap.set(".hero", { display: "none" });
-          heroHidden = true; // Mark hero as hidden
+          heroHidden = true; 
         },
         onEnterBack: () => {
-          // This is triggered when scrolling back up, but we want to keep it hidden
           if (heroHidden) {
             gsap.set(".hero", { display: "none" });
           }
         },
       },
-      y: -1900, // Scrolling movement for the hero section
+      y: -1900, 
     })}, [heroHidden]);
     
-    // gsap.to(".screen-two .screen-three", {
-    //   scrollTrigger: {
-    //     trigger: ".screen-two",
-    //     start: "top top",
-    //     end: "bottom 20%",
-    //     scrub: true,
-    //   },
-    //   y: 200,
-    // });
-
-    // Animate the ScreenTwo section to scroll up and fade in
-    // gsap.to(".screen-two", {
-    //   scrollTrigger: {
-    //     trigger: ".screen-two",
-    //     start: "top 80%",
-    //     end: "bottom 20%",
-    //     scrub: true,
-    //   },
-    //   y: 200,
-    //   opacity: 1,
-    // });
 
 
   return (

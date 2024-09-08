@@ -1,7 +1,8 @@
-/* screen-two.css */
+screen-two.css
 .main-container-se{
   overflow: hidden;
 }
+
 
 /* Base styles are already set. Add media queries for smaller screens. */
 @media (max-width: 768px) {
@@ -22,6 +23,7 @@
  
    .topdiv {
      height: 8%; /* Adjust the height for smaller screens */
+     color: aquamarine;
    }
  }
  

@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 340vh; /* Enough height for scrolling through all sections */
+    height: 300vh; /* Enough height for scrolling through all sections */
     background-color: #0A1F25;
     overflow: hidden;
 
@@ -19,7 +19,6 @@
     top: 0;
     z-index: 2; 
     
-   
   }
   
   /* ScreenTwo section */
@@ -29,7 +28,7 @@
 
 
     width: 100%;
-    margin-top: 10%;
+
     background-color: #ffffff;
     z-index: 1; 
   }
@@ -37,31 +36,33 @@
   /* ScreenThree section */
   .screen-three {
     z-index: 1;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100vh;
-    margin-top: 60%;
+    margin-top: -30%;
+
     background-color: #0A1F25;
   }
   
 
   @media screen and (max-width: 768px) {
+    
    
   
-    .hero {
     
-      display: none;
+    .main-container {
+        height: 200; /* Let the height adjust based on content */
     }
 
-    .screen-two {
-        margin-top: 0;
+    /* Ensure each section stacks properly */
+    .hero { 
+        z-index: 1; /* Remove layering for responsive view */
     }
+
     .screen-three {
-        margin-top: 0;
+        margin-top: -120%; /* Ensure no negative margin in mobile view */
     }
-    .main-container {
-        height: 300vh;
-    }
+
     
   
    
