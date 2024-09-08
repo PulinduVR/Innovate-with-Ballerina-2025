@@ -58,7 +58,7 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   background-color: #ffffff;
   mix-blend-mode: difference; /* Inverts the color of everything behind it */
   z-index: 9999;
