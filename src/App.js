@@ -1,12 +1,16 @@
+
 import React, { useState, useEffect } from "react";
+
+
+
 import Hero from "./components/Hero/hero";
 import ScreenTwo from "./components/ScreenTwo/screen-two";
 import ScreenThree from "./components/ScreenThree/screen-three";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import View from './views/FaqView';
+import View from "./views/FaqView";
 import TimeLineView from "./views/TimeLineView";
-import './App.css'; // Ensure you import your styles
+import "./App.css"; // Ensure you import your styles
 import Badges from "./components/Badges/badges";
 import PrizeSection from "../src/components/PrizeSection";
 import StatsSection from "./components/StatsSection";
@@ -14,8 +18,6 @@ import StatsSection from "./components/StatsSection";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-
-
   let heroHidden = false;
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -39,13 +41,14 @@ function App() {
     gsap.to(".hero", {
       scrollTrigger: {
 
-        start: "top top", 
-        end: "30% top", 
-        scrub: 3, 
-        pin: ".hero", 
+        start: "top top",
+        end: "30% top",
+        scrub: 3,
+        pin: ".hero",
+
         onLeave: () => {
           gsap.set(".hero", { display: "none" });
-          heroHidden = true; 
+          heroHidden = true;
         },
         onEnterBack: () => {
           if (heroHidden) {
@@ -53,54 +56,31 @@ function App() {
           }
         },
       },
-      y: -1900, 
-    })}, [heroHidden]);
-    
-    // gsap.to(".screen-two .screen-three", {
-    //   scrollTrigger: {
-    //     trigger: ".screen-two",
-    //     start: "top top",
-    //     end: "bottom 20%",
-    //     scrub: true,
-    //   },
-    //   y: 200,
-    // });
-
-    // Animate the ScreenTwo section to scroll up and fade in
-    // gsap.to(".screen-two", {
-    //   scrollTrigger: {
-    //     trigger: ".screen-two",
-    //     start: "top 80%",
-    //     end: "bottom 20%",
-    //     scrub: true,
-    //   },
-    //   y: 200,
-    //   opacity: 1,
-    // });
-
-
-  return (
-    <>
-    <div className="main-container">
-      <div className="hero">
-        <Hero />
-      </div>
-      
-      <div className="screen-two">
-        <ScreenTwo />
-      </div>
-      <div className="screen-three">
-        <ScreenThree />
-        <Badges/>
-
-        start: "top top",
-        end: "100vh top",
-        scrub: 3,
-        pin: ".hero", // Pin the Hero section while scrolling
-      },
-      y: -600,
+      y: -1900,
     });
-  }, []);
+  }, [heroHidden]);
+
+  // gsap.to(".screen-two .screen-three", {
+  //   scrollTrigger: {
+  //     trigger: ".screen-two",
+  //     start: "top top",
+  //     end: "bottom 20%",
+  //     scrub: true,
+  //   },
+  //   y: 200,
+  // });
+
+  // Animate the ScreenTwo section to scroll up and fade in
+  // gsap.to(".screen-two", {
+  //   scrollTrigger: {
+  //     trigger: ".screen-two",
+  //     start: "top 80%",
+  //     end: "bottom 20%",
+  //     scrub: true,
+  //   },
+  //   y: 200,
+  //   opacity: 1,
+  // });
 
   return (
     <>
@@ -108,19 +88,21 @@ function App() {
         <div className="hero">
           <Hero />
         </div>
+
         <div className="screen-two">
           <ScreenTwo />
         </div>
         <div className="screen-three">
           <ScreenThree />
+          {/* <Badges /> */}
         </div>
-
       </div>
-      <StatsSection />
+
       <div>
         <PrizeSection />
       </div>
       <TimeLineView />
+
       <div className="App">
         <View />
       </div>
@@ -134,6 +116,8 @@ function App() {
           left: `${position.x}px`,
         }}
       />
+
+
     </>
   );
 }
