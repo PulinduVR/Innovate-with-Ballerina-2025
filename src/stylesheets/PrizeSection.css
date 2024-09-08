@@ -284,7 +284,7 @@
 @media (max-width: 1400px) {
   
   .prize-section {
-      padding: 100px 100px;
+      padding: 80px 100px;
   }
 
   .prize-title {
@@ -367,6 +367,10 @@
     top: 240px;
     left: -60px;
   }
+  .p-vector-2 {
+    left: -17.5%;
+    top: 410px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -380,6 +384,7 @@
 }
 
 .additional-prizes{
+  top: 100px;
   right: 6%;   
 }
 .second-place .prize-info{
