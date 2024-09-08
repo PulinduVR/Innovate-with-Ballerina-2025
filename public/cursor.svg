@@ -1,14 +1,1 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="24.000000pt" height="24.000000pt" viewBox="0 0 24.000000 24.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,24.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M50 114 l0 -118 28 26 c37 35 65 48 101 48 17 0 31 4 31 9 0 5 -36
-41 -80 81 l-80 72 0 -118z m99 2 c17 -18 20 -26 10 -26 -8 0 -31 -9 -52 -20
-l-37 -20 0 66 0 65 28 -19 c15 -11 38 -32 51 -46z"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M20,23.478c0,0.014,0,0.026,0,0.038c0,0.082,0.008,0.166,0.014,0.248c0.028,0.384,0.118,0.75,0.259,1.089L40.636,77.75  c0.526,1.367,1.847,2.265,3.311,2.25c1.465-0.014,2.768-0.935,3.269-2.311l8.125-22.356l22.351-8.122  C79.066,46.713,80,45.409,80,43.944c0-0.012,0-0.021,0-0.033c0-1.452-0.891-2.754-2.248-3.276l-52.8-20.331  c-0.436-0.197-0.925-0.303-1.434-0.304C21.587,20,20,21.551,20,23.478z"/><text x="0" y="115" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Johan Cato</text><text x="0" y="120" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
