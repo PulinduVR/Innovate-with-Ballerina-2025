@@ -6,7 +6,7 @@
   padding: 20px;
   background-color: #FBB934;
   overflow: hidden; /* Ensure that content doesn't overflow */
-  padding-bottom: 7rem;
+  padding: 4rem 0 7rem 0;
 }
 
 .background-text {
