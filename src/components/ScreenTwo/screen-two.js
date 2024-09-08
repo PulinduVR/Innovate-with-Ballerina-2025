@@ -131,9 +131,9 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     padding: 20,
-    zIndex: 10,
-    alignItems: "center",
     zIndex: 1,
+    alignItems: "center",
+
   },
   container: {
     width: "100%",

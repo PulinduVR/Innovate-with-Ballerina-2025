@@ -15,7 +15,7 @@ import StatsSection from "./components/StatsSection";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  let heroHidden = false;
+  const [heroHidden, setHeroHidden] = useState(false);
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -45,7 +45,7 @@ function App() {
 
         onLeave: () => {
           gsap.set(".hero", { display: "none" });
-          heroHidden = true;
+          setHeroHidden(true);
         },
         onEnterBack: () => {
           if (heroHidden) {
