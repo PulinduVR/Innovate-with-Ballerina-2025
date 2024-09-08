@@ -1,12 +1,22 @@
 
 .stats-section {
+    padding: 2rem;
+    background-color: #0A1F25;
+    font-family: 'Space Grotesk';
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .stat-boundary{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem;
-    background-color: #0A1F25;
-    font-family: 'Space Grotesk', sans-serif;
-    overflow: hidden;
+    background-color: #0B181C;
+    border: 1px solid #10C3BD;
+    border-radius: 25px;
+    width: 75%;
+    justify-content: space-evenly;
   }
   
   .stat {
@@ -14,25 +24,50 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1rem;
+    padding: 3rem;
+    /* border-right: 2px solid #FBB934; */
   }
   
   .stat-number {
-    font-size: 4rem;
+    font-size: 4.6rem;
     font-weight: 600;
-    background: linear-gradient(100deg, #10C3BD 3.53%, #FBB934 63.81%);
+    color: #fff;
+  }
+  
+  .stat-label {
+    font-size: 1.5rem;
+    font-weight: bold !important;
+    margin-top: -10%;
+    font-weight: 500;
+    background: linear-gradient(90deg, #10C3BD 0%, #FFB34A 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
-  .stat-label {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #fff;
-    margin-top: 0.5rem;
-    font-weight: 500;
-  }
+
+  .stat-1, .stat-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Ensure the pseudo-element is positioned relative to the parent */
+    padding-right: 8%;
+}
+
+.stat-1::after, .stat-2::after {
+    content: '';
+    position: absolute;
+    top: 10%; /* Center the pseudo-element vertically */
+    right: 0;
+    width: 2px; /* Border width */
+    height: 80%; /* Border height */
+    background: linear-gradient(180deg, #10C3BD 0%, #FFB34A 100%);
+}
+
+@media (max-width: 768px) {
+    .stat-number {
+        font-size: 3rem;
+    }
+}
   
   @media (max-width: 768px) {
     .stat-number {
