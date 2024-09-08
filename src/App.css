@@ -68,4 +68,20 @@
    
     
   }
-  
+
+
+/* Custom cursor styles */
+.custom-cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-20%, -20%);
+  background-color: #ffffff;
+  mix-blend-mode: difference; /* Inverts the color of everything behind it */
+  z-index: 9999;
+  transition: width 0.2s ease, height 0.2s ease; /* Smooth transition */
+}

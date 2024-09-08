@@ -10,31 +10,49 @@ const ScreenThree = () => {
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
   useEffect(() => {
-    // Text animation for the paragraph with smoother transitions
+    const text = `Innovate With Ballerina provides an exclusive platform for university students to elevate their coding passion with the Ballerina programming language. This pioneering competition aims to drive the future of technology by fostering teamwork, innovation, and outstanding performance. Projects can be submitted via GitHub and will be evaluated by the WSO2 Ballerina team. Compelling rewards and certificates will be awarded for exceptional contributions.`;
+
+    const randomChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    const textArray = text.split(""); // Split the text into characters
+    const randomArray = textArray.map((char) =>
+      char === " " ? " " : randomChars[Math.floor(Math.random() * randomChars.length)]
+    );
+
     const tl1 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".paraSec", // Trigger element
+        trigger: ".paraSec",
         start: "top 90%",
         toggleActions: "play none none none",
       },
     });
 
-    const text = `Innovate With Ballerina provides an exclusive platform for university students to elevate their coding passion with the Ballerina programming language. This pioneering competition aims to drive the future of technology by fostering teamwork, innovation, and outstanding performance. Projects can be submitted via GitHub and will be evaluated by the WSO2 Ballerina team. Compelling rewards and certificates will be awarded for exceptional contributions.`; 
-
-    const chars = text.split(""); // Splitting the text into characters
-
-    // Typing animation for each character in the paragraph with liquid-like easing
-    chars.forEach((char, i) => {
-      tl1.to(".desc", {
-        duration: 0.05 + Math.random() * 0.05, // Randomizing duration for each character
-        text: {
-          value: text.slice(0, i + 1), // Incrementally revealing the text
-        },
-        ease: "power1.inOut", // Smooth easing for liquid effect
-      });
+    // Step 1: Display the randomized text
+    tl1.to(".desc", {
+      duration: 0,
+      text: randomArray.join(""), // Display random characters initially
     });
 
-    // Flicker effect for the error boxes
+    // Step 2: Randomly swap letters until the final text is revealed
+    textArray.forEach((char, index) => {
+      const randomDelay = Math.random() * 3; // Random delay for each letter change
+
+      if (char !== " ") {
+        tl1.to(
+          `.desc`,
+          {
+            duration: 0.3,
+            onStart: () => {
+              let currentText = document.querySelector(".desc").innerText.split("");
+              currentText[index] = char; // Replace the current random letter with the correct one
+              document.querySelector(".desc").innerText = currentText.join("");
+            },
+          },
+          randomDelay // Randomized delay for each letter
+        );
+      }
+    });
+
+    // Flicker effect for the error boxes (kept the same)
     const tlFlicker = gsap.timeline({
       scrollTrigger: {
         trigger: ".big-container",
@@ -51,7 +69,7 @@ const ScreenThree = () => {
       ease: "power1.inOut",
     });
 
-    // SVG drawing animation
+    // SVG drawing animation (kept the same)
     tl1.to(".svg3", {
       duration: 2,
       opacity: 1,
@@ -64,7 +82,7 @@ const ScreenThree = () => {
       },
     });
 
-    // Rotating Vector.svg with scroll
+    // Rotating Vector.svg with scroll (kept the same)
     gsap.to(".vector-svg", {
       scrollTrigger: {
         trigger: ".main-screen-three", // Trigger when the user scrolls in the main screen
@@ -74,15 +92,6 @@ const ScreenThree = () => {
       },
       rotation: 360, // Full rotation
       ease: "none",
-    });
-
-    // Adding a wavy liquid effect to the text once it's fully revealed
-    tl1.to(".desc", {
-      duration: 1,
-      y: 4, // Slight wavy movement on the Y-axis
-      ease: "sine.inOut",
-      repeat: -1, // Continuous wave effect
-      yoyo: true,
     });
   }, []);
 
@@ -107,7 +116,7 @@ const ScreenThree = () => {
                   src="./Vector.svg"
                   alt="box"
                   id="box"
-                  className="vector-svg" // Added class for the rotating SVG
+                  className="vector-svg"
                   style={{
                     height: "90%",
                     width: "auto",
@@ -130,7 +139,7 @@ const ScreenThree = () => {
                       style={{ scale: "0.55" }}
                     />
                   </div>
-                  <p className="desc"></p>
+                  <p className="desc"></p> {/* The paragraph with text animation */}
                 </div>
               </div>
             </div>

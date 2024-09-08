@@ -45,7 +45,23 @@ export default function BackgroundLine() {
 
     return (
         <div className="background-line">
-            <svg
+            <svg 
+                width="1177" 
+                height="1200" 
+                viewBox="0 0 1177 3168" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+            <path 
+                d="M3 0V288.608H1174V743.249H533.348V1184.52H946.708V1611.3H389.619V2121.66H1050.33V2658.76H699.361V3168" 
+                // stroke="#3A3A3A" 
+                stroke="#4D4D4D"
+                strokeWidth="10"
+                strokeDasharray="2500" // This should be the length of the entire path
+                strokeDashoffset="2500" // Start fully hidden
+            />
+            </svg>
+        
+            {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="526"
                 height="1145"
@@ -59,7 +75,7 @@ export default function BackgroundLine() {
                     strokeDasharray="2500" // This should be the length of the entire path
                     strokeDashoffset="2500" // Start fully hidden
                 />
-            </svg>
+            </svg> */}
         </div>
     );
 }

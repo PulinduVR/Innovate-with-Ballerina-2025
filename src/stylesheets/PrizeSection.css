@@ -3,14 +3,14 @@
     text-align: left;
     color: #ffffff;
     background-color: #0A1F25;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
     /* justify-content: center; */
     /* align-items: center; */
     overflow: hidden;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .prize-line{
@@ -54,6 +54,7 @@
   
   .win-exciting {
     font-weight: 300;
+    padding-top: 2.5%;
   }
   
   .prizes {
@@ -283,7 +284,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 20px;
+    gap: 40px;
   }
 
   .first-place-2 h3 {
@@ -329,7 +330,7 @@
 
   .additional-prizes-2 span:nth-child(3){
     color: #FFB34A;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     padding-bottom: 5%;
   }
