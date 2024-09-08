@@ -19,6 +19,7 @@
     width: 75%;
     justify-content: space-evenly;
     text-align: center;
+    flex-wrap: wrap;
   }
   
   .stat {
@@ -75,12 +76,41 @@
   
   @media (max-width: 768px) {
     .stat-number {
-      font-size: 3rem;
+      font-size: 5rem;
     }
-  
+    .stat{
+      margin-left: -10%;
+    }
     .stat-label {
-      font-size: 1rem;
+      font-size: 1.5rem;
+      margin-top: 10px;
     }
+    .stat-boundary {
+      flex-direction: column; /* Change to column layout */
+      align-items: center; /* Center align items */
+      width: 110%; /* Adjust width to 100% */
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 0;
+
+  }
+  .stats-section {
+    margin-left: -5%;
+    padding: 5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .stat {
+      padding-right: 0; /* Remove right padding */
+      margin-bottom: -10%; /* Add margin between items */
+  }
+
+  .stat-1::after, .stat-2::after {
+      display: none; /* Remove the border */
+  }
   }
   
   @media (max-width: 480px) {
