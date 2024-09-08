@@ -3,14 +3,14 @@
     text-align: left;
     color: #ffffff;
     background-color: #0A1F25;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
     /* justify-content: center; */
     /* align-items: center; */
     overflow: hidden;
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .prize-line{
@@ -54,6 +54,7 @@
   
   .win-exciting {
     font-weight: 300;
+    padding-top: 2.5%;
   }
   
   .prizes {
