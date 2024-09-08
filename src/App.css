@@ -1,96 +1,66 @@
-
 .main-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 250vh; 
-    background-color: #0A1F25;
-    overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 250vh;
+  background-color: #0a1f25;
+  overflow: hidden;
+}
 
+.hero {
+  position: relative;
+  width: 100%;
+  background-color: #0a1f25;
+  top: 0;
+  z-index: 2;
+}
+
+.screen-two {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.screen-three {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  margin-top: -40%;
+  background-color: #0a1f25;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    height: 200vh;
   }
 
-  
-  
   .hero {
-    position: relative;
-    width: 100%;
-    background-color: #0A1F25;
-    top: 0;
-    z-index: 2; 
-    
+    z-index: 1;
   }
-  
-  .screen-two {
-    position: absolute;
-    height: 100vh;
-
-
-    width: 100%;
-
-    background-color: #ffffff;
-    z-index: 1; 
-  }
-  
 
   .screen-three {
+    margin-top: -120%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    height: 200vh;
+  }
+
+  .hero {
     z-index: 1;
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    margin-top: -50%;
-
-    background-color: #0A1F25;
-  }
-  
-
-  @media screen and (max-width: 768px) {
-    
-   
-  
-    
-    .main-container {
-        height: 200vh; 
-    }
-
-
-
-    
-    .hero { 
-        z-index: 1; 
-    }
-
-    .screen-three {
-        margin-top: -120%; 
-    }
-
-    
-  
-   
-    
   }
 
-  @media screen and (max-width: 480px) {
-    
-    .main-container {
-        height: 200vh; 
-    }
-
-    .hero { 
-        z-index: 1; 
-    }
-
-    .screen-three {
-        margin-top: -150%; 
-    }
-
-    
+  .screen-three {
+    margin-top: -150%;
   }
+}
 
-
-
-
-/* Custom cursor styles */
 .custom-cursor {
   width: 40px;
   height: 40px;

@@ -1,18 +1,18 @@
  .button-outlined {
-   width: 60%; /* Fixed width for both buttons */
+   width: 900%; /* Fixed width for both buttons */
    position: relative;
-   display: flex;
    justify-content: center;
    align-items: center;
    padding: 0.8em;
    flex-shrink: 0;
    border-radius: 1em; /* Ensure rounded borders are applied */
-   border: 1px solid #000;
+   border: 1px solid #fbf9f9;
    display: flex;
    align-items: center;
    justify-content: center;
    background: transparent;
    cursor: pointer;
+  
 }
 
 .button-outlined {
@@ -41,9 +41,8 @@
 
 
 
-
 .button-outlined-text {
-   color: #000;
+   color: #ffffff;
 }
 
 .button-outlined-text:hover {

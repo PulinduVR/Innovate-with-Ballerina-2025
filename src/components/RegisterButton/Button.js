@@ -1,13 +1,13 @@
 import React from 'react';
 import './Button.css'; 
 
-const Button = () => {
+function Button() {
    const alertD = () => {
       alert("Button Clicked");
    }
   return (
    <div>
-   <button className='button-outlined button-outlined-text' onClick={alertD}>Download Booklet</button>
+   <button className='button-outlined button-outlined-text' onClick={alertD}>Register Now</button>
    </div>
   );
 };
