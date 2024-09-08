@@ -233,3 +233,8 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .scroll-button-container {
+    width: 12%;
+  }
+}

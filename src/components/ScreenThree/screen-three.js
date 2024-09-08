@@ -34,6 +34,23 @@ const ScreenThree = () => {
       });
     });
 
+    // Flicker effect for the error boxes
+    const tlFlicker = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".big-container",
+        start: "top 90%",
+        toggleActions: "play none none none", // Play only once
+      },
+    });
+
+    tlFlicker.to(".error-box", {
+      duration: 0.3,
+      opacity: 0,
+      repeat: 5,
+      yoyo: true, // To flicker back and forth
+      ease: "power1.inOut",
+    });
+
     // SVG drawing animation
     tl1.to(".svg3", {
       duration: 2,
@@ -81,6 +98,7 @@ const ScreenThree = () => {
                   src="./error.svg"
                   alt="box"
                   id="box"
+                  className="error-box"
                   style={{ height: "100%", width: "auto", marginTop: "-20%" }}
                 />
               </div>
