@@ -31,10 +31,10 @@ function Hero() {
       <ScrollDownButton className="scroll-button" />
       </div>
       <div className="logo-container">
-        <img src='./ieee-logo.png' alt="ieee-logo" id="ieee-logo"></img>
-        <img src='./CS-logo.png' alt="cs-logo" id="cs-logo"></img>
-        <img src='./wso2-logo.png' alt="wso2-logo" id="wso2-logo"></img>
-        <img src='./b-logo.png' alt="b-logo" id="balerina-logo"></img>
+        <img src='./ieee-logo-min.png' alt="ieee-logo" id="ieee-logo"></img>
+        <img src='./CS-logo.webp' alt="cs-logo" id="cs-logo"></img>
+        <img src='./wso2-logo.webp' alt="wso2-logo" id="wso2-logo"></img>
+        <img src='./b-logo.webp' alt="b-logo" id="balerina-logo"></img>
         
       </div>
     </div>
