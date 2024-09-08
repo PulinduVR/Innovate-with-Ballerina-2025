@@ -10,7 +10,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import View from "./views/FaqView";
 import TimeLineView from "./views/TimeLineView";
-import "./App.css"; // Ensure you import your styles
+import "./App.css"; 
 import Badges from "./components/Badges/badges";
 import PrizeSection from "../src/components/PrizeSection";
 import StatsSection from "./components/StatsSection";
