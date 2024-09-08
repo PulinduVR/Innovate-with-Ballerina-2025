@@ -45,7 +45,7 @@ function App() {
 
         onLeave: () => {
           gsap.set(".hero", { display: "none" });
-          heroHidden = true;
+          
         },
         onEnterBack: () => {
           if (heroHidden) {

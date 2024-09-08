@@ -1,10 +1,8 @@
-import React,{useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "../RegisterButton/Button";
-// import './screen-two.css';
-
 
 const ScreenTwo = () => {
   gsap.registerPlugin(useGSAP);
@@ -16,7 +14,7 @@ const ScreenTwo = () => {
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
-  },[]);
+  }, []);
 
   useGSAP(() => {
     gsap.to("#arrow", {
@@ -38,102 +36,92 @@ const ScreenTwo = () => {
       },
       y: 300,
     });
-
-    
   });
+
+  const handleButtonClick = () => {
+    alert("Register");
+  };
+
   const styles = {
     heading: {
       fontSize: isMobile ? "3rem" : "5rem",
-
       fontFamily: "Space Grotesk",
     },
     arr: {
       height: 40,
-  
-      display: isMobile && "none" ,
+      display: isMobile && "none",
     },
-
     spring: {
       height: 60,
-      display: isMobile && "none" ,
+      display: isMobile && "none",
+    },
+    topdiv: {
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "14%",
+      display: "flex",
+      justifyContent: "space-between",
+      padding: 20,
+      zIndex: 1,
+      alignItems: "center",
+    },
+    container: {
+      width: "100%",
+      height: "110vh",
+      backgroundColor: "#0A1F25",
+      color: "white",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      overflow: "hidden",
+    },
+    curve: {
+      position: "absolute",
+      width: "100%",
+      height: "100%",
+      backgroundImage: "url(./path.svg)",
+      backgroundSize: "330%",
+      backgroundPosition: "47% 10%",
+      backgroundRepeat: "no-repeat",
+      top: 0,
+      left: 0,
+      opacity: 0.1,
+    },
+    content: {
+      zIndex: 2,
+      textAlign: "center",
+      display: "flex",
+    },
+    textContainer: {
+      position: "relative",
+      display: "flex",
+      flexDirection: "column",
+      padding: 20,
+      width: "100%",
     },
   
-      topdiv: {
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "14%",
-        display: "flex",
-        justifyContent: "space-between",
-        padding: 20,
-        zIndex: 1,
-        alignItems: "center",
-    
-      },
-      container: {
-        width: "100%",
-        height: "110vh",
-        backgroundColor: "#0A1F25",
-        color: "white",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        overflow: "hidden",
-      },
-      curve: {
-        position: "absolute",
-        width: "100%",
-        height: "100%",
-        backgroundImage: "url(./path.svg)",
-        backgroundSize: "330%",
-        backgroundPosition: "47% 10%",
-        backgroundRepeat: "no-repeat",
-        top: 0,
-        left: 0,
-        opacity: 0.1,
-      },
-      content: {
-        zIndex: 2,
-        textAlign: "center",
-        display: "flex",
-      },
-      textContainer: {
-        position: "relative",
-        display: "flex",
-        flexDirection: "column",
-        padding: 20,
-        width: "100%",
-      },
-      heading: {
-        fontSize: "5rem",
-        fontWeight: "bold",
-        fontFamily: "Space Grotesk",
-      },
-      subHeading: {
-        color: '#D2D2D2',
-      },
-      highlight: {
-        backgroundImage: "url(/highlight.png)",
-        backgroundSize: "cover",
-        padding: "0 10px",
-        borderRadius: "5px",
-        color: "#152B39",
-      },
-      subText: {
-        marginTop: "20px",
-        fontSize: "1rem",
-        color: "#C5C6C7",
-        fontFamily: "Space Grotesk",
-      },
-      
-    };
-
-    
-  
+    subHeading: {
+      color: "#D2D2D2",
+    },
+    highlight: {
+      backgroundImage: "url(/highlight.png)",
+      backgroundSize: "cover",
+      padding: "0 10px",
+      borderRadius: "5px",
+      color: "#152B39",
+    },
+    subText: {
+      marginTop: "20px",
+      fontSize: "1rem",
+      color: "#C5C6C7",
+      fontFamily: "Space Grotesk",
+    },
+  };
 
   return (
-    <div style={styles.container}  className="main-container-se">
+    <div style={styles.container} className="main-container-se">
       <style>
         {`
           @keyframes spin {
@@ -148,23 +136,17 @@ const ScreenTwo = () => {
         `}
       </style>
       <div style={styles.curve}></div>
-      <div style={styles.topdiv} id = "logo-cont">
-        <img src="/bal.png" alt="bal"/>
-       
-          <Button />
-      
+      <div style={styles.topdiv} id="logo-cont">
+        <img src="/bal.png" alt="bal" />
+        {/* Update the button's onClick event handler */}
+       <Button onClick={handleButtonClick} />
       </div>
-    
-      <div style={styles.content} id = "cont">
+
+      <div style={styles.content} id="cont">
         <div style={styles.textContainer} className="text-container">
           <h1 style={styles.heading} className="heading">
             <span>
-              <img
-                id="arrow"
-                style={styles.arr }
-                src="/arrow.png"
-                alt="arrow"
-              />
+              <img id="arrow" style={styles.arr} src="/arrow.png" alt="arrow" />
             </span>
             <span style={styles.subHeading}>The </span>
             <span style={styles.highlight}>Ultimate</span>
@@ -188,7 +170,7 @@ const ScreenTwo = () => {
             </span>
           </h1>
           <p style={styles.subText}>
-            Awaken Your Dormant Innovator!<br/> Join With IEEE And WSO2 In A
+            Awaken Your Dormant Innovator!<br /> Join With IEEE And WSO2 In A
             Ballerina Language Exclusive Coding Competition
           </p>
         </div>
@@ -196,7 +178,5 @@ const ScreenTwo = () => {
     </div>
   );
 };
-
-
 
 export default ScreenTwo;
