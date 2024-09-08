@@ -1,8 +1,5 @@
 
 import React, { useState, useEffect } from "react";
-
-
-
 import Hero from "./components/Hero/hero";
 import ScreenTwo from "./components/ScreenTwo/screen-two";
 import ScreenThree from "./components/ScreenThree/screen-three";
