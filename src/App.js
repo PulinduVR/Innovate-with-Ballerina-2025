@@ -15,7 +15,7 @@ import StatsSection from "./components/StatsSection";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  const [heroHidden, setHeroHidden] = useState(false);
+  let heroHidden = false;
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -45,7 +45,7 @@ function App() {
 
         onLeave: () => {
           gsap.set(".hero", { display: "none" });
-          setHeroHidden(true);
+          heroHidden = true;
         },
         onEnterBack: () => {
           if (heroHidden) {
@@ -96,6 +96,7 @@ function App() {
       </div>
 
       <div>
+  
         <PrizeSection />
       </div>
       <TimeLineView />
@@ -104,8 +105,6 @@ function App() {
         <View />
       </div>
       <Badges />
-
-      {/* Custom Cursor */}
       <div
         className="custom-cursor"
         style={{

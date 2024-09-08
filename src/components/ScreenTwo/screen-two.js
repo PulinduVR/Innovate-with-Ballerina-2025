@@ -78,7 +78,9 @@ const ScreenTwo = () => {
       <div style={styles.curve}></div>
       <div style={styles.topdiv} id = "logo-cont">
         <img src="/bal.png" alt="bal"/>
-        <Button label="Register Now"  />
+        <div style={{display: 'flex', alignItems: 'center'}}>
+        <Button />
+        </div>
       </div>
       <div style={styles.content} id = "cont">
         <div style={styles.textContainer} className="text-container">
