@@ -45,7 +45,7 @@ const ScreenThree = () => {
 
     tlFlicker.to(".error-box", {
       duration: 0.3,
-      opacity: 0,
+      opacity: 0.4,
       repeat: 5,
       yoyo: true, // To flicker back and forth
       ease: "power1.inOut",
@@ -99,7 +99,7 @@ const ScreenThree = () => {
                   alt="box"
                   id="box"
                   className="error-box"
-                  style={{ height: "100%", width: "auto", marginTop: "-20%" }}
+                  style={{ height: "110%", width: "auto", marginTop: "-20%" }}
                 />
               </div>
               <div className="boxes-container">
