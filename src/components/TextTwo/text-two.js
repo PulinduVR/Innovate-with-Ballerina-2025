@@ -6,9 +6,9 @@ const TextTwo = () => {
       position: "absolute", 
         top: "-75%", 
       right: "-10%", 
-      // height: "40vh",
+      height: "40vh",
   }}>
-<svg width="1000" height="475" viewBox="0 0 1275 772" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="475" viewBox="50 0 1275 772" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M34.1387 311.44C123.963 187.315 366.345 -35.2695 617.28 67.3932C930.948 195.722 829.666 535.458 992.332 670.462C1122.46 778.466 1259.76 715.464 1312.14 670.462" stroke="url(#paint0_linear_339_279)" stroke-width="82"/>
 <mask id="path-2-outside-1_339_279" maskUnits="userSpaceOnUse" x="22.4249" y="297.263" width="27.2922" height="23.0411" fill="black">
 <rect fill="white" x="22.4249" y="297.263" width="27.2922" height="23.0411"/>
