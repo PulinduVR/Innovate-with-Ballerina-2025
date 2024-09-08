@@ -15,21 +15,31 @@ import PrizeSection from "../src/components/PrizeSection";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+
+  let heroHidden = false;
   useEffect(() => {
     // Animate the Hero section to scroll up and fade out
     gsap.to(".hero", {
       scrollTrigger: {
-       
-        start: "top top",
-        end: "100vh top",
-        scrub: 3,
+        start: "top top", // Start animation when the top of the hero hits the top of the viewport
+        end: "50% top", // End animation when the bottom of the hero hits the top of the viewport
+        scrub: 3, // Smooth scrolling effect
         pin: ".hero", // Pin the Hero section while scrolling
+        onLeave: () => {
+          // This triggers when the hero section leaves the viewport
+          gsap.set(".hero", { display: "none" });
+          heroHidden = true; // Mark hero as hidden
+        },
+        onEnterBack: () => {
+          // This is triggered when scrolling back up, but we want to keep it hidden
+          if (heroHidden) {
+            gsap.set(".hero", { display: "none" });
+          }
+        },
       },
-      //scroll speed increase
-      y: -600,
-     
-
-    });
+      y: -1900, // Scrolling movement for the hero section
+    })}, [heroHidden]);
+    
     // gsap.to(".screen-two .screen-three", {
     //   scrollTrigger: {
     //     trigger: ".screen-two",
@@ -51,7 +61,7 @@ function App() {
     //   y: 200,
     //   opacity: 1,
     // });
-  }, []);
+
 
   return (
     <>
@@ -59,6 +69,7 @@ function App() {
       <div className="hero">
         <Hero />
       </div>
+      
       <div className="screen-two">
         <ScreenTwo />
       </div>

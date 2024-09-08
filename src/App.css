@@ -1,39 +1,47 @@
 /* Main container that holds all the sections */
 .main-container {
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
     width: 100%;
-    height: 300vh; /* Enough height for scrolling through all sections */
+    height: 340vh; /* Enough height for scrolling through all sections */
     background-color: #0A1F25;
     overflow: hidden;
+
   }
+
   
   /* Hero section */
   .hero {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100vh; /* Full screen height */
     background-color: #0A1F25;
     top: 0;
-    z-index: 2; /* Initially on top of ScreenTwo */
+    z-index: 2; 
+    
+   
   }
   
   /* ScreenTwo section */
   .screen-two {
-    position: relative;
-    width: 100%;
+    position: absolute;
     height: 100vh;
+
+
+    width: 100%;
+    margin-top: 10%;
     background-color: #ffffff;
-    z-index: 1; /* Behind Hero */
+    z-index: 1; 
   }
   
   /* ScreenThree section */
   .screen-three {
-    position: relative;
+    z-index: 1;
+    position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: #f0f0f0;
+    margin-top: 60%;
+    background-color: #0A1F25;
   }
   
 
@@ -41,8 +49,20 @@
    
   
     .hero {
+    
       display: none;
     }
+
+    .screen-two {
+        margin-top: 0;
+    }
+    .screen-three {
+        margin-top: 0;
+    }
+    .main-container {
+        height: 300vh;
+    }
+    
   
    
     

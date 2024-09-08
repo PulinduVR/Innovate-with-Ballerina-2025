@@ -19,14 +19,14 @@ const ScreenTwo = () => {
       x: -50,
     });
 
-    gsap.from("#cont", {
+    gsap.to("#cont", {
       scrollTrigger: {
         trigger: "cont",
         start: "top 80%",
         end: "bottom 20%",
         scrub: 3,
       },
-      y: 200,
+      y: -400,
     });
 
     
@@ -48,7 +48,7 @@ const ScreenTwo = () => {
         `}
       </style>
       <div style={styles.curve}></div>
-      <div style={styles.topdiv}>
+      <div style={styles.topdiv} id = "logo-cont">
         <img src="/bal.png" alt="bal"/>
       </div>
       <div style={styles.content} id = "cont">
