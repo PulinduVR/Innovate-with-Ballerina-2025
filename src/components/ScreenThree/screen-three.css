@@ -195,3 +195,14 @@
     display: flex;
   }
 }
+
+
+@media (min-width: 1400px) {
+  .content p {
+    font-size: 1.15rem;
+  }
+
+  .content img {
+    width: 120%;
+  }
+}

@@ -281,7 +281,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (max-width: 1400px) {
   
   .prize-section {
       padding: 100px 100px;
@@ -346,7 +346,6 @@
   }
 
   .additional-prizes span:nth-child(3){
-    color: #FFB34A;
     font-size: 1.1rem;
     font-weight: 500;
     padding-bottom: 5%;
@@ -368,4 +367,27 @@
     top: 240px;
     left: -60px;
   }
+}
+
+@media (min-width: 1400px) {
+  
+  .prize-section {
+    padding: 50px 100px;
+}
+
+.prize-title {
+    font-size: 3.5rem;
+}
+
+.additional-prizes{
+  right: 6%;   
+}
+.second-place .prize-info{
+  left: -70px;
+}
+
+.p-vector-1 {
+  right: 0%;
+  top: -120px;
+}
 }
