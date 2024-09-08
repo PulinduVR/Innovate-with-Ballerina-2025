@@ -6,6 +6,7 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 
   .stat-boundary{
@@ -17,6 +18,7 @@
     border-radius: 25px;
     width: 75%;
     justify-content: space-evenly;
+    text-align: center;
   }
   
   .stat {
@@ -25,12 +27,14 @@
     align-items: center;
     text-align: center;
     padding: 3rem;
-    /* border-right: 2px solid #FBB934; */
+    /* border: 1px solid #FBB934; */
+    justify-content: center;
   }
   
   .stat-number {
-    font-size: 4.6rem;
+    font-size: 4.5rem;
     font-weight: 600;
+    width: 120px;
     color: #fff;
   }
   
@@ -56,10 +60,10 @@
 .stat-1::after, .stat-2::after {
     content: '';
     position: absolute;
-    top: 10%; /* Center the pseudo-element vertically */
+    top: 15%; /* Center the pseudo-element vertically */
     right: 0;
     width: 2px; /* Border width */
-    height: 80%; /* Border height */
+    height: 75%; /* Border height */
     background: linear-gradient(180deg, #10C3BD 0%, #FFB34A 100%);
 }
 
