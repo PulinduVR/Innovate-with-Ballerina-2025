@@ -28,7 +28,7 @@ const ScreenThree = () => {
 
     // Step 1: Display the randomized text
     tl1.to(".desc", {
-      duration: 0.1,
+      duration: 0,
       text: randomArray.join(""), // Display random characters initially
     });
 
@@ -40,7 +40,7 @@ const ScreenThree = () => {
         tl1.to(
           `.desc`,
           {
-            duration: 0.4,
+            duration: 0.3,
             onStart: () => {
               let currentText = document.querySelector(".desc").innerText.split("");
               currentText[index] = char; // Replace the current random letter with the correct one

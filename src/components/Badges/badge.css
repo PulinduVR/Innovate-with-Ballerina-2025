@@ -1,33 +1,53 @@
 .main-badge-container {
-   position: relative;
+   background-color: #081519;
+   padding: 5rem 0 2rem 0;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-color: #0A1F25;
-
-
-   padding: 20px;
-   overflow: hidden;
-
+   gap: 2rem;
 }
 
 .center-badge-container {
-   position: relative;
    display: flex;
-   flex-direction: row;
-   width: 70%;
+   flex-wrap: wrap;
    align-items: center;
-   background-color: #0A1F25;
-   margin-bottom: 100px;
-   padding: 20px;
-   padding-bottom: 40px;
-   justify-content: space-between;
+   justify-content: center;
+   width: 100%;
+   gap: 5rem;
 }
 
-.badge-container{
-   display: flex;
+.badge-container img{
+   height: 50px;
+}
+.center-text{
+   text-align: center;
+   margin-top: 2%;
+}
+
+.center-text p{
+   font-family: "Space Grotesk";
+   font-style: italic;
+   color: rgba(255, 255, 255, 0.155);
+   /* background: linear-gradient(45deg, #10C3BD 0%, #FFB34A 50%); */
+   /* background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; */
+   font-size: 0.8rem;
+}
+#badge4{
+   margin-top: 10px;
+   height: 42.5px;
+}
+
+#badge2{
    height: 60px;
 }
+
+#badge3{
+   height: 75px;
+}
+
 
 @media  screen and (max-width: 768px) {
    .center-badge-container {
