@@ -38,6 +38,27 @@ function App() {
       y: -1900, 
     })}, [heroHidden]);
     
+    // gsap.to(".screen-two .screen-three", {
+    //   scrollTrigger: {
+    //     trigger: ".screen-two",
+    //     start: "top top",
+    //     end: "bottom 20%",
+    //     scrub: true,
+    //   },
+    //   y: 200,
+    // });
+
+    // Animate the ScreenTwo section to scroll up and fade in
+    // gsap.to(".screen-two", {
+    //   scrollTrigger: {
+    //     trigger: ".screen-two",
+    //     start: "top 80%",
+    //     end: "bottom 20%",
+    //     scrub: true,
+    //   },
+    //   y: 200,
+    //   opacity: 1,
+    // });
 
 
   return (

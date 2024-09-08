@@ -26,7 +26,7 @@
 
 .badge-container{
  display: flex;
-   height: 60px;
+   height: 70px;
    width: 100px;
    justify-content: center;
    align-items: center;
@@ -39,18 +39,28 @@
 
 .badge-container img {
    width: auto; 
-   height: 50px;
+   height: 70px;
    margin: auto;
   
  }
- 
+
+
+
+
 
 @media  screen and (max-width: 768px) {
    .center-badge-container {
       flex-direction: column;
-      height : 80vh;
+      height : 60vh;
   
       
+   }
+
+   .badge-container img {
+      width: auto; 
+      height: 50px;
+      margin: auto;
+
    }
 
    

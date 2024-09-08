@@ -8,10 +8,10 @@ const Badges = () => {
                      <img src = './ieee-logo.png' alt = "badge1" id = "badge1"></img>
                   </div>
                   <div className = 'badge-container'>
-                     <img src = './CS-logo.png' alt = "badge2" id = "badge2" style = {{height: 60}}></img>
+                     <img src = './CS-logo.png' alt = "badge2" id = "badge2" style = {{scale : 1.5}}></img>
                   </div>
-                  <div className = 'badge-container' style = {{height: 90}}>
-                     <img src = './ws.svg' alt = "badge3" id = "badge3"></img>
+                  <div className = 'badge-container' >
+                     <img src = './ws.svg' alt = "badge3" id = "badge3" ></img>
                     
                   </div>
                   <div className = 'badge-container' style = {{height : 50}}>

@@ -2,7 +2,7 @@ import React,{useEffect, useState} from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import './screen-two.css';
+// import './screen-two.css';
 import Button from "../RegisterButton/Button";
 
 const ScreenTwo = () => {
@@ -28,14 +28,14 @@ const ScreenTwo = () => {
       x: -50,
     });
 
-    gsap.from("#cont", {
+    gsap.to("#cont", {
       scrollTrigger: {
         trigger: "cont",
         start: "top top",
         end: "bottom 20%",
         scrub: 3,
       },
-      y: 100,
+      y: 300,
     });
 
     
@@ -43,26 +43,21 @@ const ScreenTwo = () => {
   const stylesRes = {
     heading: {
       fontSize: isMobile ? "3rem" : "5rem",
-      fontWeight: "bold",
+
       fontFamily: "Space Grotesk",
     },
-    subHeading: {
-      color: '#D2D2D2',
-      fontSize: isMobile ? "1.5rem" : "2rem",
+    arr: {
+      height: 40,
+  
+      display: isMobile && "none" ,
     },
-    highlight: {
-      backgroundImage: "url(./highlight.png)",
-      backgroundSize: "cover",
-      padding: isMobile ? "0 5px" : "0 10px",
-      borderRadius: "5px",
-      color: "#152B39",
+
+    spring: {
+      height: 60,
+      display: isMobile && "none" ,
     },
-    subText: {
-      marginTop: "20px",
-      fontSize: isMobile ? "0.875rem" : "1rem",
-      color: "#C5C6C7",
-      fontFamily: "Space Grotesk",
-    },
+
+    
   };
 
   return (
@@ -91,7 +86,7 @@ const ScreenTwo = () => {
             <span>
               <img
                 id="arrow"
-                style={{ height: 60 }}
+                style={stylesRes.arr }
                 src="/arrow.png"
                 alt="arrow"
               />
@@ -100,7 +95,7 @@ const ScreenTwo = () => {
             <span style={styles.highlight}>Ultimate</span>
             {"  "}
             <span>
-              <img style={{ width: 40 }} src="/spring.png" alt="spring" />
+              <img style={stylesRes.spring} src="/spring.png" alt="spring" />
             </span>
             <br />
             <span style={styles.subHeading}>
