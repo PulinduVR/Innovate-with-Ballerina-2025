@@ -79,3 +79,10 @@
     display: none;
   }
 }
+
+
+@media (max-width: 360px) {
+  .main-container {
+    height: 200vh;
+  }
+}
