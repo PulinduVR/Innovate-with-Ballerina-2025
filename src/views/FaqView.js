@@ -83,12 +83,13 @@ const View = () => {
   return (
     <>
       <div className="view-container">
+      <div className="background-text-second">
+          <h1>Contact Us</h1>
+        </div>
         <div className="background-text">
           <h1>Contact Us</h1>
         </div>
-        <div className="background-text-second">
-          <h1>Contact Us</h1>
-        </div>
+
         <h1 className="faq-title">FAQ</h1>
         <div className="faq-container">
           <div className="faq-column">
@@ -151,16 +152,6 @@ const View = () => {
               contact={members[0].contact}
             />
             <Card
-              image={members[1].image}
-              name={members[1].name}
-              position={members[1].position}
-              club={members[1].club}
-              email={members[1].email}
-              contact={members[1].contact}
-            />
-          </div>
-          <div className="card-row row2">
-            <Card
               image={members[2].image}
               name={members[2].name}
               position={members[2].position}
@@ -185,6 +176,24 @@ const View = () => {
               contact={members[4].contact}
             />
           </div>
+          {/* <div className="card-row row2">
+            <Card
+              image={members[3].image}
+              name={members[3].name}
+              position={members[3].position}
+              club={members[3].club}
+              email={members[3].email}
+              contact={members[3].contact}
+            />
+            <Card
+              image={members[4].image}
+              name={members[4].name}
+              position={members[4].position}
+              club={members[4].club}
+              email={members[4].email}
+              contact={members[4].contact}
+            />
+          </div> */}
         </div>
       </div>
     </>
