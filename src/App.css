@@ -77,7 +77,7 @@
 }
 
 @media screen and (max-width: 1400px){
-  .screen-three {
-    height: 70vh;
+  .main-container {
+    height: 250vh;
   }
 }

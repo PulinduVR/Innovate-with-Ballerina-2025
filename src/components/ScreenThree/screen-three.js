@@ -21,7 +21,7 @@ const ScreenThree = () => {
     const tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".paraSec",
-        start: "top 30%",
+        start: "top 20%",
         toggleActions: "play none none none",
       },
     });
@@ -56,7 +56,7 @@ const ScreenThree = () => {
     const tlFlicker = gsap.timeline({
       scrollTrigger: {
         trigger: ".big-container",
-        start: "top 10%",
+        start: "top 20%",
         toggleActions: "play none none none", // Play only once
       },
     });
