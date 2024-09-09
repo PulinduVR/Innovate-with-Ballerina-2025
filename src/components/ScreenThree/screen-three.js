@@ -23,7 +23,7 @@ const ScreenThree = () => {
   const tlMobile = gsap.timeline({
     scrollTrigger: {
       trigger: ".mobile-responsive-view",
-      start: "top 10%",
+      start: "top top",
       toggleActions: "play none none none",
     },
   });
