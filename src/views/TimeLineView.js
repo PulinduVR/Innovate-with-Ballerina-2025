@@ -124,7 +124,7 @@ export default function TimeLineView() {
         {
             x: 0, // Move to its original position
             opacity: 1, // Fade in to full opacity
-            duration: 2, // Duration of the animation
+            duration: 5, // Duration of the animation
             ease: "power2.inOut" // Smooth easing
         }
     );
@@ -232,7 +232,7 @@ export default function TimeLineView() {
                             <TimeLineCard2 text={"Awareness Session"} month={"SEPTEMBER"} day={"15"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card3`} animate={visibleCard >= 3 ? controls : { opacity: 0 }}>
-                            <TimeLineCard2 text={"Closing Registrations"} month={"SEPTEMBER"} day={"20"} />
+                            <TimeLineCard1 text={"Closing Registration"} month={"SEPTEMBER"} day={"20"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card4`} animate={visibleCard >= 4 ? controls : { opacity: 0 }}>
                             <TimeLineCard1 text={"Worksop 01 Case Study"} month={"SEPTEMBER"} day={"20"} />

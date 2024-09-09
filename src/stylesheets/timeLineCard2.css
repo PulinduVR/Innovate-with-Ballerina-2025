@@ -11,6 +11,7 @@
     position: relative;
     font-family:'Space Grotesk', sans-serif ;
     overflow: hidden; /* Ensure content is clipped within the card */
+    
   }
 
   @media (min-width: 1024px) {
@@ -23,8 +24,8 @@
  .time-line-card2 .date {
     position: absolute;
     top: 4%;
-    left: 6%;
-    font-size: 14.757px;
+    left: 5%;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: 101%; /* 19.955px */

@@ -44,11 +44,11 @@
 
 .inner-container {
     margin-top: 7%;
-    width: 80%;
+    /* width: 80%; */
     /* Adjust width as needed */
     padding: 20px;
     /* Padding inside the inner container */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* Optional: Add border-radius for rounded corners */
 
     /* background: url('../assets/dottedline.svg') no-repeat center 45%; */
@@ -57,7 +57,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -71,12 +73,12 @@
     /* Ensure it stays above the background */
 }
 
-.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+/* .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
     margin: 5% 0; 
-}
+} */
 
 
-@media (min-width: 1024px) {
+@media (min-width: 10024px) {
     .card1 {
         margin: 5% 5% 5% 0%; /* top right bottom left */
     }
@@ -119,10 +121,12 @@
     }
 
     .inner-container {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         /* align-items: center; */
-        margin-left: 10%;
-        gap: 0px;
+        margin-left: -15%;
+        gap: 10px;
     }
 
 }
