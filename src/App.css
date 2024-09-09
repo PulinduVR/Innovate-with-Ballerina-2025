@@ -55,10 +55,10 @@
   .hero {
     z-index: 1;
   }
-
   .screen-three {
-    margin-top: -150%;
+    margin-top: 220%;
   }
+  
 }
 
 .custom-cursor {

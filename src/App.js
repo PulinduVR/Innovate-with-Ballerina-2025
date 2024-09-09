@@ -32,9 +32,31 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    let heroHidden = false;
 
+    const heroSection = document.querySelector(".hero");
+    if (!heroSection) return; // Avoid running if hero section isn't present
 
-    
+    gsap.to(heroSection, {
+      scrollTrigger: {
+        trigger: heroSection, // Scoped to the specific hero section
+        start: "top top", // Trigger when the top of the hero reaches the top of the viewport
+        end: "30% top", // When the bottom of the hero reaches the top of the viewport
+        scrub: 3,
+        onLeave: () => {
+          gsap.set(heroSection, { display: "none" }); // Only hide the hero section
+          heroHidden = true;
+        },
+     
+      },
+      y : -1500
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // Clean up ScrollTriggers on unmount
+    };
+  }, []);
   // gsap.to(".screen-two .screen-three", {
   //   scrollTrigger: {
   //     trigger: ".screen-two",
@@ -61,7 +83,7 @@ function App() {
     <>
       <div className="main-container">
         <div className="hero">
-          {/* <Hero /> */}
+          <Hero />
         </div>
 
         <div className="screen-two">

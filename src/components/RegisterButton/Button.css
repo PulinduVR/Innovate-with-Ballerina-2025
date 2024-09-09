@@ -1,25 +1,40 @@
 .reg-button {
+   width: 100%; 
    position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
    padding: 0.8em;
    flex-shrink: 0;
-   border-radius: 5em; /* Ensure rounded borders are applied */
-   border: 1px solid transparent; /* Set the initial border */
+   border-radius: 1em; /* Ensure rounded borders are applied */
+   border: 1px solid #ffffff;
    background: transparent;
    cursor: pointer;
-   width: 140%;
-   border-image: linear-gradient(45deg, #109f0e, #ffb34a);
-   border-image-slice: 1;
- }
- 
- .reg-button:hover {
-   border-image: linear-gradient(45deg, #ffb34a, #109f0e);
-   border-image-slice: 1;
- }
- 
- .reg-button-text {
+   transition: background 0.4s ease, color 0.4s ease;
+}
+
+.reg-button:hover {
+   background: linear-gradient(45deg, #0E9F9B, #FFB34A); /* Apply gradient */
+   background-size: 200% 100%;
+   background-position: left center;
+   color: transparent;
+   -webkit-background-clip: text;
+   background-clip: text;
+   transition: background 0.4s ease, color 0.4s ease;
+   transition: border 0.4s ease, color 0.4s ease;
+   border : none;
+
+}
+
+.button-outlined {
+   background: transparent;
+}
+
+.button-outlined:hover {
+   border: 1px solid #0E9F9B; 
+}
+
+.reg-button, .button-outlined-text {
    text-align: center;
    font-family: "Space Grotesk";
    font-size: 1.1rem;
@@ -28,13 +43,9 @@
    line-height: 109%;
    letter-spacing: 0.24px;
    text-transform: uppercase;
-   color: white;
- }
- 
- .reg-button-text:hover {
-   background: linear-gradient(45deg, #109f0e, #ffb34a);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   background-clip: text;
- }
- 
+}
+
+.reg-button {
+   color: #E9E9E9;
+}
+
