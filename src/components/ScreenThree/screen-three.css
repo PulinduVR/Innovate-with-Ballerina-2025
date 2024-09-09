@@ -273,6 +273,13 @@
     }
 
     .center-container {
-      width: 80%; /* Adjust width to fit smaller screens */
+      width: 75%; /* Adjust width to fit smaller screens */
+    }
+  
+    .error-box{
+      height: 120% !important;
+    }
+    .vector-svg{
+      height: 115% !important;
     }
 }

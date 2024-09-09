@@ -29,7 +29,7 @@
   position: relative;
   width: 100%;
   height: 80vh;
-  margin-top: -40%;
+  margin-top: -30%;
   background-color: #0a1f25;
 }
 
@@ -74,4 +74,8 @@
   mix-blend-mode: difference; /* Inverts the color of everything behind it */
   z-index: 9999;
   transition: width 0.2s ease, height 0.2s ease; /* Smooth transition */
+}
+
+@media screen and (min-width: 1400px) {
+
 }
