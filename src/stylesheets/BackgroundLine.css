@@ -1,0 +1,6 @@
+@media (max-width: 1400px) {
+    .responsive-svg {
+      height: 1250px; /* Adjust the height as needed */
+      margin-top: -5%;
+    }
+  }

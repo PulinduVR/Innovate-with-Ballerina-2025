@@ -123,3 +123,9 @@
       font-size: 2.5rem;
     }
   }
+
+  /* @media screen and (max-width: 1400px){
+    .stats-section{
+      padding-top: 10rem;
+    }
+  } */

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "../stylesheets/BackgroundLine.css";
 
 
 export default function BackgroundLine() {
@@ -46,6 +47,7 @@ export default function BackgroundLine() {
     return (
         <div className="background-line">
             <svg 
+                className="responsive-svg"
                 width="1117" 
                 height="1250" 
                 viewBox="0 0 1177 3168" 
