@@ -1,14 +1,14 @@
 import React from 'react';
-import './Button.css'; // Import the CSS styles
+import './Button.css'; 
 
-const Button = ({  label }) => {
+function Button() {
    const alertD = () => {
       alert("Button Clicked");
    }
   return (
-    <button className="register-button"  onClick={alertD}>
-      {label}
-    </button>
+   <div>
+   <button className='button-outlined button-outlined-text' onClick={alertD}>Register Now</button>
+   </div>
   );
 };
 
