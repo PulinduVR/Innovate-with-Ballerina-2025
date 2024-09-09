@@ -15,7 +15,7 @@ import StatsSection from "./components/StatsSection";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  let heroHidden = false;
+  
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -33,30 +33,8 @@ function App() {
   }, []);
 
 
-  useEffect(() => {
-    // Animate the Hero section to scroll up and fade out
-    gsap.to(".hero", {
-      scrollTrigger: {
 
-        start: "top top",
-        end: "30% top",
-        scrub: 3,
-        pin: ".hero",
-
-        onLeave: () => {
-          gsap.set(".hero", { display: "none" });
-          
-        },
-        onEnterBack: () => {
-          if (heroHidden) {
-            gsap.set(".hero", { display: "none" });
-          }
-        },
-      },
-      y: -1900,
-    });
-  }, [heroHidden]);
-
+    
   // gsap.to(".screen-two .screen-three", {
   //   scrollTrigger: {
   //     trigger: ".screen-two",
@@ -83,7 +61,7 @@ function App() {
     <>
       <div className="main-container">
         <div className="hero">
-          <Hero />
+          {/* <Hero /> */}
         </div>
 
         <div className="screen-two">

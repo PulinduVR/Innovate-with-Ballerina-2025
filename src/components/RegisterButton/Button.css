@@ -1,34 +1,25 @@
- .button-outlined {
-   width: 900%; /* Fixed width for both buttons */
+.reg-button {
    position: relative;
+   display: flex;
    justify-content: center;
    align-items: center;
    padding: 0.8em;
    flex-shrink: 0;
-   border-radius: 1em; /* Ensure rounded borders are applied */
-   border: 1px solid #fbf9f9;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   border-radius: 5em; /* Ensure rounded borders are applied */
+   border: 1px solid transparent; /* Set the initial border */
    background: transparent;
    cursor: pointer;
-   margin-right: 30px;
-}
-
-.button-outlined {
-   background: transparent;
-   
-}
-
-
-
-
-.button-outlined:hover {
-   border: 1px solid #0E9F9B;; 
-   
-}
-
- .button-outlined-text {
+   width: 140%;
+   border-image: linear-gradient(45deg, #109f0e, #ffb34a);
+   border-image-slice: 1;
+ }
+ 
+ .reg-button:hover {
+   border-image: linear-gradient(45deg, #ffb34a, #109f0e);
+   border-image-slice: 1;
+ }
+ 
+ .reg-button-text {
    text-align: center;
    font-family: "Space Grotesk";
    font-size: 1.1rem;
@@ -37,18 +28,13 @@
    line-height: 109%;
    letter-spacing: 0.24px;
    text-transform: uppercase;
-}
-
-
-
-.button-outlined-text {
-   color: #f7f5f5;
-}
-
-.button-outlined-text:hover {
-   background: linear-gradient(45deg, #0E9F9B, #FFB34A); /* Apply gradient */
+   color: white;
+ }
+ 
+ .reg-button-text:hover {
+   background: linear-gradient(45deg, #109f0e, #ffb34a);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    background-clip: text;
-   
-}
+ }
+ 
