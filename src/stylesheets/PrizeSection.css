@@ -494,3 +494,9 @@
 }
 }
 
+@media (max-width: 360px) {
+  .prize-section {
+    height: 120vh;
+}
+}
+
