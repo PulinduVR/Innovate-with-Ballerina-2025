@@ -75,3 +75,9 @@
   z-index: 9999;
   transition: width 0.2s ease, height 0.2s ease; /* Smooth transition */
 }
+
+@media screen and (max-width: 1400px){
+  .screen-three {
+    height: 70vh;
+  }
+}
