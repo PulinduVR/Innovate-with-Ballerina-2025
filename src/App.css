@@ -81,3 +81,12 @@
     height: 200vh;
   }
 }
+
+@media screen and (max-width: 768px){
+  .custom-cursor {
+    display: none;
+  }
+  .screen-three {
+    margin-top: 25%; 
+  }
+}
