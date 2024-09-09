@@ -27,33 +27,6 @@ export default function TimeLineView() {
         gsap.set(".svg3", { opacity: 0 });
         gsap.set(".header", { opacity: 0 });
         gsap.set(".svg-2", { opacity: 0 });
-
-        // Set initial opacity for the paragraph and buttons
-    gsap.set(".register-paragraph", { opacity: 0 });
-    gsap.set(".register-buttons", { opacity: 0 });
-
-    // Timeline for the paragraph and buttons
-    const registrationTl = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".register-section",
-            start: "top 50%",
-        }
-    });
-
-    // First, animate the paragraph
-    registrationTl.to(".register-paragraph", {
-        opacity: 1,
-        duration: 1,
-        ease: "power2.inOut",
-    });
-
-    // Then, animate the buttons
-    registrationTl.to(".register-buttons", {
-        opacity: 1,
-        duration: 1,
-        ease: "power2.inOut",
-        stagger: 0.3, // Buttons will appear one after the other
-    });
           
        // ---------Animation for the header text and SVG drawing---------------
 
@@ -305,13 +278,13 @@ export default function TimeLineView() {
                             </div>
 
                         </div>
-                        <p className="para register-paragraph">
+                        <p className="para">
                             Join the "Innovate with Ballerina" competition to empower your <br />coding proficiency and entrepreneurial spirit! <br />Gain invaluable experience and contribute to shaping  the future of technology. <br />Secure your spot today and embark on an inspiring journey of learning and discovery.
                         </p>
                     </div>
-                    <div className='buttonSection register-buttons'>
-                        <button className='button-filled button-filled-text btn-register' onClick={() => window.location.href='https://forms.gle/uB1ScvWHJYsQbTBs5'}>Register Now</button>
-                        <button className='button-outlined button-outlined-text btn-download' onClick={() => window.location.href='https://drive.google.com/file/d/1PU3KlQlWEZaPHcD0jbWcEpEwVleT9uRF/view?usp=sharing'}>Download Booklet</button>
+                    <div className='buttonSection'>
+                        <button className='button-filled button-filled-text' onClick={() => window.location.href='https://forms.gle/uB1ScvWHJYsQbTBs5'}>Register Now</button>
+                        <button className='button-outlined button-outlined-text' onClick={() => window.location.href='https://drive.google.com/file/d/1PU3KlQlWEZaPHcD0jbWcEpEwVleT9uRF/view?usp=sharing'}>Download Booklet</button>
                     </div>
                     <div className='svg2'>
                         <svg className='svg-2' xmlns="http://www.w3.org/2000/svg" width="316" height="306" viewBox="0 0 316 306" fill="none">
