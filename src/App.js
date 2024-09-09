@@ -45,7 +45,7 @@ function App() {
 
         onLeave: () => {
           gsap.set(".hero", { display: "none" });
-          // heroHidden = true;
+          
         },
         onEnterBack: () => {
           if (heroHidden) {
@@ -105,8 +105,6 @@ function App() {
         <View />
       </div>
       <Badges />
-
-      {/* Custom Cursor */}
       <div
         className="custom-cursor"
         style={{

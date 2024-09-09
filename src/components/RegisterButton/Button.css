@@ -1,53 +1,54 @@
-.register-button {
-   background: transparent;
-   border: 2px solid transparent;
-   border-width: 4px;
-   border-radius: 50px;
-   padding: 10px 30px;
-   margin-right : 50px;
-   cursor: pointer;
-   font-size: 24px;
-   font-family: 'Arial', sans-serif;
-   text-transform: uppercase;
-   color: #e0e0e0;
+ .button-outlined {
+   width: 900%; /* Fixed width for both buttons */
    position: relative;
-   overflow: hidden;
-   transition: color 0.3s ease, background 0.3s ease;
-   scale : 0.8 ;
- }
- 
- 
- .register-button::before {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background: linear-gradient(to right, #00c3ff, #ffff1c);
-   z-index: -1;
-   border-radius: inherit;
-   padding: 2px;
-   -webkit-mask: 
-     linear-gradient(#fff 0 0) content-box, 
-     linear-gradient(#fff 0 0);
-   -webkit-mask-composite: xor;
-           mask-composite: exclude;
- }
- 
+   justify-content: center;
+   align-items: center;
+   padding: 0.8em;
+   flex-shrink: 0;
+   border-radius: 1em; /* Ensure rounded borders are applied */
+   border: 1px solid #fbf9f9;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: transparent;
+   cursor: pointer;
+   margin-right: 30px;
+}
 
- .register-button:focus {
-   outline: none;
-
- }
- 
-
- @media screen and (max-width: 768px) {
-   .register-button {
-     scale : 0.7;
-       margin-right : 0;
-       
-
-   }
+.button-outlined {
+   background: transparent;
    
- }
+}
+
+
+
+
+.button-outlined:hover {
+   border: 1px solid #0E9F9B;; 
+   
+}
+
+ .button-outlined-text {
+   text-align: center;
+   font-family: "Space Grotesk";
+   font-size: 1.1rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 109%;
+   letter-spacing: 0.24px;
+   text-transform: uppercase;
+}
+
+
+
+.button-outlined-text {
+   color: #f7f5f5;
+}
+
+.button-outlined-text:hover {
+   background: linear-gradient(45deg, #0E9F9B, #FFB34A); /* Apply gradient */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   
+}
