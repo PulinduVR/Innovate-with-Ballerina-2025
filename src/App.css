@@ -75,7 +75,3 @@
   z-index: 9999;
   transition: width 0.2s ease, height 0.2s ease; /* Smooth transition */
 }
-
-@media screen and (min-width: 1400px) {
-
-}
