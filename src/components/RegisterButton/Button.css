@@ -4,17 +4,14 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 0.8em;
-   flex-shrink: 0;
-   border-radius: 1em; /* Ensure rounded borders are applied */
-   border: 1px solid #ffffff;
+   padding: 0.8em 2em;
+   border-radius: 1em;
    background: transparent;
-   cursor: pointer;
-   transition: background 0.4s ease, color 0.4s ease;
+   border: 1px solid #E9E9E9;
 }
 
-.reg-button:hover {
-   background: linear-gradient(45deg, #0E9F9B, #FFB34A); /* Apply gradient */
+/* .reg-button:hover {
+   background: linear-gradient(45deg, #0E9F9B, #FFB34A);
    background-size: 200% 100%;
    background-position: left center;
    color: transparent;
@@ -22,26 +19,24 @@
    background-clip: text;
    transition: background 0.4s ease, color 0.4s ease;
    transition: border 0.4s ease, color 0.4s ease;
-   border : none;
+} */
 
-}
-
-.button-outlined {
+/* .button-outlined {
    background: transparent;
-}
+} */
 
-.button-outlined:hover {
+/* .button-outlined:hover {
    border: 1px solid #0E9F9B; 
-}
+} */
 
 .reg-button, .button-outlined-text {
    text-align: center;
    font-family: "Space Grotesk";
-   font-size: 1.1rem;
+   font-size: 0.8rem;
    font-style: normal;
    font-weight: 400;
    line-height: 109%;
-   letter-spacing: 0.24px;
+   letter-spacing: 1px;
    text-transform: uppercase;
 }
 

@@ -137,9 +137,13 @@ const ScreenTwo = () => {
       </style>
       <div style={styles.curve}></div>
       <div style={styles.topdiv} id="logo-cont">
-        <img src="/bal.png" alt="bal" />
+        <img src="/bal.png" alt="bal" 
+          style={{
+            padding: "1em 1em",
+          }}
+        />
         {/* Update the button's onClick event handler */}
-        <div style={{ display: "flex", width : '200px' , marginRight : '20px'}}>
+        <div style={{ display: "flex", width : '200px' , marginRight : '1.5em'}}>
        <Button onClick={handleButtonClick} />
        </div>
       </div>

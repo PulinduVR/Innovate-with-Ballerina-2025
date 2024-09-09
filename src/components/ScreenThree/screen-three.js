@@ -21,14 +21,14 @@ const ScreenThree = () => {
     const tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".paraSec",
-        start: "top 80%",
+        start: "top 50%",
         toggleActions: "play none none none",
       },
     });
 
     // Step 1: Display the randomized text
     tl1.to(".desc", {
-      duration: 0.2,
+      duration: 0.1,
       text: randomArray.join(""), // Display random characters initially
     });
 
