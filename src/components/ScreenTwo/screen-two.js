@@ -133,7 +133,6 @@ const styles = {
     padding: 20,
     zIndex: 10,
     alignItems: "center",
-    zIndex: 1,
   },
   container: {
     width: "100%",

@@ -226,28 +226,28 @@ export default function TimeLineView() {
                     </div>
                     <div className="inner-container">
                         <motion.div initial={{ opacity: 0 }} className={`card card1`} animate={visibleCard >= 1 ? controls : { opacity: 0 }}>
-                            <TimeLineCard1 text={"Starting Registration"} month={"SEPT"} day={"01"} />
+                            <TimeLineCard1 text={"Starting Registration"} month={"SEPTEMBER"} day={"01"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card2`} animate={visibleCard >= 2 ? controls : { opacity: 0 }}>
-                            <TimeLineCard2 text={"Closing Registrations"} month={"SEPT"} day={"20"} />
+                            <TimeLineCard2 text={"Awareness Session"} month={"SEPTEMBER"} day={"15"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card3`} animate={visibleCard >= 3 ? controls : { opacity: 0 }}>
-                            <TimeLineCard2 text={"Case Study Publishing"} month={"SEPT"} day={"26"} />
+                            <TimeLineCard2 text={"Closing Registrations"} month={"SEPTEMBER"} day={"20"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card4`} animate={visibleCard >= 4 ? controls : { opacity: 0 }}>
-                            <TimeLineCard1 text={"Workshop 02"} month={"SEPT"} day={"30"} />
+                            <TimeLineCard1 text={"Worksop 01 Case Study"} month={"SEPTEMBER"} day={"20"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card5`} animate={visibleCard >= 5 ? controls : { opacity: 0 }}>
-                            <TimeLineCard3 text={"Opening Submissions"} month={"SEPT"} day={"30"} />
+                            <TimeLineCard3 text={"Worksop 01"} month={"SEPTEMBER"} day={"30"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card6`} animate={visibleCard >= 6 ? controls : { opacity: 0 }}>
-                            <TimeLineCard1 text={"Workshop 03"} month={"OCT"} day={"03"} />
+                            <TimeLineCard1 text={"Workshop 02"} month={"OCTOMBER"} day={"30"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card7`} animate={visibleCard >= 7 ? controls : { opacity: 0 }}>
-                            <TimeLineCard3 text={"Closing Submissions"} month={"OCT"} day={"13"} />
+                            <TimeLineCard3 text={"Closing Submissions"} month={"OCTOMBER"} day={"13"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card8`} animate={visibleCard >= 8 ? controls : { opacity: 0 }}>
-                            <TimeLineCard1 text={"AWARD CEREMONY"} month={"NOV"} day={"02"} />
+                            <TimeLineCard1 text={"AWARD CEREMONY"} month={"NOVEMBER"} day={"02"} />
                         </motion.div>
                     </div>
 

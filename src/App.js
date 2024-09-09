@@ -45,7 +45,7 @@ function App() {
 
         onLeave: () => {
           gsap.set(".hero", { display: "none" });
-          heroHidden = true;
+          // heroHidden = true;
         },
         onEnterBack: () => {
           if (heroHidden) {
@@ -96,6 +96,7 @@ function App() {
       </div>
 
       <div>
+        <StatsSection />
         <PrizeSection />
       </div>
       <TimeLineView />
