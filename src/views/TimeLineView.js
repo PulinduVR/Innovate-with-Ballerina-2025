@@ -20,6 +20,7 @@ export default function TimeLineView() {
     
     useEffect(() => {
         
+        
         gsap.registerPlugin(TextPlugin, ScrollTrigger);
     
         // Set initial opacity for elements
@@ -32,7 +33,7 @@ export default function TimeLineView() {
         const tl1 = gsap.timeline({
             scrollTrigger: {
                 trigger: ".paraSec",
-                start: "top 90%",
+                start: "top 10%",
                 // onEnter: () => console.log("ScrollTrigger is triggered!"),
             }
         });
@@ -161,7 +162,7 @@ export default function TimeLineView() {
     });
 
     gsap.to(".text-background-div4 p", {
-        x: "-15%",
+        x: "5%",
         scrollTrigger: {
             trigger: ".timeline-view-container",
             start: "top center",
@@ -181,7 +182,7 @@ export default function TimeLineView() {
             
             cards.forEach((card, index) => {
                 const rect = card.getBoundingClientRect();
-                const isVisible = rect.top < windowHeight / 2 && rect.bottom > windowHeight / 2;
+                const isVisible = rect.top < windowHeight / 3 && rect.bottom > windowHeight / 3;
                 if (isVisible) {
                     setVisibleCard(index + 1);
                 }
@@ -235,19 +236,19 @@ export default function TimeLineView() {
                             <TimeLineCard1 text={"Closing Registration"} month={"SEPTEMBER"} day={"20"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card4`} animate={visibleCard >= 4 ? controls : { opacity: 0 }}>
-                            <TimeLineCard1 text={"Worksop 01 Case Study"} month={"SEPTEMBER"} day={"20"} />
+                            <TimeLineCard2 text={"Worksop 01 Case Study"} month={"SEPTEMBER"} day={"26"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card5`} animate={visibleCard >= 5 ? controls : { opacity: 0 }}>
-                            <TimeLineCard3 text={"Worksop 01"} month={"SEPTEMBER"} day={"30"} />
+                            <TimeLineCard3 text={"Worksop 02"} month={"SEPTEMBER"} day={"30"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card6`} animate={visibleCard >= 6 ? controls : { opacity: 0 }}>
-                            <TimeLineCard1 text={"Workshop 02"} month={"OCTOMBER"} day={"30"} />
+                            <TimeLineCard1 text={"Submission Opening"} month={"OCTOBER"} day={"30"} id={"card-5"}/>
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card7`} animate={visibleCard >= 7 ? controls : { opacity: 0 }}>
-                            <TimeLineCard3 text={"Closing Submissions"} month={"OCTOMBER"} day={"13"} />
+                            <TimeLineCard2 text={"Closing Submissions"} month={"OCTOBER"} day={"13"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card8`} animate={visibleCard >= 8 ? controls : { opacity: 0 }}>
-                            <TimeLineCard1 text={"AWARD CEREMONY"} month={"NOVEMBER"} day={"02"} />
+                            <TimeLineCard2 text={"AWARD CEREMONY"} month={"NOVEMBER"} day={"02"} />
                         </motion.div>
                     </div>
 

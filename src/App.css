@@ -41,9 +41,9 @@
   .hero {
     z-index: 1;
   }
-
-  .screen-three {
-    margin-top: -120%;
+  .screen-three{
+    margin-top: -30%;
+    height: 75vh;
   }
 }
 

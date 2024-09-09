@@ -43,10 +43,10 @@
 
 
 .inner-container {
-    margin-top: 7%;
+    margin-top: 10%;
     /* width: 80%; */
     /* Adjust width as needed */
-    padding: 20px;
+    padding: 5rem 0;
     /* Padding inside the inner container */
     /* border-radius: 10px; */
     /* Optional: Add border-radius for rounded corners */
@@ -73,46 +73,49 @@
     /* Ensure it stays above the background */
 }
 
-/* .card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
     margin: 5% 0; 
-} */
+}
 
 
-@media (min-width: 10024px) {
+@media (min-width: 1024px) {
     .card1 {
-        margin: 5% 5% 5% 0%; /* top right bottom left */
+        top: -30px;
+        right: 87.5%;
     }
     
     .card2 {
-        margin: -4% 5% 5% 40%; /* top right bottom left */
+        top: -70px;
+        left: 20%;
     }
     
     .card3 {
-        margin: 2% 10% 2% 55%; /* top right bottom left */
+        top: -80px;
+        right: -70%;
     }
     
     .card4 {
-        margin: 3% 10% 2% 20%; /* top right bottom left */
+        top: -120px;
     }
     
     .card5 {
-        margin: 2% 5% 5% 50%; /* top right bottom left */
-        top: 50px;
+        top: -120px;
+        left: 70%;
     }
     
     .card6 {
-        margin: -3% 5% 5% 64%; /* top right bottom left */
-        top: 60px;
+        top: -120px;
+        /* top: 60px; */
     }
     
     .card7 {
-        margin: 0% 5% 5% 30%; /* top right bottom left */
-        top: 50px;
+        left:30%;
+        /* top: 50px; */
     }
     
-    .card8 {
-        margin: -1% 7% 5% 50%; /* top right bottom left */
-    }
+    /* .card8 {
+        margin: -1% 7% 5% 50%;
+    } */
 }
 
 @media (max-width: 768px) {
@@ -415,8 +418,8 @@
 .svg3 {
     position: absolute;
     top: -32.5%;
-    right: 25%;
-    width: 22.5%;
+    right: 28%;
+    width: 20%;
 
 }
 

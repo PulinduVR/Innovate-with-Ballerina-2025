@@ -93,3 +93,7 @@
       flex-direction: row;
   
     }
+
+.special-card .date{
+    right:  44%;
+}

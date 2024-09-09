@@ -102,7 +102,7 @@
   }
 
   .faq-column {
-    width: 100%;
+    width: 80%;
     max-width: 100%;
   }
 
@@ -111,6 +111,6 @@
   }
 
   .dropdown-button {
-    padding: 11% 4%;
+    padding: 10% 4%;
   }
 }

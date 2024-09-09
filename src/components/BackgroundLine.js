@@ -22,8 +22,8 @@ export default function BackgroundLine() {
             strokeDashoffset: 0,
             scrollTrigger: {
                 trigger: ".inner-container",
-                start: "top 20%", // When the top of the container enters the bottom of the viewport
-                end: "bottom 90%", // When the bottom of the container leaves the top of the viewport
+                start: "top 30%", // When the top of the container enters the bottom of the viewport
+                end: "bottom 50%", // When the bottom of the container leaves the top of the viewport
                 // markers: true, // For debugging
                 scrub: 2,
                  onUpdate: self => {
@@ -46,8 +46,8 @@ export default function BackgroundLine() {
     return (
         <div className="background-line">
             <svg 
-                width="1177" 
-                height="1200" 
+                width="1117" 
+                height="1250" 
                 viewBox="0 0 1177 3168" 
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg">
