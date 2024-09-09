@@ -3,6 +3,7 @@ import "./screen-three.css";
 import TextOne from "../TextOne/text-one";
 import TextTwo from "../TextTwo/text-two";
 import gsap from "gsap";
+import { motion } from "framer-motion";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 
@@ -18,6 +19,22 @@ const ScreenThree = () => {
       char === " " ? " " : randomChars[Math.floor(Math.random() * randomChars.length)]
     );
 
+
+  const tlMobile = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".mobile-responsive-view",
+      start: "top 90%",
+      toggleActions: "play none none none",
+    },
+  });
+
+  tlMobile.from(".mobile-responsive-view", {
+    duration: 1,
+    opacity: 0,
+    y: 50, // Slide in from below
+    ease: "power1.out",
+  });
+    
     const tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".paraSec",
@@ -150,7 +167,12 @@ const ScreenThree = () => {
 
       {/* Mobile View */}
       <div className="mobile-responsive-view">
-        <div className="mobile-center-container">
+        <motion.div
+          className="mobile-center-container"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
           <img
             src="./b1.png"
             alt="mobile-view"
@@ -165,7 +187,7 @@ const ScreenThree = () => {
             and will be evaluated by the WSO2 Ballerina team. Compelling rewards
             and certificates will be awarded for exceptional contributions.
           </p>
-        </div>
+        </motion.div>
       </div>
     </>
   );
