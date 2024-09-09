@@ -22,7 +22,7 @@ export default function BackgroundLine() {
             strokeDashoffset: 0,
             scrollTrigger: {
                 trigger: ".inner-container",
-                start: "top 30%", // When the top of the container enters the bottom of the viewport
+                start: "top 10%", // When the top of the container enters the bottom of the viewport
                 end: "bottom 50%", // When the bottom of the container leaves the top of the viewport
                 // markers: true, // For debugging
                 scrub: 2,
