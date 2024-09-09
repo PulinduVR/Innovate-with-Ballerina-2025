@@ -21,7 +21,7 @@ const ScreenThree = () => {
     const tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".paraSec",
-        start: "top 50%",
+        start: "top 10%",
         toggleActions: "play none none none",
       },
     });
@@ -63,7 +63,7 @@ const ScreenThree = () => {
 
     tlFlicker.to(".error-box", {
       duration: 0.3,
-      opacity: 0.1,
+      opacity: 0,
       repeat: 5,
       yoyo: true, // To flicker back and forth
       ease: "power1.inOut",
