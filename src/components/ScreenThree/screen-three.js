@@ -40,7 +40,7 @@ const ScreenThree = () => {
         tl1.to(
           `.desc`,
           {
-            duration: 0.3,
+            duration: 0.2,
             onStart: () => {
               let currentText = document.querySelector(".desc").innerText.split("");
               currentText[index] = char; // Replace the current random letter with the correct one
@@ -62,8 +62,8 @@ const ScreenThree = () => {
     });
 
     tlFlicker.to(".error-box", {
-      duration: 0.3,
-      opacity: 0.4,
+      duration: 0.25,
+      opacity: 0.1,
       repeat: 5,
       yoyo: true, // To flicker back and forth
       ease: "power1.inOut",
@@ -108,7 +108,7 @@ const ScreenThree = () => {
                   alt="box"
                   id="box"
                   className="error-box"
-                  style={{ height: "110%", width: "auto", marginTop: "-20%" }}
+                  style={{ height: "110%", width: "auto", marginTop: "-20%", opacity: 1.3 }}
                 />
               </div>
               <div className="boxes-container">

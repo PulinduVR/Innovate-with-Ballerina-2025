@@ -4,7 +4,7 @@ const TextTwo = () => {
   <div style={{ 
      
       position: "absolute", 
-        top: "-60%", 
+        top: "-70%", 
       right: "-10%", 
       height: "40vh",
   }}>
