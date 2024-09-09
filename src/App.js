@@ -34,7 +34,7 @@ function App() {
 
   useEffect(() => {
     let heroHidden = false;
-
+    console.log(heroHidden);
     const heroSection = document.querySelector(".hero");
     if (!heroSection) return; // Avoid running if hero section isn't present
 
