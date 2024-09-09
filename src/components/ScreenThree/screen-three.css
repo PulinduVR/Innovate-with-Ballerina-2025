@@ -148,7 +148,7 @@
     justify-content: center;
     align-items: center;
     background-color: #0A1F25;
-    height: 100vh; /* Full height of the viewport */
+    height: 18vh; /* Full height of the viewport */
     padding: 20px; /* Add padding for spacing on small screens */
   }
 
@@ -172,7 +172,7 @@
   }
 
   .content img {
-    width: 80%; /* Ensure the image scales appropriately */
+    width: 90%; /* Ensure the image scales appropriately */
     height: auto;
     margin: 0 auto 20px auto; /* Center and space out the image */
   }
@@ -181,7 +181,6 @@
     font-size: 14px; /* Adjust font size for readability on small screens */
     line-height: 1.5;
     font-family: 'space-grotesk', sans-serif;
-    margin: 0; /* Remove extra margins */
   }
 
   .text-one {
@@ -194,7 +193,14 @@
 
   .mobile-responsive-view {
     display: flex;
+    height: 80vh;
   }
+    .mobile-responsive-view p{
+      padding-top: 10%;
+  }
+  .mobile-responsive-view img{
+    margin-left: 5%;
+}
 }
 
 @media only screen and (max-width: 980)  {

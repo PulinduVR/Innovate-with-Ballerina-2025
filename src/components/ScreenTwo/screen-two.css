@@ -1,15 +1,12 @@
-screen-two.css
 .main-container-se{
   overflow: hidden;
 }
-
-
 /* Base styles are already set. Add media queries for smaller screens. */
 @media (max-width: 768px) {
 
    .text-container {
       position: relative;
-       width: 50%; /* Adjust width for smaller screens */
+       width: 50%;
    }
    .heading {
      font-size: 1rem; /* Smaller heading for mobile */
@@ -24,6 +21,9 @@ screen-two.css
    .topdiv {
      height: 8%; /* Adjust the height for smaller screens */
      color: aquamarine;
+   }
+   #star{
+    width: 30px !important;
    }
  }
  

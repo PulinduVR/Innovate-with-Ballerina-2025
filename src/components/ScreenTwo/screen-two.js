@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "../RegisterButton/Button";
+import "../ScreenTwo/screen-two.css";
 
 const ScreenTwo = () => {
   gsap.registerPlugin(useGSAP);
@@ -166,6 +167,7 @@ const ScreenTwo = () => {
               <span>
                 <img
                   id="star"
+                  className="star"
                   src="/o-star.svg"
                   alt="star"
                   width={40}
