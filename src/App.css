@@ -41,14 +41,15 @@
 
 @media screen and (max-width: 480px) {
   .main-container {
-    height: 200vh;
+    height: 150vh;
   }
 
   .hero {
     z-index: 1;
   }
   .screen-three {
-    margin-top: 200%;
+    margin-top: 180%;
+    height: 75vh;
   }
   
 }

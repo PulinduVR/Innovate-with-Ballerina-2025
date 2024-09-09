@@ -116,7 +116,7 @@
   @media (max-width: 480px) {
     .stats-section {
       flex-direction: column;
-      margin-top: -20%;
+      margin-top: -17.5%;
     }
   
     .stat-number {
