@@ -15,7 +15,7 @@ import StatsSection from "./components/StatsSection";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  let heroHidden = false;
+  
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -32,31 +32,31 @@ function App() {
     };
   }, []);
 
-
   useEffect(() => {
-    // Animate the Hero section to scroll up and fade out
-    gsap.to(".hero", {
+    let heroHidden = false;
+
+    const heroSection = document.querySelector(".hero");
+    if (!heroSection) return; // Avoid running if hero section isn't present
+
+    gsap.to(heroSection, {
       scrollTrigger: {
-
-        start: "top top",
-        end: "30% top",
+        trigger: heroSection, // Scoped to the specific hero section
+        start: "top top", // Trigger when the top of the hero reaches the top of the viewport
+        end: "30% top", // When the bottom of the hero reaches the top of the viewport
         scrub: 3,
-        pin: ".hero",
-
         onLeave: () => {
-          gsap.set(".hero", { display: "none" });
-          
+          gsap.set(heroSection, { display: "none" }); // Only hide the hero section
+          heroHidden = true;
         },
-        onEnterBack: () => {
-          if (heroHidden) {
-            gsap.set(".hero", { display: "none" });
-          }
-        },
+     
       },
-      y: -1900,
+      y : -1500
     });
-  }, [heroHidden]);
 
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // Clean up ScrollTriggers on unmount
+    };
+  }, []);
   // gsap.to(".screen-two .screen-three", {
   //   scrollTrigger: {
   //     trigger: ".screen-two",

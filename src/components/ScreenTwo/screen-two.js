@@ -139,7 +139,9 @@ const ScreenTwo = () => {
       <div style={styles.topdiv} id="logo-cont">
         <img src="/bal.png" alt="bal" />
         {/* Update the button's onClick event handler */}
+        <div style={{ display: "flex", width : '200px' , marginRight : '20px'}}>
        <Button onClick={handleButtonClick} />
+       </div>
       </div>
 
       <div style={styles.content} id="cont">

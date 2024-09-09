@@ -7,7 +7,7 @@ function Button() {
    }
   return (
    <div>
-   <button className='button-outlined button-outlined-text' onClick={alertD}>Register Now</button>
+   <button className='reg-button reg-button-text' onClick={alertD}>Register Now</button>
    </div>
   );
 };
