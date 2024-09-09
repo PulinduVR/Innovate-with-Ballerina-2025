@@ -38,7 +38,7 @@ const ScreenThree = () => {
     const tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".paraSec",
-        start: "top 50%",
+        start: "top 140%",
         toggleActions: "play none none none",
       },
     });
@@ -73,7 +73,7 @@ const ScreenThree = () => {
     const tlFlicker = gsap.timeline({
       scrollTrigger: {
         trigger: ".big-container",
-        start: "top 60%",
+        start: "top 150%",
         toggleActions: "play none none none", // Play only once
       },
     });
@@ -103,7 +103,7 @@ const ScreenThree = () => {
     gsap.to(".vector-svg", {
       scrollTrigger: {
         trigger: ".main-screen-three", // Trigger when the user scrolls in the main screen
-        start: "top center", // Start rotation when the top of the container reaches the center of the viewport
+        start: "top 150%", // Start rotation when the top of the container reaches the center of the viewport
         end: "bottom top", // End rotation when the bottom of the container reaches the top of the viewport
         scrub: 2, // Smooth animation based on scroll
       },
