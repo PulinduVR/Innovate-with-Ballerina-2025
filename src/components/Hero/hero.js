@@ -37,6 +37,11 @@ function Hero() {
         <img src='./b-logo.webp' alt="b-logo" id="balerina-logo"></img>
         
       </div>
+
+      <div className='partner'>
+        <span className='organized'>Organized by</span>
+        <span className='powered'>Powered by</span>
+      </div>
     </div>
   );
 }

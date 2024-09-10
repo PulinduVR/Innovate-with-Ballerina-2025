@@ -69,7 +69,7 @@
 /* Container for the logos at the bottom left */
 .logo-container {
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   left: 10px;
   width: 100%;
   display: flex;
@@ -237,4 +237,17 @@
   .scroll-button-container {
     width: 12%;
   }
+}
+
+.partner{
+  color: rgb(255, 255, 255);
+  font-size: 0.6rem;
+  /* position: absolute; */
+  display: flex;
+  gap: 10%;
+  width: 100%;
+  /* text-transform: uppercase; */
+  /* top: 90%; */
+  position: relative;
+  left: 10%;
 }
