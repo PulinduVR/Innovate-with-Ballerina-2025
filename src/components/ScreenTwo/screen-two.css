@@ -32,3 +32,11 @@
   width : 180px;
   margin-right : 1.5em;
 }
+
+@media (max-width: 480px){
+  .regBtn{
+    display: flex;
+    width : 180px;
+    margin-right : 1em;
+  }
+}
