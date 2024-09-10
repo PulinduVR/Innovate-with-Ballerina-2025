@@ -27,3 +27,8 @@
    }
  }
  
+.regBtn{
+  display: flex;
+  width : 180px;
+  margin-right : 1.5em;
+}

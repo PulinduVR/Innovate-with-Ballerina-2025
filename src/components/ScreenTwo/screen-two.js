@@ -144,7 +144,7 @@ const ScreenTwo = () => {
           }}
         />
         {/* Update the button's onClick event handler */}
-        <div style={{ display: "flex", width : '200px' , marginRight : '1.5em'}}>
+        <div className="regBtn">
        <Button onClick={handleButtonClick} />
        </div>
       </div>
