@@ -14,7 +14,6 @@ import StatsSection from "./components/StatsSection";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin); // Register ScrollToPlugin
 
 function App() {
-  
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   // Update mouse position for custom cursor
@@ -31,43 +30,40 @@ function App() {
   }, []);
 
   useEffect(() => {
+    const isMobile = window.innerWidth <= 768; // Detect if it's a mobile screen
+    if (isMobile) return; // Don't run scroll-to-top behavior on mobile screens
+
+    let heroHidden = false;
     const heroSection = document.querySelector(".hero");
-    if (!heroSection) return; // Avoid running if the hero section isn't present
+    if (!heroSection) return;
 
-    // Check if the screen width is greater than 768px (non-mobile devices)
-    const isDesktop = window.matchMedia("(min-width: 768px)").matches;
-
-    if (isDesktop) {
-      let heroHidden = false;
-
-      // Initial scroll trigger to hide the hero section
-      const scrollTrigger = gsap.to(heroSection, {
-        scrollTrigger: {
-          trigger: heroSection, // Scoped to the specific hero section
-          start: "top top", // Trigger when the top of the hero reaches the top of the viewport
-          end: "bottom 25%", // When the bottom of the hero reaches 25% of the viewport
-          scrub: 10, // Make the animation smooth and connected to the scroll
-          onLeave: () => {
-            if (!heroHidden) {
-              gsap.to(window, {
-                scrollTo: { y: 0, autoKill: false }, // Smooth scroll to the top
-                duration: 1, // Adjust the duration for smoother scrolling
-                ease: "power2.out", // A more gradual ease effect
-                onComplete: () => {
-                  heroHidden = true; // Ensure the scroll only happens once
-                  gsap.set(heroSection, { display: "none" }); // Hide the hero section
-                },
-              });
-            }
-          },
+    // Initial scroll trigger to hide the hero section
+    const scrollTrigger = gsap.to(heroSection, {
+      scrollTrigger: {
+        trigger: heroSection,
+        start: "top top",
+        end: "bottom 25%",
+        scrub: 10,
+        onLeave: () => {
+          if (!heroHidden) {
+            gsap.to(window, {
+              scrollTo: { y: 0, autoKill: false }, // Smooth scroll to the top
+              duration: 1,
+              ease: "power2.out",
+              onComplete: () => {
+                heroHidden = true;
+                gsap.set(heroSection, { display: "none" }); // Hide the hero section
+              }
+            });
+          }
         },
-        y: -1500, // Move the hero section up
-      });
+      },
+      y: -1500 // Move the hero section up
+    });
 
-      return () => {
-        scrollTrigger.kill(); // Clean up the ScrollTrigger on unmount
-      };
-    }
+    return () => {
+      scrollTrigger.kill(); // Clean up the ScrollTrigger on unmount
+    };
   }, []);
 
   return (
