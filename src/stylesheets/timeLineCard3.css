@@ -71,7 +71,7 @@
     }
 
     .time-line-card3 .day {
-        font-size: 98px; /* Reduce font size for smaller screens */
+        font-size: 110px; /* Reduce font size for smaller screens */
     }
 
     .time-line-card3 .text {
@@ -87,3 +87,15 @@
     flex-direction: row;
 
   }
+
+
+
+  @media (max-width: 480px) {
+    .special-card1 .date{
+      right: 22.5%;
+    }
+    .special-card1 .day{
+        margin-right: -45px;
+      }
+  }
+  
