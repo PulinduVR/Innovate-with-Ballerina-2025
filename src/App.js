@@ -1,9 +1,10 @@
+
 import React, { useState, useEffect } from "react";
 import Hero from "./components/Hero/hero";
 import ScreenTwo from "./components/ScreenTwo/screen-two";
 import ScreenThree from "./components/ScreenThree/screen-three";
 import gsap from "gsap";
-import { ScrollTrigger, ScrollToPlugin } from "gsap/all"; // Import ScrollToPlugin
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import View from "./views/FaqView";
 import TimeLineView from "./views/TimeLineView";
 import "./App.css"; 
@@ -11,9 +12,11 @@ import Badges from "./components/Badges/badges";
 import PrizeSection from "../src/components/PrizeSection";
 import StatsSection from "./components/StatsSection";
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin); // Register ScrollToPlugin
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  
+
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   // Update mouse position for custom cursor
@@ -30,41 +33,51 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const isMobile = window.innerWidth <= 768; // Detect if it's a mobile screen
-    if (isMobile) return; // Don't run scroll-to-top behavior on mobile screens
-
     let heroHidden = false;
+    console.log(heroHidden);
     const heroSection = document.querySelector(".hero");
-    if (!heroSection) return;
+    if (!heroSection) return; // Avoid running if hero section isn't present
 
-    // Initial scroll trigger to hide the hero section
-    const scrollTrigger = gsap.to(heroSection, {
+    gsap.to(heroSection, {
       scrollTrigger: {
-        trigger: heroSection,
-        start: "top top",
-        end: "bottom 25%",
-        scrub: 10,
+        trigger: heroSection, // Scoped to the specific hero section
+        start: "top top", // Trigger when the top of the hero reaches the top of the viewport
+        end: "30% top", // When the bottom of the hero reaches the top of the viewport
+        scrub: 3,
         onLeave: () => {
-          if (!heroHidden) {
-            gsap.to(window, {
-              scrollTo: { y: 0, autoKill: false }, // Smooth scroll to the top
-              duration: 1,
-              ease: "power2.out",
-              onComplete: () => {
-                heroHidden = true;
-                gsap.set(heroSection, { display: "none" }); // Hide the hero section
-              }
-            });
-          }
+          gsap.set(heroSection, { display: "none" }); // Only hide the hero section
+          heroHidden = true;
         },
+     
       },
-      y: -1500 // Move the hero section up
+      y : -1500
     });
 
     return () => {
-      scrollTrigger.kill(); // Clean up the ScrollTrigger on unmount
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill()); // Clean up ScrollTriggers on unmount
     };
   }, []);
+  // gsap.to(".screen-two .screen-three", {
+  //   scrollTrigger: {
+  //     trigger: ".screen-two",
+  //     start: "top top",
+  //     end: "bottom 20%",
+  //     scrub: true,
+  //   },
+  //   y: 200,
+  // });
+
+  // Animate the ScreenTwo section to scroll up and fade in
+  // gsap.to(".screen-two", {
+  //   scrollTrigger: {
+  //     trigger: ".screen-two",
+  //     start: "top 80%",
+  //     end: "bottom 20%",
+  //     scrub: true,
+  //   },
+  //   y: 200,
+  //   opacity: 1,
+  // });
 
   return (
     <>
@@ -78,6 +91,7 @@ function App() {
         </div>
         <div className="screen-three">
           <ScreenThree />
+          {/* <Badges /> */}
         </div>
       </div>
 
@@ -98,6 +112,8 @@ function App() {
           left: `${position.x}px`,
         }}
       />
+
+
     </>
   );
 }
