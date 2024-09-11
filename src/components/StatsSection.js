@@ -19,13 +19,13 @@ const StatsSection = () => {
       <div className="stat-boundary">
         <div className="stat stat-1">
           <h1 className="stat-number">
-            {startCounting && <CountUp end={785} duration={2.5} />}
+            {startCounting && <CountUp end={815} duration={2.5} />}
           </h1>
           <p className="stat-label">DELEGATES</p>
         </div>
         <div className="stat stat-2">
           <h1 className="stat-number">
-            {startCounting && <CountUp end={210} duration={2.5} />}
+            {startCounting && <CountUp end={218} duration={2.5} />}
           </h1>
           <p className="stat-label">TEAMS</p>
         </div>
