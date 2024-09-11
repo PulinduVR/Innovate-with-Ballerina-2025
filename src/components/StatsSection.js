@@ -31,7 +31,7 @@ const StatsSection = () => {
         </div>
         <div className="stat">
           <h1 className="stat-number">
-            {startCounting && <CountUp end={22} duration={2.5} />}
+            {startCounting && <CountUp end={24} duration={2.5} />}
           </h1>
           <p className="stat-label">UNIVERSITIES</p>
         </div>
