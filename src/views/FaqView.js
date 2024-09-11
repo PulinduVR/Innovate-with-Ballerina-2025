@@ -53,7 +53,7 @@ const View = () => {
     {
       image: 'https://zenko.syd1.cdn.digitaloceanspaces.com/balerina/salama.png',
       name: 'Salama Fazlul',
-      position: 'Event Chairman',
+      position: 'Event Chairperson',
       club: 'Innovate with Ballerina',
       email: 'fazlulsalama@gmail.com',
       contact: '+94 77 460 7907'
@@ -61,7 +61,7 @@ const View = () => {
     {
       image: 'https://zenko.syd1.cdn.digitaloceanspaces.com/balerina/ameera.png',
       name: 'Ameera Thiwanka',
-      position: 'Event Co-Chairman',
+      position: 'Event Co-Chairperson',
       club: 'Innovate with Ballerina',
       email: 'ameera.21@cse.mrt.ac.lk',
       contact: '+94 71 135 6855'
@@ -69,7 +69,7 @@ const View = () => {
     {
       image: 'https://zenko.syd1.cdn.digitaloceanspaces.com/balerina/harindu.png',
       name: 'Harindu Hadithya',
-      position: 'Event Co-Chairman',
+      position: 'Event Co-Chairperson',
       club: 'Innovate with Ballerina',
       email: 'hhadithya34@gmail.com',
       contact: '+94 71 090 1630'

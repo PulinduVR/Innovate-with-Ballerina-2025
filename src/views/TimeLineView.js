@@ -230,7 +230,7 @@ export default function TimeLineView() {
                             <TimeLineCard1 text={"Opening Registration"} month={"SEPTEMBER"} day={"01"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card2`} animate={visibleCard >= 2 ? controls : { opacity: 0 }}>
-                            <TimeLineCard2 text={"Awareness Session"} month={"SEPTEMBER"} day={"15"} />
+                            <TimeLineCard2 text={"Awareness Session"} month={"SEPTEMBER"} day={"16"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card3`} animate={visibleCard >= 3 ? controls : { opacity: 0 }}>
                             <TimeLineCard1 text={"Closing Registration"} month={"SEPTEMBER"} day={"20"} />
