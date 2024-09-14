@@ -105,7 +105,7 @@ const View = () => {
               isOpen={openFaqIndex === 1}
               onToggle={() => handleToggle(1)}
             >
-              <p>Yes, all participants must be currently enrolled undergraduates, and they can be from different universities or institutions.</p>
+              <p>No, All participants must be currently enrolled undergraduates from the same university or institution.</p>
             </Faq>
             <Faq
               title="Can we change our team members after registration close?"
