@@ -18,14 +18,14 @@ const StatsSection = () => {
     <section className="stats-section" ref={ref}>
       <div className="stat-boundary">
         <div className="stat stat-1">
-          <h1 className="stat-number">
-            {startCounting && <CountUp end={1015} duration={2.5} />}
+          <h1 className="stat-number stat-1-number">
+            {startCounting && <CountUp end={1107} duration={2.5} />}
           </h1>
           <p className="stat-label">DELEGATES</p>
         </div>
         <div className="stat stat-2">
           <h1 className="stat-number">
-            {startCounting && <CountUp end={272} duration={2.5} />}
+            {startCounting && <CountUp end={297} duration={2.5} />}
           </h1>
           <p className="stat-label">TEAMS</p>
         </div>

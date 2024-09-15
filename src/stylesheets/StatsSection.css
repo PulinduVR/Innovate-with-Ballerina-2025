@@ -58,6 +58,10 @@
     padding-right: 8%;
 }
 
+.stat-1-number{
+  margin-left: -25%;
+}
+
 .stat-1::after, .stat-2::after {
     content: '';
     position: absolute;
