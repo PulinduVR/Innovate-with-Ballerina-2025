@@ -245,7 +245,7 @@ export default function TimeLineView() {
                             <TimeLineCard1 text={"Opening Submissions "} month={"OCTOBER"} day={"07"} id={"card-5"}/>
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card7`} animate={visibleCard >= 7 ? controls : { opacity: 0 }}>
-                            <TimeLineCard2 text={"Closing Submissions"} month={"OCTOBER"} day={"17"} />
+                            <TimeLineCard2 text={"Closing Submissions"} month={"OCTOBER"} day={"20"} />
                         </motion.div>
                         <motion.div initial={{ opacity: 0 }} className={`card card8`} animate={visibleCard >= 8 ? controls : { opacity: 0 }}>
                             <TimeLineCard2 text={"AWARD CEREMONY"} month={"NOVEMBER"} day={"02"} />
@@ -283,7 +283,7 @@ export default function TimeLineView() {
                         </p>
                     </div>
                     <div className='buttonSection'>
-                        <button className='button-filled button-filled-text' onClick={() => window.location.href='https://forms.gle/uB1ScvWHJYsQbTBs5'}>Register Now</button>
+                        <button className='button-filled button-filled-text' disabled onClick={() => window.location.href='https://forms.gle/uB1ScvWHJYsQbTBs5'}>Register Now</button>
                         <button className='button-outlined button-outlined-text' onClick={() => window.location.href='https://drive.google.com/file/d/1e8Hc0kA7o-CwiHeImb0yKhdpY46t4wNo/view?usp=sharing'}>Download Booklet</button>
                     </div>
                     <div className='svg2'>
