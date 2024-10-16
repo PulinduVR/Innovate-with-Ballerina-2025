@@ -35,7 +35,7 @@ const View = () => {
 
   const members = [
     {
-      image: 'https://zenko.syd1.cdn.digitaloceanspaces.com/balerina/senel.png',
+      image: '/senel.png',
       name: 'Senel Ephraims',
       position: 'Chairman',
       club: 'IEEE Student Branch Of University Of Moratuwa',
@@ -51,7 +51,7 @@ const View = () => {
       contact: '+94 71 882 6916'
     },
     {
-      image: 'https://zenko.syd1.cdn.digitaloceanspaces.com/balerina/salama.png',
+      image: '/salama.png',
       name: 'Salama Fazlul',
       position: 'Event Chairperson',
       club: 'Innovate with Ballerina',
