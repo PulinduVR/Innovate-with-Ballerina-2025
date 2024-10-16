@@ -59,7 +59,7 @@ const View = () => {
       contact: '+94 77 460 7907'
     },
     {
-      image: 'https://zenko.syd1.cdn.digitaloceanspaces.com/balerina/ameera.png',
+      image: './ameera.png',
       name: 'Ameera Thiwanka',
       position: 'Event Co-Chairperson',
       club: 'Innovate with Ballerina',
@@ -67,7 +67,7 @@ const View = () => {
       contact: '+94 71 135 6855'
     },
     {
-      image: 'https://zenko.syd1.cdn.digitaloceanspaces.com/balerina/harindu.png',
+      image: './harindu.png',
       name: 'Harindu Hadithya',
       position: 'Event Co-Chairperson',
       club: 'Innovate with Ballerina',
