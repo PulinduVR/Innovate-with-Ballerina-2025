@@ -7,6 +7,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import View from "./views/FaqView";
 import TimeLineView from "./views/TimeLineView";
+import TimelineAdvanced from "./components/timeline";
 import "./App.css"; 
 import Badges from "./components/Badges/badges";
 import PrizeSection from "../src/components/PrizeSection";
@@ -99,7 +100,8 @@ function App() {
         <StatsSection />
         <PrizeSection />
       </div>
-      <TimeLineView />
+      
+      <TimelineAdvanced />
 
       <div className="App">
         <View />

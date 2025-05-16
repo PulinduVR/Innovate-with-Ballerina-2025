@@ -1,0 +1,257 @@
+/* Main Container */
+.timeline-container {
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  background-color: #002332;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Timeline Title */
+.timeline-title {
+  text-align: center;
+  margin-bottom: 5rem;
+  z-index: 10;
+  position: relative;
+}
+
+.timeline-title h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.timeline-title h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  background-image: linear-gradient(to right, #fbbf24, #f59e0b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Timeline Line */
+.timeline-line-container {
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  margin-left: -0.125rem;
+  top: 0;
+  height: 100%;
+  width: 0.25rem;
+  background-color: #f59e0b;
+  z-index: 10;
+  transform-origin: top center;
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #f59e0b;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.7);
+  transform-origin: center;
+  z-index: 15;
+}
+
+.timeline-dot-top {
+  top: -0.5rem;
+  left: -0.375rem;
+}
+
+.timeline-dot-bottom {
+  bottom: -0.5rem;
+  left: -0.375rem;
+}
+
+/* Timeline Events */
+.timeline-events {
+  position: relative;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.timeline-event {
+  display: flex;
+  margin: 6rem 0;
+  position: relative;
+  min-height: 12rem; /* Ensure enough space for the event cards */
+}
+
+.timeline-event.left {
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  .timeline-event.left {
+    justify-content: flex-end;
+  }
+}
+
+.timeline-event.right {
+  justify-content: flex-start;
+}
+
+/* Event Card */
+.event-card {
+  background-color: rgba(0, 17, 25, 0.8);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  width: 100%;
+  margin-top: 100px;
+  max-width: 24rem;
+  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 30;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.event-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #ffc837, #f59e0b);
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .event-card {
+    width: 41.666667%;
+  }
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.event-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.event-date {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.date-number {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 0.8;
+  background-image: linear-gradient(to bottom, #ffc837, #a17507);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 15px rgba(255, 200, 55, 0.3);
+  margin-right: 0.5rem;
+}
+
+.date-month {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+/* Connector */
+.connector {
+  overflow: visible;
+  position: absolute;
+  width: 13%;
+  height: 8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  pointer-events: none;
+}
+
+.connector.left {
+  left: 50%;
+  margin-left: 0.200rem;
+}
+
+.connector.right {
+  right: 50%;
+  margin-right: 0.200rem;
+}
+
+.connector-path {
+  stroke-width: 50px;
+  fill: none;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .timeline-event {
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+  
+  .timeline-line {
+    left: 1rem;
+  }
+  
+  .connector {
+    width: 20%;
+    left: 1rem;
+    margin-left: 0;
+  }
+  
+  .connector.left, .connector.right {
+    left: 1rem;
+    margin-left: 0;
+  }
+  
+  .event-card {
+    margin-left: 2rem;
+  }
+}
+
+/* Smoother animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+  }
+}
