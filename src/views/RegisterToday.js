@@ -3,7 +3,7 @@
 // import TimeLineCard1 from "../components/TimeLineCard1";
 // import TimeLineCard2 from "../components/TimeLineCard2";
 // import TimeLineCard3 from "../components/TimeLineCard3";
-import '../stylesheets/timeLineView.css';
+import '../stylesheets/RegisterToday.css';
 //import BackgroundLine from '../components/BackgroundLine';
 //import { gsap } from "gsap";
 // import { TextPlugin } from "gsap/TextPlugin";

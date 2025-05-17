@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
 .faq-container {
   display: flex;
   justify-content: center;
-  margin: 0 auto 25px auto;
+  margin: 0 9% 25px 9%;
   max-width: 1200px;
   width: 100%;
   font-family: "Space Grotesk", sans-serif;
@@ -15,51 +16,77 @@
 }
 
 .dropdown {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
-.dropdown-button {
-  background-color: #333;
-  color: white;
+.dropdown.open {
+  background-color: #FBB934;
   border: none;
-  padding: 3% 1.5%;
+}
+
+.dropdown-button {
+  background-color: #ffffff00;
+  color: white;
+  border: 1px solid #fff;
+  padding: 10% 2.5%;
   cursor: pointer;
   width: 100%;
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 30px;
   height: 50px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Work Sans", sans-serif;
   position: relative;
   overflow: hidden;
+}
+
+.dropdown-button.open {
+  background-color: #FBB934;
+  border: none;
+  border-radius: 30px 30px 0 0;
+  padding-bottom: 5%;
 }
 
 .dropdown-title {
   flex: 1;
   padding: 15px 20px; /* Add padding directly to the title to space out */
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+.dropdown-title.open {
+  color: #000000;
+  padding-top: 5px;
+
 }
 
 .dropdown-arrow-wrapper {
-  background-color: #4a4a4a;
-  width: 40px;
-  height: 35px;
+  background-color: #ffffff00;
+  border: 1px solid #fff;
+  width: 24px;
+  height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
 }
 
+.dropdown-arrow-wrapper.open {
+  border: 1px solid #000;
+}
+
 .dropdown-arrow {
   transition: transform 0.3s ease;
   color: white;
+  width: 20px;
+  height: 20px;
 }
 
 .dropdown-arrow.open {
   transform: rotate(180deg);
+  color: #000000;
 }
 
 .dropdown-content {
@@ -67,17 +94,23 @@
   color: black;
   padding: 5px 0px; /* This padding applies when the answer is closed */
   border-radius: 0 0 10px 10px;
-  width: calc(100% - 50px);
+  width: calc(100% - 57px);
   transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   margin-left: 4%;
+  padding-bottom: 24px;
+  transition: max-height 0.6s ease-in-out;
 }
 
 .dropdown-content.open {
   opacity: 1;
-  padding: 16px 0px; /* Increase the vertical padding when the answer is open */
+  padding: 2% 5%; /* Increase the vertical padding when the answer is open */
+  background-color: #FBB934;
+  margin-left: 0px;
+  border-radius: 0px 0px 30px 30px;
+
 }
 
 .card-title{
