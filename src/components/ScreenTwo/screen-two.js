@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "../RegisterButton/Button";
 import "../ScreenTwo/screen-two.css";
+import girl_image from "../../assets/girl.png";
 
 const ScreenTwo = () => {
   gsap.registerPlugin(useGSAP);
@@ -148,7 +149,21 @@ const ScreenTwo = () => {
           }
         `}
       </style>
-      <div style={styles.curve}></div>
+      <img
+        src={girl_image}
+        alt="girl"
+        style={{
+          position: "absolute",
+          left: "50%",
+          top: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 0,
+          opacity: 1,
+          maxWidth: "40vw",
+          maxHeight: "70vh",
+          pointerEvents: "none",
+        }}
+      />
       <div style={styles.topdiv} id="logo-cont">
         <img src="/bal.png" alt="bal"
           style={{
@@ -164,9 +179,6 @@ const ScreenTwo = () => {
       <div style={styles.content} id="cont">
         <div style={styles.textContainer} className="text-container">
           <h1 style={styles.heading} className="heading">
-            <span>
-              <img id="arrow" style={styles.arr} src="/arrow.png" alt="arrow" />
-            </span>
             <span style={styles.subHeadingHighlight}>The Ultimate</span>
             <br />
             <span style={styles.subHeading}>
