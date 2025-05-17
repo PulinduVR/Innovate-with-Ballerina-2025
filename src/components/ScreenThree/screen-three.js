@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 import b1 from "./b1.png";
-import spring from "./spring.png";
+import spring_image from "./spring.png";
 import spiral from "./spiral.png";
 
 const ScreenThree = () => {
@@ -117,8 +117,18 @@ const ScreenThree = () => {
     <>
       <div className="main-screen-three">
         <div className="container-screen-three">
+          <img
+            src={spring_image}
+            alt="spring"
+            style={{ scale: "30%", position: "absolute", top: "-10%", left: "63%", zIndex: "1" }}
+          />
+          <img
+            src={spiral}
+            alt="spiral"
+            style={{ scale: "35%", position: "absolute", top: "60%", left: "10%", zIndex: "1" }}
+          />
           <div className="big-container">
-            <div className="center-container paraSection">
+            <div className="center-container paraSec" style={{ backgroundColor: "transparent" }}>
               <div className="content">
                 <div>
                   <img

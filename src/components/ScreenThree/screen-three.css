@@ -35,9 +35,11 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.center-container .paraSection {
+.center-container .paraSec {
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -105,6 +107,7 @@
   text-align: center;
   margin-top: -5%;
   opacity: 1;
+  text-align: justify;
 }
 
 .boxes-container {
