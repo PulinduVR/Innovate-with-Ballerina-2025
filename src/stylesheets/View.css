@@ -2,11 +2,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 20px;
-  background-color: #FBB934;
+  background: linear-gradient(to bottom, #113C48, #0A1F25);;
   overflow: hidden; /* Ensure that content doesn't overflow */
   padding: 4rem 0 7rem 0;
+  max-height: 953px;
 }
 
 .background-text {
@@ -41,6 +41,12 @@
   color: white;
   margin-bottom: 50px;
   margin-top: 10px;
+  text-align: left;
+  margin-left: 10%;
+  background: linear-gradient(0deg, #10C3BD 0%, #FFB34A 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .card-gallery {
@@ -118,4 +124,10 @@
   .row1 > div, .row2 > div {
     width: 100%; /* Make each column take the full width */
   }
+}
+
+.faq-sub {
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  margin-left: 10%;
 }
