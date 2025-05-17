@@ -11,27 +11,27 @@ gsap.registerPlugin(ScrollTrigger);
 const View = () => {
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  useEffect(() => {
-    gsap.to(".background-text", {
-      x: "15%",  // Move to the right
-      scrollTrigger: {
-        trigger: ".view-container",
-        start: "top top",  // Animation starts when the top of the container hits the top of the viewport
-        end: "bottom top",  // Animation ends when the bottom of the container hits the top of the viewport
-        scrub: 3,  // Smooth scrubbing
-      },
-    });
+  // useEffect(() => {
+  //   gsap.to(".background-text", {
+  //     x: "15%",  // Move to the right
+  //     scrollTrigger: {
+  //       trigger: ".view-container",
+  //       start: "top top",  // Animation starts when the top of the container hits the top of the viewport
+  //       end: "bottom top",  // Animation ends when the bottom of the container hits the top of the viewport
+  //       scrub: 3,  // Smooth scrubbing
+  //     },
+  //   });
 
-    gsap.to(".background-text-second", {
-      x: "-15%",  // Move to the left
-      scrollTrigger: {
-        trigger: ".view-container",
-        start: "top top",
-        end: "bottom top",
-        scrub: 3,
-      },
-    });
-  }, []);
+  //   gsap.to(".background-text-second", {
+  //     x: "-15%",  // Move to the left
+  //     scrollTrigger: {
+  //       trigger: ".view-container",
+  //       start: "top top",
+  //       end: "bottom top",
+  //       scrub: 3,
+  //     },
+  //   });
+  // }, []);
 
   const members = [
     {
@@ -83,13 +83,13 @@ const View = () => {
   return (
     <>
       <div className="view-container">
-      <div className="background-text-second">
+      {/* <div className="background-text-second">
           <h1>Contact Us</h1>
         </div>
         <div className="background-text">
           <h1>Contact Us</h1>
-        </div>
-
+        </div> */}
+        <p className="faq-sub">NEED MORE INFO?</p>
         <h1 className="faq-title">FAQ</h1>
         <div className="faq-container">
           <div className="faq-column">
@@ -140,7 +140,7 @@ const View = () => {
           </div>
         </div>
 
-        <div className="card-gallery">
+        {/* <div className="card-gallery">
           <h1 className="card-title">Meet the Team</h1>
           <div className="card-row card-one row1">
             <Card
@@ -193,8 +193,8 @@ const View = () => {
               email={members[4].email}
               contact={members[4].contact}
             />
-          </div> */}
-        </div>
+          </div> 
+        </div> */}
       </div>
     </>
   );
