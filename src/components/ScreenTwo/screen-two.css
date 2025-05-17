@@ -1,42 +1,100 @@
-.main-container-se{
+.main-container-se {
   overflow: hidden;
 }
+
 /* Base styles are already set. Add media queries for smaller screens. */
 @media (max-width: 768px) {
 
-   .text-container {
-      position: relative;
-       width: 50%;
-   }
-   .heading {
-     font-size: 1rem; /* Smaller heading for mobile */
-   }
- 
-   .sub-text {
-     font-size: 0.9rem; /* Smaller text for mobile */
-   }
- 
-  
- 
-   .topdiv {
-     height: 8%; /* Adjust the height for smaller screens */
-     color: aquamarine;
-   }
-   #star{
+  .text-container {
+    position: relative;
+    width: 50%;
+  }
+
+  .heading {
+    font-size: 1rem;
+    /* Smaller heading for mobile */
+  }
+
+  .sub-text {
+    font-size: 0.9rem;
+    /* Smaller text for mobile */
+  }
+
+
+
+  .topdiv {
+    height: 8%;
+    /* Adjust the height for smaller screens */
+    color: aquamarine;
+  }
+
+  #star {
     width: 30px !important;
-   }
- }
- 
-.regBtn{
-  display: flex;
-  width : 180px;
-  margin-right : 1.5em;
+  }
 }
 
-@media (max-width: 480px){
-  .regBtn{
+.regBtn {
+  display: flex;
+  width: 180px;
+  margin-right: 1.5em;
+}
+
+.gradient-border-text {
+  position: relative;
+  color: white;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.gradient-border-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(-90deg, #10C3BD 0%, #FF9400 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 2px transparent;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+.gradient-border-heading {
+  position: relative;
+  color: white;
+  font-family: "Space Grotesk";
+  font-size: 100px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.gradient-border-heading::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(-90deg, #10C3BD 0%, #FF9400 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 4px transparent;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .regBtn {
     display: flex;
-    width : 180px;
-    margin-right : 1em;
+    width: 180px;
+    margin-right: 1em;
   }
 }

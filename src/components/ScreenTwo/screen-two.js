@@ -5,6 +5,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "../RegisterButton/Button";
 import "../ScreenTwo/screen-two.css";
 import girl_image from "../../assets/girl.png";
+import spiral from "./spiral.png";
+import dots from "./dots.png";
+import { color } from "framer-motion";
 
 const ScreenTwo = () => {
   gsap.registerPlugin(useGSAP);
@@ -115,17 +118,9 @@ const ScreenTwo = () => {
       color: "#152B39",
     },
     subHeadingHighlight: {
-      background: "linear-gradient(-90deg, #10C3BD 0%, #FF9400 100%)",
-      WebkitBackgroundClip: "text",
-      WebkitTextFillColor: "transparent",
-      backgroundClip: "text",
-      color: "transparent",
-    },
-    subText: {
-      marginTop: "20px",
-      fontSize: "1rem",
-      fontWeight: 800,
+      fontSize: "100px",
       fontFamily: "Space Grotesk",
+      fontWeight: "500",
       background: "linear-gradient(-90deg, #10C3BD 0%, #FF9400 100%)",
       WebkitBackgroundClip: "text",
       WebkitTextFillColor: "transparent",
@@ -160,6 +155,36 @@ const ScreenTwo = () => {
           zIndex: 0,
           opacity: 1,
           maxWidth: "40vw",
+          maxHeight: "72vh",
+          pointerEvents: "none",
+        }}
+      />
+      <img
+        src={spiral}
+        alt="spiral"
+        style={{
+          position: "absolute",
+          left: "10%",
+          top: "80%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 0,
+          opacity: 1,
+          maxWidth: "40vw",
+          maxHeight: "70vh",
+          pointerEvents: "none",
+        }}
+      />
+      <img
+        src={girl_image}
+        alt="girl"
+        style={{
+          position: "absolute",
+          left: "50%",
+          top: "50%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 0,
+          opacity: 1,
+          maxWidth: "40vw",
           maxHeight: "70vh",
           pointerEvents: "none",
         }}
@@ -181,14 +206,10 @@ const ScreenTwo = () => {
           <h1 style={styles.heading} className="heading">
             <span style={styles.subHeadingHighlight}>The Ultimate</span>
             <br />
-            <span style={styles.subHeading}>
-              Coding Challenge
-            </span>
+            <span className="gradient-border-heading" data-text="Coding Challenge">Coding Challenge</span>
           </h1>
-          <p style={styles.subText}>
-            Awaken Your Dormant Innovator!<br /><br /> Join With IEEE And WSO2 In A
-            Ballerina Language Exclusive Coding Competition
-          </p>
+          <span className="gradient-border-text" data-text="Awaken Your Dormant Innovator!">Awaken Your Dormant Innovator!</span>
+          <span className="gradient-border-text" data-text="Join With IEEE And WSO2 In A Ballerina Language Exclusive Coding Competition">Join With IEEE And WSO2 In A Ballerina Language Exclusive Coding Competition</span>
         </div>
       </div>
     </div>
