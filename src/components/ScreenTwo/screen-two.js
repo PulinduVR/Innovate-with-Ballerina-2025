@@ -71,7 +71,7 @@ const ScreenTwo = () => {
     container: {
       width: "100%",
       height: "110vh",
-      backgroundColor: "#0A1F25",
+      background: "linear-gradient(180deg, #113C48 0%, #0A1F25 100%)",
       color: "white",
       display: "flex",
       alignItems: "center",
@@ -102,7 +102,7 @@ const ScreenTwo = () => {
       padding: 20,
       width: "100%",
     },
-  
+
     subHeading: {
       color: "#D2D2D2",
     },
@@ -113,11 +113,23 @@ const ScreenTwo = () => {
       borderRadius: "5px",
       color: "#152B39",
     },
+    subHeadingHighlight: {
+      background: "linear-gradient(-90deg, #10C3BD 0%, #FF9400 100%)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+      backgroundClip: "text",
+      color: "transparent",
+    },
     subText: {
       marginTop: "20px",
       fontSize: "1rem",
-      color: "#C5C6C7",
+      fontWeight: 800,
       fontFamily: "Space Grotesk",
+      background: "linear-gradient(-90deg, #10C3BD 0%, #FF9400 100%)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+      backgroundClip: "text",
+      color: "transparent",
     },
   };
 
@@ -138,15 +150,15 @@ const ScreenTwo = () => {
       </style>
       <div style={styles.curve}></div>
       <div style={styles.topdiv} id="logo-cont">
-        <img src="/bal.png" alt="bal" 
+        <img src="/bal.png" alt="bal"
           style={{
             padding: "1em 1em",
           }}
         />
         {/* Update the button's onClick event handler */}
         <div className="regBtn">
-       <Button onClick={handleButtonClick} />
-       </div>
+          <Button onClick={handleButtonClick} />
+        </div>
       </div>
 
       <div style={styles.content} id="cont">
@@ -155,30 +167,14 @@ const ScreenTwo = () => {
             <span>
               <img id="arrow" style={styles.arr} src="/arrow.png" alt="arrow" />
             </span>
-            <span style={styles.subHeading}>The </span>
-            <span style={styles.highlight}>Ultimate</span>
-            {"  "}
-            <span>
-              <img style={styles.spring} src="/spring.png" alt="spring" />
-            </span>
+            <span style={styles.subHeadingHighlight}>The Ultimate</span>
             <br />
             <span style={styles.subHeading}>
-              C
-              <span>
-                <img
-                  id="star"
-                  className="star"
-                  src="/o-star.svg"
-                  alt="star"
-                  width={40}
-                  style={{ marginBottom: -10 }}
-                />
-              </span>
-              ding Challenge
+              Coding Challenge
             </span>
           </h1>
           <p style={styles.subText}>
-            Awaken Your Dormant Innovator!<br /> Join With IEEE And WSO2 In A
+            Awaken Your Dormant Innovator!<br /><br /> Join With IEEE And WSO2 In A
             Ballerina Language Exclusive Coding Competition
           </p>
         </div>

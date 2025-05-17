@@ -23,7 +23,7 @@
    padding: 1px;
    /* Border width */
    border-radius: 1em;
-   background: linear-gradient(-90deg, #0E9F9B 0%, #FFB34A 100%);
+   background: linear-gradient(-90deg, #10C3BD 0%, #FF9400 100%);
    -webkit-mask:
       linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
