@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 import b1 from "./b1.png";
+import spring from "./spring.png";
+import spiral from "./spiral.png";
 
 const ScreenThree = () => {
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
@@ -116,18 +118,17 @@ const ScreenThree = () => {
       <div className="main-screen-three">
         <div className="container-screen-three">
           <div className="big-container">
-            <div className="center-container paraSec">
-
-            </div>
-            <div className="content">
-              <div>
-                <img
-                  src={b1}
-                  alt="ballerina"
-                  style={{ scale: "0.55" }}
-                />
+            <div className="center-container paraSection">
+              <div className="content">
+                <div>
+                  <img
+                    src={b1}
+                    alt="ballerina"
+                    style={{ scale: "0.55" }}
+                  />
+                </div>
+                <p className="desc"></p> {/* The paragraph with text animation */}
               </div>
-              <p className="desc"></p> {/* The paragraph with text animation */}
             </div>
           </div>
         </div>
