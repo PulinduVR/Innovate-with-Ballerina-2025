@@ -7,7 +7,7 @@ import "../ScreenTwo/screen-two.css";
 import girl_image from "../../assets/girl.png";
 import spiral from "./spiral.png";
 import dots from "./dots.png";
-import { color } from "framer-motion";
+import elipse from "./elipse.png";
 
 const ScreenTwo = () => {
   gsap.registerPlugin(useGSAP);
@@ -118,7 +118,7 @@ const ScreenTwo = () => {
       color: "#152B39",
     },
     subHeadingHighlight: {
-      fontSize: "100px",
+      fontSize: "6.5vw",
       fontFamily: "Space Grotesk",
       fontWeight: "500",
       background: "linear-gradient(-90deg, #10C3BD 0%, #FF9400 100%)",
@@ -164,19 +164,34 @@ const ScreenTwo = () => {
         alt="spiral"
         style={{
           position: "absolute",
-          left: "10%",
-          top: "80%",
+          left: "25%",
+          top: "85%",
           transform: "translate(-50%, -50%)",
           zIndex: 0,
           opacity: 1,
-          maxWidth: "40vw",
-          maxHeight: "70vh",
+          maxWidth: "20vw",
+          maxHeight: "10vh",
           pointerEvents: "none",
         }}
       />
       <img
-        src={girl_image}
-        alt="girl"
+        src={dots}
+        alt="dots"
+        style={{
+          position: "absolute",
+          left: "90%",
+          top: "40%",
+          transform: "translate(-50%, -50%)",
+          zIndex: 0,
+          opacity: 1,
+          maxWidth: "20vw",
+          maxHeight: "10vh",
+          pointerEvents: "none",
+        }}
+      />
+      <img
+        src={elipse}
+        alt="ellipse"
         style={{
           position: "absolute",
           left: "50%",
@@ -184,8 +199,8 @@ const ScreenTwo = () => {
           transform: "translate(-50%, -50%)",
           zIndex: 0,
           opacity: 1,
-          maxWidth: "40vw",
-          maxHeight: "70vh",
+          maxWidth: "90vw",
+          maxHeight: "85vh",
           pointerEvents: "none",
         }}
       />
@@ -204,10 +219,10 @@ const ScreenTwo = () => {
       <div style={styles.content} id="cont">
         <div style={styles.textContainer} className="text-container">
           <h1 style={styles.heading} className="heading">
-            <span style={styles.subHeadingHighlight}>The Ultimate</span>
-            <br />
+            <span style={styles.subHeadingHighlight}>The Ultimate</span><br />
             <span className="gradient-border-heading" data-text="Coding Challenge">Coding Challenge</span>
           </h1>
+          <br />
           <span className="gradient-border-text" data-text="Awaken Your Dormant Innovator!">Awaken Your Dormant Innovator!</span>
           <span className="gradient-border-text" data-text="Join With IEEE And WSO2 In A Ballerina Language Exclusive Coding Competition">Join With IEEE And WSO2 In A Ballerina Language Exclusive Coding Competition</span>
         </div>
