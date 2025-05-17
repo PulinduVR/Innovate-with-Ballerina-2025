@@ -207,7 +207,7 @@
     background-color: #E9E9E9;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     /* gap: 20px; */
     /* overflow-x: hidden; */
@@ -217,15 +217,17 @@
 }
 
 .paraSec-sub {
-    width: 75%;
+    width: 70%;
     margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
 }
 
 
 .header {
     position: relative;
     color: #292929;
-    text-align: center;
+    text-align: left;
     font-family: "Space Grotesk";
     font-size: 3.6rem;
     font-style: normal;
@@ -245,14 +247,14 @@
 
 /* Default styles for larger screens */
 .para {
-    margin-top: 3%;
+    margin-top: 5%;
     color: #282828;
     justify-content: 'center';
     align-items: center;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: left;
     font-family: "Space Grotesk";
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     font-style: normal;
     font-weight: 400;
     line-height: 109%; /* 29.43px */
@@ -434,11 +436,41 @@
 }
 
 .title-area{
-    position: relative;
+    /* position: relative; */
     display: flex;
+    flex-direction: column;
+    max-width: 800px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
+.today{
+    background: linear-gradient(90deg, #10C3BD 0%, #FFB34A 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 0px;
+    margin-top: -10px;
+}
 
+.register-image{
+    max-width: 405px;
+    margin-left: 75%;
+    display: block;
+    margin-top: -400px;
+
+}
+
+.register-claws{
+    max-width:65px;
+    margin-left: 70%;
+    display: block;
+    margin-top: -410px;
+    margin-bottom: 450px;
+}
+
+
+.test {
+    color: red
+}
