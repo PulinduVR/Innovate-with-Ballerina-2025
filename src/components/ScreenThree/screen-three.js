@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import "./screen-three.css";
-import TextOne from "../TextOne/text-one";
-import TextTwo from "../TextTwo/text-two";
 import gsap from "gsap";
 import { motion } from "framer-motion";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
+import b1 from "./b1.png";
+import spring_image from "./spring.png";
+import spiral from "./spiral.png";
 
 const ScreenThree = () => {
   gsap.registerPlugin(ScrollTrigger, TextPlugin);
@@ -20,21 +21,21 @@ const ScreenThree = () => {
     );
 
 
-  const tlMobile = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".mobile-responsive-view",
-      start: "top 150%",
-      toggleActions: "play none none none",
-    },
-  });
+    const tlMobile = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".mobile-responsive-view",
+        start: "top 150%",
+        toggleActions: "play none none none",
+      },
+    });
 
-  tlMobile.from(".mobile-responsive-view", {
-    duration: 1,
-    opacity: 0,
-    y: 50, // Slide in from below
-    ease: "power1.out",
-  });
-    
+    tlMobile.from(".mobile-responsive-view", {
+      duration: 1,
+      opacity: 0,
+      y: 50, // Slide in from below
+      ease: "power1.out",
+    });
+
     const tl1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".paraSec",
@@ -115,54 +116,32 @@ const ScreenThree = () => {
   return (
     <>
       <div className="main-screen-three">
-        <TextOne className="text-one" />
         <div className="container-screen-three">
+          <img
+            src={spring_image}
+            alt="spring"
+            style={{ scale: "30%", position: "absolute", top: "-10%", left: "63%", zIndex: "1" }}
+          />
+          <img
+            src={spiral}
+            alt="spiral"
+            style={{ scale: "35%", position: "absolute", top: "60%", left: "10%", zIndex: "1" }}
+          />
           <div className="big-container">
-            <div className="box-start-container">
-              <div className="boxes-container">
-                <img
-                  src="./error.svg"
-                  alt="box"
-                  id="box"
-                  className="error-box"
-                  style={{ height: "110%", width: "auto", marginTop: "-20%", opacity: 1.3 }}
-                />
-              </div>
-              <div className="boxes-container">
-                <img
-                  src="./Vector.svg"
-                  alt="box"
-                  id="box"
-                  className="vector-svg"
-                  style={{
-                    height: "90%",
-                    width: "auto",
-                    marginTop: "50%",
-                    marginLeft: "50%",
-                  }}
-                />
-              </div>
-            </div>
-            <div className="center-container paraSec">
-              <div className="browser-window">
-                <div className="browser-header">
-                  <div className="browser-buttons"></div>
+            <div className="center-container paraSec" style={{ backgroundColor: "transparent" }}>
+              <div className="content">
+                <div>
+                  <img
+                    src={b1}
+                    alt="ballerina"
+                    style={{ scale: "0.55" }}
+                  />
                 </div>
-                <div className="content">
-                  <div>
-                    <img
-                      src="./b1.png"
-                      alt="ballerina"
-                      style={{ scale: "0.55" }}
-                    />
-                  </div>
-                  <p className="desc"></p> {/* The paragraph with text animation */}
-                </div>
+                <p className="desc"></p> {/* The paragraph with text animation */}
               </div>
             </div>
           </div>
         </div>
-        <TextTwo />
       </div>
 
       {/* Mobile View */}
@@ -173,11 +152,7 @@ const ScreenThree = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <img
-            src="./b1.png"
-            alt="mobile-view"
-            style={{ width: "70%", height: "auto" }}
-          />
+
           <p className="mobile-desc-text">
             "Innovate With Ballerina" provides an exclusive platform for
             university students to elevate their coding passion with the
