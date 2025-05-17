@@ -6,7 +6,7 @@ import ScreenThree from "./components/ScreenThree/screen-three";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import View from "./views/FaqView";
-import TimeLineView from "./views/TimeLineView";
+import RegisterToday from "./views/RegisterToday";
 import TimelineAdvanced from "./components/timeline";
 import "./App.css"; 
 import Badges from "./components/Badges/badges";
@@ -102,6 +102,7 @@ function App() {
       </div>
       
       <TimelineAdvanced />
+      <RegisterToday />
 
       <div className="App">
         <View />
