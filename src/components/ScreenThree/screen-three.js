@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./screen-three.css";
 import gsap from "gsap";
-import { motion } from "framer-motion";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 import b1 from "./b1.png";
