@@ -3,7 +3,7 @@
     text-align: left;
     color: #ffffff;
     background-color: #0A1F25;
-    height: 100vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -11,6 +11,16 @@
     /* align-items: center; */
     overflow: hidden;
     /* height: 100vh; */
+  }
+
+  .left-star-element {
+    display: block;
+    z-index: 0;
+    position: absolute;
+    left: -80px;
+    top: 0%;
+    height: 360px;
+    width: 100px;
   }
 
   .prize-line{
@@ -50,15 +60,70 @@
     line-height: 100%;
     letter-spacing: 5px;
     margin-bottom: 3%;
+    margin-right: auto;
+    padding-left: 40px;
   }
   
   .win-exciting {
+    font-weight: 700;
+    padding-top: 240px;
+    letter-spacing: -1px;
+  }
+
+  .first-place-title {
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
     font-weight: 300;
-    padding-top: 2.5%;
+    letter-spacing: -1px;
+    background: linear-gradient(to right, #FF9400, #10C3BD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .third-place-title {
+    position: absolute;
+    bottom: 240px;
+    left: 22%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    background: linear-gradient(to right, #FF9400, #10C3BD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .second-place-title {
+    position: absolute;
+    bottom: 240px;
+    right: 8%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    background: linear-gradient(to right, #FF9400, #10C3BD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
   }
   
   .prizes {
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-right: auto;
+    background: linear-gradient(to right, #FF9400, #10C3BD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
   }
 
   .prize-box {

@@ -104,80 +104,62 @@ const PrizeSection = () => {
         <span className="prizes">Prizes</span>
       </div>
 
+      <div className="left-star-element">
+        <img
+          src="./Vector.svg"
+          alt="box"
+          id="box"
+          // className="vector-svg"
+          style={{ 
+            height: "220px",
+            transform: "rotate(35deg)",
+          }}
+        />
+      </div>
+
+      <img
+        src="./prizes-linked-path.svg"
+        alt="path"
+        id="path"
+        // className="vector-svg"
+        style={{
+          position: "absolute",
+          zIndex: 1,
+          top: "0%",
+          left: "2%",
+          width: "95%",
+        }}
+      />
+
+      <span className='first-place-title'>
+        1ST PLACE
+      </span>
+
+      <span className='second-place-title'>
+        2ND PLACE
+      </span>
+
+      <span className='third-place-title'>
+        3RD PLACE
+      </span>
+
+      <div style={{ zIndex: 2, position: "relative", width: "100%" }}>
+        <img
+          src="./prize-box-2025.png"
+          alt="box"
+          id="box"
+          // className="vector-svg"
+          style={{
+            position: "absolute",
+            width: "80%",
+            top: "-80px",
+            left: "9%",
+          }}
+        />
+      </div>
+
       <div className='prize-line'>
-        <div className="prize-set">
-          <motion.div 
-            className="card-1"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-          >
-            <div className="prize-box first-place">
-              <motion.div 
-                className="prize-info"
-                initial={{ opacity: 0, y: 100 }} 
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: 'easeOut', delay: 0.3 }}
-              >
-                <h3>1st Place</h3>
-                <p>Rs 150,000/-</p>
-              </motion.div>
-              <img src="/1st.png" alt="First Place" style={{ height: "410px" }} />
-            </div>
-          </motion.div>
-
-          <motion.div 
-            className="card-2"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
-          >
-            <div className="prize-box second-place">
-              <img src="/2nd.png" alt="Second Place" />
-              <motion.div 
-                className="prize-info"
-                initial={{ opacity: 0, y: 100 }} 
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
-              >
-                <h3>2nd Place</h3>
-                <p>Rs 100,000/-</p>
-              </motion.div>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            className="card-3"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
-          >
-            <div className="prize-box third-place">
-              <img src="/3rd.png" alt="Third Place" />
-              <motion.div 
-                className="prize-info"
-                initial={{ opacity: 0, y: 100 }} 
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: 'easeOut', delay: 0.7 }}
-              >
-                <h3>3rd Place</h3>
-                <p>Rs 75,000/-</p>
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
-
-        <motion.div
-          className='additional-prizes'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.8 }}
-        >
-          <img src="/p-star.svg" alt="star" />
-          <span>Additonal Prizes of <br />Rs 10,000 /- Each </span>
-          <span>for places 4th to 10th</span>
-          <span>Valuable Certificates <br/>for every submission </span>
-        </motion.div>
+        
       </div>
 
       <div className='prize-line-2'>
@@ -240,7 +222,7 @@ const PrizeSection = () => {
           </motion.div>
         </div>
 
-        <motion.div
+        {/* <motion.div
           className='additional-prizes-2'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -250,7 +232,7 @@ const PrizeSection = () => {
           <span>Additonal Prizes of <br />Rs 10,000 /- Each </span>
           <span>for places 4th to 10th</span>
           <span>Valuable Certificates <br/>for every submission </span>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       <div className="vector">
