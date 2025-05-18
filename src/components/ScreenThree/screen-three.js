@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./screen-three.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
