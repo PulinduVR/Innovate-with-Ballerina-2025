@@ -49,7 +49,7 @@ const ScreenTwo = () => {
 
   const styles = {
     heading: {
-      fontSize: isMobile ? "3rem" : "5rem",
+      fontSize: isMobile ? "0rem" : "5rem",
       fontFamily: "Space Grotesk",
     },
     arr: {
@@ -118,9 +118,9 @@ const ScreenTwo = () => {
       color: "#152B39",
     },
     subHeadingHighlight: {
-      fontSize: "6.5vw",
+      fontSize: isMobile ? "2.5rem" : "6.5vw",
       fontFamily: "Space Grotesk",
-      fontWeight: "500",
+      fontWeight: isMobile ? "600" : "500",
       background: "linear-gradient(-90deg, #10C3BD 0%, #FF9400 100%)",
       WebkitBackgroundClip: "text",
       WebkitTextFillColor: "transparent",
@@ -154,8 +154,8 @@ const ScreenTwo = () => {
           transform: "translate(-50%, -50%)",
           zIndex: 0,
           opacity: 1,
-          maxWidth: "40vw",
-          maxHeight: "72vh",
+          maxWidth: isMobile ? "50vw" : "40vw",
+          maxHeight: isMobile ? "80vh" : "72vh",
           pointerEvents: "none",
         }}
       />
@@ -165,12 +165,12 @@ const ScreenTwo = () => {
         style={{
           position: "absolute",
           left: "25%",
-          top: "85%",
+          top: isMobile ? "68%" : "85%",
           transform: "translate(-50%, -50%)",
           zIndex: 0,
           opacity: 1,
           maxWidth: "20vw",
-          maxHeight: "10vh",
+          maxHeight: isMobile ? "5vh" : "10vh",
           pointerEvents: "none",
         }}
       />
@@ -180,12 +180,12 @@ const ScreenTwo = () => {
         style={{
           position: "absolute",
           left: "90%",
-          top: "40%",
+          top: isMobile ? "40%" : "40%",
           transform: "translate(-50%, -50%)",
           zIndex: 0,
           opacity: 1,
           maxWidth: "20vw",
-          maxHeight: "10vh",
+          maxHeight: isMobile ? "5vh" : "10vh",
           pointerEvents: "none",
         }}
       />
@@ -195,7 +195,7 @@ const ScreenTwo = () => {
         style={{
           position: "absolute",
           left: "50%",
-          top: "50%",
+          top: isMobile ? "55%" : "50%",
           transform: "translate(-50%, -50%)",
           zIndex: 0,
           opacity: 1,
@@ -219,12 +219,13 @@ const ScreenTwo = () => {
       <div style={styles.content} id="cont">
         <div style={styles.textContainer} className="text-container">
           <h1 style={styles.heading} className="heading">
-            <span style={styles.subHeadingHighlight}>The Ultimate</span><br />
+            <span style={styles.subHeadingHighlight}>The Ultimate</span>
+            <br />
             <span className="gradient-border-heading" data-text="Coding Challenge">Coding Challenge</span>
           </h1>
           <br />
-          <span className="gradient-border-text" data-text="Awaken Your Dormant Innovator!">Awaken Your Dormant Innovator!</span>
-          <span className="gradient-border-text" data-text="Join With IEEE And WSO2 In A Ballerina Language Exclusive Coding Competition">Join With IEEE And WSO2 In A Ballerina Language Exclusive Coding Competition</span>
+          <span className={isMobile ? "gradient-border-mobile-text" : "gradient-border-text"} data-text="Awaken Your Dormant Innovator!">Awaken Your Dormant Innovator!</span>
+          <span className={isMobile ? "gradient-border-mobile-text" : "gradient-border-text"} data-text="Join With IEEE And WSO2 In A Ballerina Language Exclusive Coding Competition">Join With IEEE And WSO2 In A Ballerina Language Exclusive Coding Competition</span>
         </div>
       </div>
     </div>
